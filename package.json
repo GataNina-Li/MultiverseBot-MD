@@ -7,7 +7,7 @@
     "directories": {
         "lib": "lib",
         "src": "src",
-        "plugins": "plugins"
+        "plugins": "plugins" 
     },
     "scripts": {
         "start": "node index.js",
