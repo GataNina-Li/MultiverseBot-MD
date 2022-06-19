@@ -4,7 +4,7 @@ pkg install nodejs -y
 pkg install ffmpeg -y
 pkg install imagemagick -y
 pkg install yarn
-git clone https://github.com/ilmanhdyt/ShiraoriBOT-Md
-cd ShiraoriBOT-Md
+git clone https://github.com/GataNina-Li/EstelarBot-MD
+cd EstelarBot-MD
 yarn
 node .
