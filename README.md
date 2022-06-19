@@ -20,7 +20,7 @@
 </p>
 
 # Ambil Session Disini
-
+https://replit.com/@GataNina-Li/Session-Md#.replit
 > Buka [ Linknya Disini ](https://replit.com/@zeeoneofc/Session-Md?lita=1&outputonly=1#.replit) 
 > Untuk Tutorialnya Liat Dan Subscribe [ Here ](https://youtu.be/7wfSvv4AHsQ) 
 
