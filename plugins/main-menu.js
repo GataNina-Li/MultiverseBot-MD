@@ -283,20 +283,21 @@ const fdoc = {
 
 //━━━━━━━━[ BAGIAN MENU ]━━━━━━━━//
 if (teks == '404') {
-let menuu = `┌────「 *${namebot}* 」───⬣
-│⬡ Aktif selama ${uptime}
-│⬡ ${Object.keys(global.db.data.users).length} Pengguna
-│⬡ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
-│⬡ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
-│⬡ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
+let menuu = 
+`┌────「 *${namebot}* 」───⬣
+│⬡ 𝑫𝒖𝒓𝒂𝒏𝒕𝒆 ${uptime}
+│⬡ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔 ${Object.keys(global.db.data.users).length} 
+│⬡ 𝑴𝒐𝒅𝒐 ${global.opts['self'] ? '𝑷𝒓𝒊𝒗𝒂𝒅𝒐' : '𝑷𝒖𝒃𝒍𝒊𝒄𝒐'}
+│⬡ 𝑪𝒉𝒂𝒕𝒔 𝑩𝒂𝒏𝒆𝒂𝒅𝒐𝒔 ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}
+│⬡ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔 𝑩𝒂𝒏𝒆𝒂𝒅𝒐𝒔 ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰──────⬣
 ┌────「 *${name}* 」───⬣
-│⬡ Api : ${tag}
-│⬡ Limit : ${limit}
-│⬡ Role : ${role}
-│⬡ Premium : ${global.prem ? 'Yes' : 'No'}
-│⬡ Date : ${week} ${date}
-│⬡ Time : ${wib}
+│⬡ 𝑬𝒏𝒍𝒂𝒄𝒆 ${tag}
+│⬡ 𝑳𝒊𝒎𝒊𝒕𝒆𝒔 𝒅𝒆 𝒖𝒔𝒐 ${limit}
+│⬡ 𝑹𝒂𝒏𝒈𝒐 - 𝑹𝒐𝒍 ${role}
+│⬡ 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 ${global.prem ? '✅' : '❌'}
+│⬡ 𝑭𝒆𝒄𝒉𝒂 ${week} ${date}
+│⬡ 𝑯𝒐𝒓𝒂 ${wib}
 ╰──────────────⬣`
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
