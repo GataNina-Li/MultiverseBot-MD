@@ -194,7 +194,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 //━━━━━━━━[ TIMER ]━━━━━━━━//
     let d = new Date(new Date + 3600000)
     let locale = 'es'
-    let wib = moment.tz('Ecuador/Quito').format('HH:mm:ss')
+    let wib = moment.tz('Colombia/Bogota').format('HH:mm:ss')
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
     let date = d.toLocaleDateString(locale, {
