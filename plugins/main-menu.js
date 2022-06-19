@@ -193,8 +193,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
 //━━━━━━━━[ TIMER ]━━━━━━━━//
     let d = new Date(new Date + 3600000)
-    let locale = 'id'
-    let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
+    let locale = 'es'
+    let wib = moment.tz('America/Los_Angeles').format('HH:mm:ss')
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
     let date = d.toLocaleDateString(locale, {
@@ -284,14 +284,14 @@ const fdoc = {
 //━━━━━━━━[ BAGIAN MENU ]━━━━━━━━//
 if (teks == '404') {
 let menuu = 
-`┌────「 *${namebot}* 」───⬣
+`┌────「 ${namebot} 」───⬣
 │⬡ 𝑫𝒖𝒓𝒂𝒏𝒕𝒆 ${uptime}
 │⬡ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔 ${Object.keys(global.db.data.users).length} 
 │⬡ 𝑴𝒐𝒅𝒐 ${global.opts['self'] ? '𝑷𝒓𝒊𝒗𝒂𝒅𝒐' : '𝑷𝒖𝒃𝒍𝒊𝒄𝒐'}
 │⬡ 𝑪𝒉𝒂𝒕𝒔 𝑩𝒂𝒏𝒆𝒂𝒅𝒐𝒔 ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}
 │⬡ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔 𝑩𝒂𝒏𝒆𝒂𝒅𝒐𝒔 ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰──────⬣
-┌────「 *${name}* 」───⬣
+┌────「 ${name} 」───⬣
 │⬡ 𝑬𝒏𝒍𝒂𝒄𝒆 ${tag}
 │⬡ 𝑳𝒊𝒎𝒊𝒕𝒆𝒔 𝒅𝒆 𝒖𝒔𝒐 ${limit}
 │⬡ 𝑹𝒂𝒏𝒈𝒐 - 𝑹𝒐𝒍 ${role}
@@ -586,19 +586,19 @@ function clockString(ms) {
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function ucapan() {
-  const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat DiniHari"
+  const time = moment.tz('America/Los_Angeles').format('HH')
+  res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
   if (time >= 4) {
-    res = "Selamat Pagi"
+    res = "🌇 *Buenos Días | Good Morning* ⛅"
   }
-  if (time > 10) {
-    res = "Selamat Siang"
+  if (time >= 11) {
+    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
   }
   if (time >= 15) {
-    res = "Selamat Sore"
+    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
   }
-  if (time >= 18) {
-    res = "Selamat Malam"
+  if (time >= 17) {
+    res = "🌃 *Buenas noches | Good Evening* 💫"
   }
   return res
 }
