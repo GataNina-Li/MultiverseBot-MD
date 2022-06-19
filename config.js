@@ -13,7 +13,7 @@ global.pulsa = '085212023766'
 global.gopay = '087892711054'
 
 //=============『 Info Bot 』=================//
-global.namebot = 'EstelarBot-MD'
+global.namebot = '𝑬𝒔𝒕𝒆𝒍𝒂𝒓𝑩𝒐𝒕-𝑴𝑫 '
 global.gc = 'https://chat.whatsapp.com'
 global.web = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
