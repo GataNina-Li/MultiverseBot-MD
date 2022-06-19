@@ -38,6 +38,7 @@ global.salah = 'Salah ❌\n'
 global.stiker_wait = 'Stiker sedang dibuat'
 global.packname = '2022'
 global.author = '© Hyzer Official'
+global.vs = '1.1.5'
 
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
