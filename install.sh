@@ -1,16 +1,4 @@
 pkg update && pkg upgrade
-pkg install git -y
-pkg install nodejs -y
-pkg install ffmpeg -y
-pkg install imagemagick -y
-pkg install yarn
-git clone https://github.com/GataNina-Li/EstelarBot-MD
-cd EstelarBot-MD
-yarn
-npm install
-node .
-
-pkg update && pkg upgrade
 apt update && apt upgrade
 bin=$PREFIX/bin
 dir=$(pwd)
@@ -51,6 +39,14 @@ else
   echo -e "\u001b[32mGenial!! ya esta el install imagemagick!"
 fi
 
+if [ -e $bin/yarn ]; then 
+  echo -e "\u001b[32mYa esta instalado el imagemagick, en ese caso lo omitiremos"
+else
+  echo -e "\u001b[31mInstaling \u001b[31myarn!"
+  pkg install yarn
+  echo -e "\u001b[32mGenial!! ya esta el install yarn!"
+fi
+
 echo -e "\u001b[33mComprobación de la instalación!"
 
 check() {
@@ -81,6 +77,13 @@ check() {
   else
     echo -e "\u001b[31mImagemagick no instalado!, instalar manualmente usando `pkg install imagemagick -y` o `apt install imagemagick -y`"
   fi   
+  
+  
+  if [ -e $bin/yarn ]; then
+    echo -e "\u001b[32myarn ya está instalado!" 
+  else
+    echo -e "\u001b[31myarn no instalado!, instalar manualmente usando `pkg install yarn` o `apt install yarn`"
+  fi
 }
 
 
@@ -113,6 +116,7 @@ echo -e "\u001b[32mDone checking instalation!"
 
 echo -e "\u001b[33mInstall and update module!"
 if [ -e $dir/package.json ]; then
+  npm yarn
   npm install
   npm update
   echo -e "\u001b[32Done Install and update module!" 
