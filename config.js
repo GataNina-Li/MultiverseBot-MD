@@ -1,21 +1,21 @@
 //=============『 Utama 』================== //
-global.owner = ['6287892711054'] 
+global.owner = [['14504976783'], ['593968585383'], ['593993684821']] 
 global.mods = [] 
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = 'Hyzer Official'
-global.numberowner = '6287892711054'
-global.instagram = 'https://instagram.com/hyzer_stfu'
-global.github = 'https://github.com/Hyzerr'
+global.nameowner = 'EstelarBot-MD'
+global.numberowner = '14504976783'
+global.instagram = 'https://www.instagram.com/gata_dios'
+global.github = 'https://github.com/GataNina-Li/EstelarBot-MD'
 global.dana = '087892711054'
 global.pulsa = '085212023766'
 global.gopay = '087892711054'
 
 //=============『 Info Bot 』=================//
-global.namebot = 'ShiroBot-Md'
-global.gc = 'https://chat.whatsapp.com/Jzd9DEVB5nODtNBk1VCNrV'
-global.web = 'https://hyzerr-apii.herokuapp.com' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
+global.namebot = 'EstelarBot-MD'
+global.gc = 'https://chat.whatsapp.com'
+global.web = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
 
 //=======『 Tampilan Dan Lainnya 』============//
