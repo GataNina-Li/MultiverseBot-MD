@@ -51,7 +51,7 @@ const buttonMessage = {
 }
  else conn.sendMessage(m.chat, buttonMessage, MessageType.buttonsMessage ,m )
 //conn.reply(test)  
-}
+
 handler.help = ['apikey']
 handler.tags = ['info']
 handler.command = /^apikey$/i
