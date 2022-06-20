@@ -39,7 +39,7 @@ let test =`
 ` // Tambah sendiri kalo mau
 
 conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
-  
+}  
  
 //conn.reply(test)  
 
