@@ -1,4 +1,7 @@
-let handler = async m => m.reply(`
+let handler = m => m
+handler.before = m => {
+
+let test =`
 ┌─〔 *APIKEY FREE* 〕
 ├➥ *Bany :* adadeh
 ├➥ *leyscoders:* MIMINGANZ
@@ -31,7 +34,11 @@ let handler = async m => m.reply(`
 ┃ > *Trimakasih Telah Membantu*
 ┃ *Jalanya Bot Ini :)*
 ┗━━━━━━━━━━━━━━━━
-`.trim()) // Tambah sendiri kalo mau
+`.trim() // Tambah sendiri kalo mau
+
+conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
+conn.reply(test)  
+}
 handler.help = ['apikey']
 handler.tags = ['info']
 handler.command = /^apikey$/i
