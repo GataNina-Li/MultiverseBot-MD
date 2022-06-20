@@ -476,8 +476,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
               return menu.help.map(help => {
                 return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
-                  .replace(/%islimit/g, menu.limit ? '(Ⓛ)' : '')
-                  .replace(/%isPremium/g, menu.premium ? '(Ⓟ)' : '')
+                  .replace(/%islimit/g, menu.limit ? 'Ⓛ' : '')
+                  .replace(/%isPremium/g, menu.premium ? 'Ⓟ' : '')
                   .trim()
               }).join('\n')
             }),
@@ -513,7 +513,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
           hydratedTemplate: {
             imageMessage: message.imageMessage, 
             hydratedContentText: text, 
-            hydratedFooterText: wm2, 
+            hydratedFooterText: `Ⓛ ⇢ *_Limite_*\nⓅ ⇢ *_Premium_*`, 
             hydratedButtons: [{
             urlButton: {
                displayText: 'Website Creator',
