@@ -49,7 +49,7 @@ const defaultMenu = {
   header: '┌─「 %category 」',
   body: '├ %cmd %islimit %isPremium',
   footer: '└────\n', 
-  after: ``,
+  after: `yyyy`,
 }
 
 // ✩｡:*•.─────  AGRUPACION POR CATEGORIA  ─────.•*:｡✩
@@ -513,7 +513,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
           hydratedTemplate: {
             imageMessage: message.imageMessage, 
             hydratedContentText: text, 
-            hydratedFooterText: cmd islimit isPremium`, 
+            hydratedFooterText: cmd + islimit + isPremium, 
             hydratedButtons: [{
             urlButton: {
                displayText: 'Website Creator',
