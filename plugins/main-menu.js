@@ -1,13 +1,21 @@
-/**
-* create by hyzer official
-* g usah di hapus anjg, gw cape sumpah
-* sc free, bayar pake subs aja udh good
-* jika ada bug/mau request fitur
-* chat me on wa https://wa.me/6287892711054
-* follow my instagram @zexyds_
-**/
+/* 
+GATA DIOS | HYZER
+ES PREFERIBLE NO CAMBIAR NADA DE AQUÍ SI NO SABES LO QUE HACES
+POR FAVOR NO CAMBIE LOS DATOS QUE PROPORCIONA SEGUIR ELABORANDO ESTE PROYECTO
+PUEDES ESCRIBIRME AL INSTAGRAM SOLO AHÍ REALIZO LA ASISTENCIA
+https://www.instagram.com/gata_dios | https://wa.me/6287892711054 
 
-//━━━━━━━━[ DEFAULT SETTINGS ]━━━━━━━━//
+SI HAY ERRORES PREVIO A NO HABER TOCADO NADA DE AQUÍ AVISAME POR FAVOR PARA DAR UNA SOLUCIÓN 
+
+IT IS PREFERRED NOT TO CHANGE ANYTHING HERE IF YOU DON'T KNOW WHAT YOU'RE DOING
+PLEASE DO NOT CHANGE THE DATA PROVIDED CONTINUE DEVELOPING THIS PROJECT
+YOU CAN WRITE ME ON INSTAGRAM ONLY THERE I DO THE ASSISTANCE
+https://www.instagram.com/gata_dios | https://wa.me/6287892711054
+
+IF THERE ARE ERRORS BEFORE HAVING NOT TOUCHED ANYTHING HERE, PLEASE NOTIFY ME TO GIVE A SOLUTION
+*/
+
+// ✩｡:*•.─────  AJUSTE DE BASE  ─────.•*:｡✩
 let { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let levelling = require('../lib/levelling')
 let fs = require('fs')
@@ -19,7 +27,7 @@ let fetch = require('node-fetch')
 let { perfomance } = require('perf_hooks')
 let moment = require('moment-timezone')
 
-//━━━━━━━━[ DEFAULT MENU ]━━━━━━━━//
+// ✩｡:*•.─────  MENU PREDETERMINADO  ─────.•*:｡✩
 const defaultMenu = {
   before:`
 ┌─「 *${global.namebot}* 」
@@ -45,7 +53,7 @@ const defaultMenu = {
   after: ``,
 }
 
-//━━━━━━━━[ CATEGORY ]━━━━━━━━//
+// ✩｡:*•.─────  AGRUPACION POR CATEGORIA  ─────.•*:｡✩
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
@@ -175,7 +183,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'photooxy': 'PHOTO OXY MENU', 
   }
 
-//━━━━━━━━[ DATABASE USER ]━━━━━━━━//
+// ✩｡:*•.─────  DATABASE  ─────.•*:｡✩
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let who
@@ -191,7 +199,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let tag = `wa.me/${m.sender.split('@')[0]}`
  m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
 
-//━━━━━━━━[ TIMER ]━━━━━━━━//
+// ✩｡:*•.─────  TIEMPO  ─────.•*:｡✩
     let d = new Date(new Date + 3600000)
     let locale = 'es'
     let wib = moment.tz('America/Bogota').format('HH:mm:ss')
@@ -225,7 +233,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let uptime = clockString(_uptime)
     let waktuwib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 
-//━━━━━━━━[ SETTING HELP ]━━━━━━━━//
+// ✩｡:*•.─────  AJUSTES DE PROTOCOLO - AYUDA  ─────.•*:｡✩
 let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(plugin => {
     return {
       help: Array.isArray(plugin.tags) ? plugin.help : [plugin.help],
@@ -237,7 +245,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
     }
   })
 
-//━━━━━━━━[ FAKE REPLY ]━━━━━━━━//
+// ✩｡:*•.─────  IGNORA ESTO  ─────.•*:｡✩
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
@@ -281,7 +289,7 @@ const fdoc = {
    }
    }
 
-//━━━━━━━━[ BAGIAN MENU ]━━━━━━━━//
+// ✩｡:*•.─────  MENU DE INICIO  ─────.•*:｡✩
 if (teks == '404') {
 let menuu = 
 `*╭𝄗𝄗𝄗☆ ${namebot} ☆𝄗𝄗𝄗⬣*
@@ -306,7 +314,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             description: menuu,
             buttonText: '𝑴𝑬𝑵𝑼 𝑫𝑰𝑵𝑨𝑴𝑰𝑪𝑶',
             listType: 1,
-            footerText: `*𝑷𝑹𝑬𝑺𝑰𝑶𝑵𝑬 𝑬𝑺𝑻𝑬 𝑴𝑬𝑵𝑺𝑨𝑱𝑬 | ᴳᵃᵗᵃ ᴰⁱᵒˢ*`,
+            footerText: `*𝑷𝑹𝑬𝑺𝑰𝑶𝑵𝑬 𝑬𝑺𝑻𝑬 𝑴𝑬𝑵𝑺𝑨𝑱𝑬\nᴳᵃᵗᵃ ᴰⁱᵒˢ*`,
             mtype: 'listMessage',
             sections: [
               {
@@ -498,7 +506,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
       readmore: readMore
     }
     
-//━━━━━━━━[ SETTINGS MENU ]━━━━━━━━//
+// ✩｡:*•.─────  AJUSTES DE MENU - DATOS  ─────.•*:｡✩
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
       const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -572,7 +580,7 @@ handler.exp = 3
 
 module.exports = handler
 
-//━━━━━━━━[  JANGAN DI UBAH  ]━━━━━━━━//
+// ✩｡:*•.─────  IGNORA ESTO  ─────.•*:｡✩
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
