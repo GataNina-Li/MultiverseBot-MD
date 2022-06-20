@@ -1,8 +1,8 @@
-let { MessageType } = require('@adiwajshing/baileys')
+//let { MessageType } = require('@adiwajshing/baileys')
 //let handler = m => m
 //handler.before = m => {
 let handler = async (m, { conn }) => {
-/*
+
 let test =`
 ┌─〔 *APIKEY FREE* 〕
 ├➥ *Bany :* adadeh
@@ -36,21 +36,11 @@ let test =`
 ┃ > *Trimakasih Telah Membantu*
 ┃ *Jalanya Bot Ini :)*
 ┗━━━━━━━━━━━━━━━━
-`.trim() // Tambah sendiri kalo mau*/
+` // Tambah sendiri kalo mau
 
-//conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
+conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
   
-  let wm = global.wm
-    let buttons = [
-        
-{buttonId: '.kandang', buttonText: {displayText: 'Kandang 🐾'}, type: 1}, 
-]
-const buttonMessage = {
-    contentText: `📍 Sepertinya Kakak Sudah Kecapekan\nSilahkan Istirahat dulu Untuk melanjutkan berburu !\n🕖 **`,
-    footerText: `${wm}`, 
-    buttons: buttons,
-    headerType: 1
-}
+ 
 //conn.reply(test)  
 
 handler.help = ['apikey']
