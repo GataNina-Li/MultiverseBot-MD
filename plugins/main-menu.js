@@ -29,23 +29,22 @@ let moment = require('moment-timezone')
 
 // ✩｡:*•.─────  MENU PREDETERMINADO  ─────.•*:｡✩
 const defaultMenu = {
-  before:`
-┌─「 *${global.namebot}* 」
-├ Hai, %name!
-├ Tersisa *%limit Limit*
-├ Role *%role*
-├ Level *%level (%exp / %maxexp)*
-├ [%xp4levelup]
-├ %totalexp XP secara Total
-│ 
-├ Tanggal: *%week %weton, %date*
-├ Tanggal Islam: *%dateIslamic*
-├ Waktu: *%time*
-│
-├ Uptime: *%uptime (%muptime)*
-├ Database: %rtotalreg dari %totalreg
-├ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
-└────
+  before:
+`*╭𝄗𝄗𝄗✦ ${global.namebot} ✦𝄗𝄗𝄗⬣*
+ ⎸ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐(𝒂) %name!
+ ⎸ 𝑳𝒊𝒎𝒊𝒕𝒆𝒔 𝒅𝒆 𝒖𝒔𝒐 *%limit*
+ ⎸ 𝑹𝒂𝒏𝒈𝒐 - 𝑹𝒐𝒍 *%role*
+ ⎸ 𝑵𝒊𝒗𝒆𝒍 *%level (%exp / %maxexp)*
+ ⎸ 𝑭𝒂𝒍𝒕𝒂  *%xp4levelup* 𝒑𝒂𝒓𝒂 𝒔𝒖𝒃𝒊𝒓 𝒅𝒆 𝑵𝒊𝒗𝒆𝒍 
+ ⎸ 𝑬𝒙𝒑𝒆𝒓𝒊𝒆𝒏𝒄𝒊𝒂 | 𝑿𝑷 *%totalexp*
+ ⎸
+ ⎸ 𝑭𝒆𝒄𝒉𝒂 *%week, %date*
+ ⎸ 𝑯𝒐𝒓𝒂 *%time*
+ ⎸
+ ⎸ 𝑨𝒄𝒕𝒊𝒗𝒊𝒅𝒂𝒅 *%uptime (%muptime)*
+ ⎸ 𝑹𝒆𝒔𝒑𝒂𝒍𝒅𝒐 *%rtotalreg* 𝒅𝒆 *%totalreg*
+ ⎸ 𝑴𝒆𝒎𝒐𝒓𝒊𝒂 𝒆𝒏 𝒖𝒔𝒐 *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+*╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*
 %readmore`.trimStart(), 
   header: '┌─「 %category 」',
   body: '├ %cmd %islimit %isPremium',
