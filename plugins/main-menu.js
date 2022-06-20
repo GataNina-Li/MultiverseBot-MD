@@ -49,7 +49,7 @@ const defaultMenu = {
   header: '┌─「 %category 」',
   body: '├ %cmd %islimit %isPremium',
   footer: '└────\n', 
-  after: null,
+  //after: null,
 }
 
 // ✩｡:*•.─────  AGRUPACION POR CATEGORIA  ─────.•*:｡✩
