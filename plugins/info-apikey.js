@@ -50,7 +50,7 @@ const buttonMessage = {
     headerType: 1
 }
 //conn.reply(test)  
-}
+
 handler.help = ['apikey']
 handler.tags = ['info']
 handler.command = /^apikey$/i
