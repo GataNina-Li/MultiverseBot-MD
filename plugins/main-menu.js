@@ -46,9 +46,9 @@ const defaultMenu = {
  ⎸ 𝑴𝒆𝒎𝒐𝒓𝒊𝒂 𝒆𝒏 𝒖𝒔𝒐 *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 *╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*
 %readmore`.trimStart(), 
-  header: '┌─「 %category 」',
-  body: '├ %cmd %islimit %isPremium',
-  footer: '└────\n', 
+  header: '*╭𝄗✦ %category ✦𝄗⬣*',
+  body: ' ⎸ %cmd %islimit %isPremium',
+  footer: '*╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*', 
   after: '',
 }
 
