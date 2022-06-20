@@ -1,7 +1,7 @@
 //let handler = m => m
 //handler.before = m => {
 let handler = async (m, { conn }) => { 
-
+/*
 let test =`
 ┌─〔 *APIKEY FREE* 〕
 ├➥ *Bany :* adadeh
@@ -35,7 +35,7 @@ let test =`
 ┃ > *Trimakasih Telah Membantu*
 ┃ *Jalanya Bot Ini :)*
 ┗━━━━━━━━━━━━━━━━
-`.trim() // Tambah sendiri kalo mau
+`.trim() // Tambah sendiri kalo mau*/
 
 //conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
   
@@ -44,7 +44,7 @@ let test =`
 ]
 const buttonMessage = {
     contentText: `\nSepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 **`,
-    footerText: test, 
+    footerText: wm2, 
     buttons: buttons,
     headerType: 1
 }
