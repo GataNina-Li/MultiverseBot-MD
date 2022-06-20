@@ -32,7 +32,7 @@
 > https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 ```
 ```bash
-> https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
+> https://github.com/mcollina/heroku-buildpack-imagemagick
 ```
 -----
 ### 🌟 CREADORA 
