@@ -37,7 +37,17 @@ let test =`
 ┗━━━━━━━━━━━━━━━━
 `.trim() // Tambah sendiri kalo mau
 
-conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
+//conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
+  
+  let buttons = [
+{buttonId: '.inv', buttonText: {displayText: 'Inventory'}, type: 1}, 
+]
+const buttonMessage = {
+    contentText: `\nSepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 **`,
+    footerText: test, 
+    buttons: buttons,
+    headerType: 1
+}
 //conn.reply(test)  
 }
 handler.help = ['apikey']
