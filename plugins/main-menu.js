@@ -292,20 +292,20 @@ const fdoc = {
 if (teks == '404') {
 let menuu = 
 `*╭𝄗𝄗𝄗☆ ${namebot} ☆𝄗𝄗𝄗⬣*
- ⎸⍟ 𝑽𝒆𝒓𝒔𝒊𝒐𝒏 𝑬𝒔𝒕𝒆𝒍𝒂𝒓 ➟ *${vs}*
- ⎸✪ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔 ➟ *${Object.keys(global.db.data.users).length}* 
- ⎸✪ 𝑯𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝑫𝒖𝒓𝒂𝒏𝒕𝒆 ➟ *${uptime}*
- ⎸✪ 𝑴𝒐𝒅𝒐 ➟ *${global.opts['self'] ? '𝑷𝒓𝒊𝒗𝒂𝒅𝒐' : '𝑷𝒖𝒃𝒍𝒊𝒄𝒐'}*
- ⎸✪ 𝑪𝒉𝒂𝒕𝒔 𝑩𝒂𝒏𝒆𝒂𝒅𝒐𝒔 ➟ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}*
- ⎸✪ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔 𝑩𝒂𝒏𝒆𝒂𝒅𝒐𝒔 ➟ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*
+ ⎸⍟ *_Version Estelar_* ➟ *${vs}*
+ ⎸✪ *_Usuarios_* ➟ *${Object.keys(global.db.data.users).length}* 
+ ⎸✪ *_Activa Durante_* ➟ *${uptime}*
+ ⎸✪ *_Modo_* ➟ *${global.opts['self'] ? '𝑷𝒓𝒊𝒗𝒂𝒅𝒐' : '𝑷𝒖𝒃𝒍𝒊𝒄𝒐'}*
+ ⎸✪ *_Chats Baneados_* ➟ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}*
+ ⎸✪ *_Usuarios Baneados_* ➟ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*
 *╰𝄗𝄗𝄗𝄗𝄗𝄗𝄗⬣*
 *╭𝄗☆ ${name} ☆𝄗⬣*
- ⎸✪ 𝑬𝒏𝒍𝒂𝒄𝒆 ➟ *${tag}*
- ⎸✪ 𝑳𝒊𝒎𝒊𝒕𝒆𝒔 𝒅𝒆 𝒖𝒔𝒐 ➟ *${limit}*
- ⎸✪ 𝑹𝒂𝒏𝒈𝒐 - 𝑹𝒐𝒍 ➟ ${role}
- ⎸✪ 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 ➟ ${global.prem ? '✅' : '❌'}
- ⎸✪ 𝑭𝒆𝒄𝒉𝒂 ➟ *${week} ${date}* 
- ⎸✪ 𝑯𝒐𝒓𝒂 ➟ *${wib}*
+ ⎸✪ *_Enlace_* ➟ *${tag}*
+ ⎸✪ *_Limites de Uso_* ➟ *${limit}*
+ ⎸✪ *_Rango | Rol_* ➟ ${role}
+ ⎸✪ *_Premium_* ➟ ${global.prem ? '✅' : '❌'}
+ ⎸✪ *_Fecha_* ➟ *${week} ${date}* 
+ ⎸✪ *_Hora_* ➟ *${wib}*
 *╰𝄗𝄗𝄗𝄗⬣*`
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
