@@ -40,16 +40,17 @@ let test =`
 
 //conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
   
-  let buttons = [
-{buttonId: '.inv', buttonText: {displayText: 'Inventory'}, type: 1}, 
+  let wm = global.wm
+    let buttons = [
+        
+{buttonId: '.kandang', buttonText: {displayText: 'Kandang 🐾'}, type: 1}, 
 ]
 const buttonMessage = {
-    contentText: `\nSepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 **`,
-    footerText: wm2, 
+    contentText: `📍 Sepertinya Kakak Sudah Kecapekan\nSilahkan Istirahat dulu Untuk melanjutkan berburu !\n🕖 **`,
+    footerText: `${wm}`, 
     buttons: buttons,
     headerType: 1
-}
- else conn.sendMessage(m.chat, buttonMessage, MessageType.buttonsMessage ,m )
+}}
 //conn.reply(test)  
 
 handler.help = ['apikey']
