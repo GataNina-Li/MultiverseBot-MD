@@ -309,7 +309,7 @@ let menuu =
 *╰𝄗𝄗𝄗𝄗⬣*`
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
-            title: `✨ ${ucapan()}`,
+            title: `${ucapan()}`,
             description: menuu,
             buttonText: '𝑴𝑬𝑵𝑼 𝑫𝑰𝑵𝑨𝑴𝑰𝑪𝑶',
             listType: 1,
