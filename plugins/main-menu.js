@@ -513,7 +513,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
           hydratedTemplate: {
             imageMessage: message.imageMessage, 
             hydratedContentText: text, 
-            hydratedFooterText: cmd, 
+            hydratedFooterText: `Ⓛ ⇢ Limite\nⓅ ⇢ Premium\n𝑬𝒔𝒕𝒆𝒍𝒂𝒓𝑩𝒐𝒕-𝑴𝑫 | 𝑮𝒂𝒕𝒂 𝑫𝒊𝒐𝒔 `, 
             hydratedButtons: [{
             urlButton: {
                displayText: 'Website Creator',
