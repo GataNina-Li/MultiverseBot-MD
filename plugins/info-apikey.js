@@ -1,7 +1,7 @@
 let { MessageType } = require('@adiwajshing/baileys')
 //let handler = m => m
 //handler.before = m => {
-let handler = async (m, { conn }) => { 
+let handler = async (m, { conn }) => {
 /*
 let test =`
 ┌─〔 *APIKEY FREE* 〕
@@ -50,7 +50,7 @@ const buttonMessage = {
     footerText: `${wm}`, 
     buttons: buttons,
     headerType: 1
-}}
+}
 //conn.reply(test)  
 
 handler.help = ['apikey']
@@ -65,7 +65,7 @@ handler.private = false
 handler.admin = false
 handler.botAdmin = false
 
-handler.fail = null
+//handler.fail = null
 handler.limit = false
 
 module.exports = handler
