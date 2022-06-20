@@ -47,7 +47,7 @@ const defaultMenu = {
 *╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*
 %readmore`.trimStart(), 
   header: '*╭𝄗✦ %category ✦𝄗⬣*',
-  body: '  ⎸ %cmd %islimit %isPremium',
+  body: '   ⎸ %cmd %islimit %isPremium',
   footer: `*╰𝄗𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗𝄗⬣*`, 
   after: '',
 }
