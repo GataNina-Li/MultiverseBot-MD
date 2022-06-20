@@ -3,14 +3,14 @@ GATA DIOS | HYZER
 ES PREFERIBLE NO CAMBIAR NADA DE AQUÍ SI NO SABES LO QUE HACES
 POR FAVOR NO CAMBIE LOS DATOS QUE PROPORCIONA SEGUIR ELABORANDO ESTE PROYECTO
 PUEDES ESCRIBIRME AL INSTAGRAM SOLO AHÍ REALIZO LA ASISTENCIA
-https://www.instagram.com/gata_dios | https://wa.me/6287892711054 
+https://www.instagram.com/gata_dios 
 
 SI HAY ERRORES PREVIO A NO HABER TOCADO NADA DE AQUÍ AVISAME POR FAVOR PARA DAR UNA SOLUCIÓN 
 
 IT IS PREFERRED NOT TO CHANGE ANYTHING HERE IF YOU DON'T KNOW WHAT YOU'RE DOING
 PLEASE DO NOT CHANGE THE DATA PROVIDED CONTINUE DEVELOPING THIS PROJECT
 YOU CAN WRITE ME ON INSTAGRAM ONLY THERE I DO THE ASSISTANCE
-https://www.instagram.com/gata_dios | https://wa.me/6287892711054
+https://www.instagram.com/gata_dios 
 
 IF THERE ARE ERRORS BEFORE HAVING NOT TOUCHED ANYTHING HERE, PLEASE NOTIFY ME TO GIVE A SOLUTION
 */
@@ -513,7 +513,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
           hydratedTemplate: {
             imageMessage: message.imageMessage, 
             hydratedContentText: text, 
-            hydratedFooterText: `Ⓛ ⇢ Limite\nⓅ ⇢ Premium\n𝑬𝒔𝒕𝒆𝒍𝒂𝒓𝑩𝒐𝒕-𝑴𝑫 | 𝑮𝒂𝒕𝒂 𝑫𝒊𝒐𝒔 `, 
+            hydratedFooterText: cmd, 
             hydratedButtons: [{
             urlButton: {
                displayText: 'Website Creator',
