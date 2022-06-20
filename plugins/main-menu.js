@@ -284,7 +284,7 @@ const fdoc = {
 //━━━━━━━━[ BAGIAN MENU ]━━━━━━━━//
 if (teks == '404') {
 let menuu = 
-`*╭𝄗𝄗𝄗𝄗☆ ${namebot} ☆𝄗𝄗⬣*
+`*╭𝄗𝄗𝄗☆ ${namebot} ☆𝄗𝄗𝄗⬣*
  ⎸⍟ 𝑽𝒆𝒓𝒔𝒊𝒐𝒏 𝑬𝒔𝒕𝒆𝒍𝒂𝒓 ➟ *${vs}*
  ⎸✪ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔 ➟ *${Object.keys(global.db.data.users).length}* 
  ⎸✪ 𝑯𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝑫𝒖𝒓𝒂𝒏𝒕𝒆 ➟ *${uptime}*
@@ -292,19 +292,19 @@ let menuu =
  ⎸✪ 𝑪𝒉𝒂𝒕𝒔 𝑩𝒂𝒏𝒆𝒂𝒅𝒐𝒔 ➟ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}*
  ⎸✪ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔 𝑩𝒂𝒏𝒆𝒂𝒅𝒐𝒔 ➟ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*
 *╰𝄗𝄗𝄗𝄗𝄗𝄗𝄗⬣*
-*╭𝄗𝄗☆ ${name} ☆𝄗⬣*
+*╭𝄗☆ ${name} ☆𝄗⬣*
  ⎸✪ 𝑬𝒏𝒍𝒂𝒄𝒆 ➟ *${tag}*
  ⎸✪ 𝑳𝒊𝒎𝒊𝒕𝒆𝒔 𝒅𝒆 𝒖𝒔𝒐 ➟ *${limit}*
  ⎸✪ 𝑹𝒂𝒏𝒈𝒐 - 𝑹𝒐𝒍 ➟ ${role}
  ⎸✪ 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 ➟ ${global.prem ? '✅' : '❌'}
  ⎸✪ 𝑭𝒆𝒄𝒉𝒂 ➟ *${week} ${date}* 
  ⎸✪ 𝑯𝒐𝒓𝒂 ➟ *${wib}*
-*╰𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗⬣*`
+*╰𝄗𝄗𝄗𝄗⬣*`
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
             title: `✨ ${ucapan()}`,
             description: menuu,
-            buttonText: 'LIST MENU',
+            buttonText: '𝑴𝑬𝑵𝑼 𝑫𝑰𝑵𝑨𝑴𝑰𝑪𝑶',
             listType: 1,
             footerText: `*𝑷𝑹𝑬𝑺𝑰𝑶𝑵𝑬 𝑬𝑺𝑻𝑬 𝑴𝑬𝑵𝑺𝑨𝑱𝑬 | ᴳᵃᵗᵃ ᴰⁱᵒˢ*`,
             mtype: 'listMessage',
