@@ -1,3 +1,4 @@
+let { MessageType } = require('@adiwajshing/baileys')
 //let handler = m => m
 //handler.before = m => {
 let handler = async (m, { conn }) => { 
