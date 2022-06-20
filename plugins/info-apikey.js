@@ -38,7 +38,7 @@ let test =`
 `.trim() // Tambah sendiri kalo mau
 
 conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
-conn.reply(test)  
+//conn.reply(test)  
 }
 handler.help = ['apikey']
 handler.tags = ['info']
