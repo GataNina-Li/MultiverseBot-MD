@@ -20,7 +20,7 @@ m.reply(conn.sendBut(m.chat, `╭───────────────�
 │ ${i + 1}. ${conn.getName(jid) == undefined ? 'Unknown' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}
 `.trim()).join('\n') : ''}
-╰────────────────────🚫`, gt , `Menu`, '.menu',  m))
+╰────────────────────🚫`, wm, `Menu`, '.menu',  m))
     //`.trim())
    //conn.reply(m.chat, caption, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }) separar contenido
 }
