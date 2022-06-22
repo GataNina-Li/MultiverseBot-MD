@@ -4,6 +4,9 @@ global.mods = []
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
+global.packname = 'wa.me/6285713964963'
+global.author = 'Bot Is The Best'
+
 global.nameowner = 'MultiverseBot-MD'
 global.numberowner = '51993042301'
 global.instagram = 'https://www.instagram.com/gata_dios'
