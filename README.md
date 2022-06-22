@@ -1,8 +1,6 @@
-<div align="center">
-<img src="https://i.imgur.com/NiPH3Ze.jpeg" alt="EstelarBot-MD" width="700" />
-
+# MultiverseBot-MD
+<img src="https://c.tenor.com/7JVyw1cEFPAAAAAS/universe-galaxy.gif" width="400" height="230"/>
 </p>
-<h1 align="center">EstelarBot-MD</h1>
 
 >
 >
