@@ -10,11 +10,11 @@ let handler = async (m, { conn }) => {
  let boost5 = `${pickRandom(['81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100'])}%`
 
    await m.reply(start)
-   await m.reply(```boost```)
-   await m.reply(```boost2```)
-   await m.reply(```boost3```)
-   await m.reply(```boost4```)
-   await m.reply(```boost5```)
+   await m.reply(boost)
+   await m.reply(boost2)
+   await m.reply(boost3)
+   await m.reply(boost4)
+   await m.reply(boost5)
    let old = performance.now()
    let neww = performance.now()
    let speed = `${neww - old}`
