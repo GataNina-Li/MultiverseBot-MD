@@ -521,8 +521,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
      templateMessage: {
          hydratedTemplate: {
            videoMessage: message.videoMessage,
-           hydratedContentText: text,
-           hydratedFooterText: `Ⓛ ⇢ Limite\nⓅ ⇢ Premium\nMultiverseBot-MD `,
+           hydratedContentText: text.trim(),
+           hydratedFooterText: `Ⓛ ⇢ Limite\nⓅ ⇢ Premium\nMultiverseBot-MD`,
            hydratedButtons: [{
             urlButton: {
                displayText: 'Website Creator',
