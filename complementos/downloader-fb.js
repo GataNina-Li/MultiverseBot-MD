@@ -1,4 +1,4 @@
-let xfar = require('xfarr-api')
+/*let xfar = require('xfarr-api')
 let fetch = require('node-fetch')
 let handler = async (m, { conn, command, text }) => {
     if (!text) throw 'Ingresar Link\n\nContoh: .fb https://facebook.com/xxxxxx'
@@ -14,4 +14,4 @@ handler.tags = ['downloader']
 handler.command = /^fb|facebook$/i
 
 
-module.exports = handler
+module.exports = handler*/
