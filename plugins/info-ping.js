@@ -60,7 +60,7 @@ _CPU Core(s) Usage (${cpus.length} Core CPU)_
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
 `.trim()
   //m.reply(txt)
- m.reply(conn.sendBut(m.chat, txt, pp, wm,  `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m)) 
+ m.reply(conn.sendButImg(m.chat, txt, wm, pp, `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m)) 
 }
 handler.help = ['velocidad | ping']
 handler.tags = ['info']
