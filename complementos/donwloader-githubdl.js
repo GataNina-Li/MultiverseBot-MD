@@ -1,4 +1,4 @@
-let handler = async (m, { args, usedPrefix, command }) => {
+/*let handler = async (m, { args, usedPrefix, command }) => {
 
 if (!args[0]) throw 'donde esta el nombre de usuario bro?'
 if (!args[1]) throw '¿dónde está el repositorio?'
@@ -15,4 +15,4 @@ handler.command = /githubdl/i
 
 handler.limit = true
 
-module.exports = handler
+module.exports = handler*/
