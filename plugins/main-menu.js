@@ -317,83 +317,83 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             sections: [
               {
                 "rows": [{
-                  "title": ` 👨 OWNER BOT`,
-                  "description": "Nomor Pemilik Bot Chat P/Meminta Save Tidak Akan Di Respon",
+                  "title": `PROPIETARIO(A) BOT`,
+                  "description": "Número de Propietario(a) del Bot",
                   "rowId": `.owner`
                 },{
                   "title": "❗ INFO BOT",
-                  "description": "Menampilkan Menu Info",
+                  "description": "Mostrar el menú de información",
                   "rowId": `${_p}? info`
                 }],
-                "title": "INFORMASI BOT"
+                "title": "INFORMACIÓN SOBRE EL BOT"
               }, {
                 "rows": [{
-                  "title": `│🧾│ SEMUA PERINTAH`,
-                  "description": "Menampilkan Menu All",
+                  "title": `│🧾│ TODOS LOS COMANDOS`,
+                  "description": "Mostrar Todo el Menú",
                   "rowId": '.? all'
                   }, {
-                  "title": "│ 📝│ ABSEN & VOTING",
-                  "description": "Menampilkan Menu Absen",
+                  "title": "│ 📝│ ABSEN Y VOTO",
+                  "description": "Visualización del menú de ausencias",
                   "rowId": `${_p}? absen`
                 }, {
                   "title": "│⛩️│ANIME",
-                  "description": "Menampilkan Menu Anime",
+                  "description": "Visualización del menú de anime",
                   "rowId": `${_p}? anime`
                 }, {
-                  "title": "│🎇│STICKER & CONVERTER",
-                  "description": "Menampilkan Menu Sticker",
+                  "title": "│🎇│STICKER & CONVERTIDOR",
+                  "description": "Mostrar el menú de Sticker",
                   "rowId": `${_p}? sticker`
                 }, {
-                  "title": "│📺│DOWNLOADER",
-                  "description": "Menampilkan Menu Downloader",
+                  "title": "│📺│DESCARGADOR",
+                  "description": "Mostrar el menú del descargador",
                   "rowId": `${_p}? downloader`
                 }, {
                   "title": "│📈│EXP & LIMIT",
-                  "description": "Menampilkan Menu Exp",
+                  "description": "Mostrar el menú Exp",
                   "rowId": `${_p}? xp`
                 }, {
-                  "title": "│🐣│FUN",
-                  "description": "Menampilkan Menu Fun",
+                  "title": "│🐣│DIVERSIÓN",
+                  "description": "Mostrar el menú de diversión",
                   "rowId": `${_p}? fun`
                 }, {
-                  "title": "│🎮│GAME",
-                  "description": "Menampilkan Menu Game",
+                  "title": "│🎮│JUEGO",
+                  "description": "Mostrar el menú del juego",
                   "rowId": `${_p}? game`
                 }, {
                   "title": "│🧰│GITHUB",
-                  "description": "Menampilkan Menu Github",
+                  "description": "Mostrar el menú de Github",
                   "rowId": `${_p}? github`
                 }, {
-                  "title": "│🏢│GROUP",
-                  "description": "Menampilkan Menu Group",
+                  "title": "│🏢│GRUPO",
+                  "description": "Mostrar el menú de grupo",
                   "rowId": `${_p}? group`
                 }, {
-                  "title": "│🖼│IMAGE",
-                  "description": "Menampilkan Menu Image",
+                  "title": "│🖼│IMAGEN",
+                  "description": "Mostrar el menú de imágenes",
                   "rowId": `${_p}? image`
                 }, {
                   "title": "│📡│INTERNET",
-                  "description": "Menampilkan Menu Internet",
+                  "description": "Mostrar el menú de Internet",
                   "rowId": `${_p}? internet`
                 }, {
                   "title": "│🕋│ISLAMIC",
                   "description": "Menampilkan Menu Islam",
                   "rowId": `${_p}? islam`
                 }, {
-                  "title": "│🐚│KERANG",
-                  "description": "Menampilkan Menu Kerang",
+                  "title": "│🐚│MARISCOS",
+                  "description": "Visualización del menú de mariscos",
                   "rowId": `${_p}? kerang`
                 }, {
                   "title": "│✒️│MAKER",
-                  "description": "Menampilkan Menu Maker",
+                  "description": "Mostrar el menú Maker",
                   "rowId": `${_p}? maker`
                 }, {
                   "title": "│👨‍💻│OWNER",
-                  "description": "Menampilkan Menu Owner",
+                  "description": "Mostrar el menú del propietario(a)",
                   "rowId": `${_p}? owner`
                 }, {
-                  "title": "│🎙│PENGUBAH SUARA",
-                  "description": "Menampilkan Menu Voice Changer",
+                  "title": "│🎙│CAMBIO DE VOZ",
+                  "description": "Mostrar el menú del cambiador de voz",
                   "rowId": `${_p}? suara`
                 }, {
                   "title": "│🔝│PREMIUM",
