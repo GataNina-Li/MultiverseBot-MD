@@ -1,9 +1,4 @@
-//let { MessageType } = require('@adiwajshing/baileys')
-//let handler = m => m
-//handler.before = m => {
-let handler = async (m, { conn }) => {
-
-let test =`
+let handler = async m => m.reply(`
 ┌─〔 *APIKEY FREE* 〕
 ├➥ *Bany :* adadeh
 ├➥ *leyscoders:* MIMINGANZ
@@ -36,13 +31,7 @@ let test =`
 ┃ > *Trimakasih Telah Membantu*
 ┃ *Jalanya Bot Ini :)*
 ┗━━━━━━━━━━━━━━━━
-` // Tambah sendiri kalo mau
-
-conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
-}  
- 
-//conn.reply(test)  
-
+`.trim()) // Tambah sendiri kalo mau
 handler.help = ['apikey']
 handler.tags = ['info']
 handler.command = /^apikey$/i
@@ -55,7 +44,7 @@ handler.private = false
 handler.admin = false
 handler.botAdmin = false
 
-//handler.fail = null
+handler.fail = null
 handler.limit = false
 
 module.exports = handler
