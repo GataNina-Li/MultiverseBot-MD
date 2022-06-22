@@ -1,19 +1,19 @@
 //=============『 Utama 』================== //
-global.owner = ['14504976783', '593993684821', '593968585383'] 
+global.owner = ['51993042301', '593993684821', '593968585383', '528451003894', '50495086382', '50498965677', '16479546631'] 
 global.mods = [] 
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = 'EstelarBot-MD'
-global.numberowner = '14504976783'
+global.nameowner = 'MultiverseBot-MD'
+global.numberowner = '51993042301'
 global.instagram = 'https://www.instagram.com/gata_dios'
-global.github = 'https://github.com/GataNina-Li/EstelarBot-MD'
+global.github = 'https://github.com/GataNina-Li/MultiverseBot-MD'
 global.dana = '087892711054'
 global.pulsa = '085212023766'
 global.gopay = '087892711054'
 
 //=============『 Info Bot 』=================//
-global.namebot = '𝑬𝒔𝒕𝒆𝒍𝒂𝒓𝑩𝒐𝒕-𝑴𝑫 '
+global.namebot = 'MultiverseBot-MD '
 global.gc = 'https://chat.whatsapp.com'
 global.web = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
