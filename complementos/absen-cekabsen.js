@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix }) => {
     let id = m.chat
     conn.absen = conn.absen ? conn.absen : {}
-    if (!(id in conn.absen)) throw `_*Tidak ada absen berlangsung digrup ini!*_\n\n*${usedPrefix}mulaiabsen* - untuk memulai absen`
+    if (!(id in conn.absen)) throw `_*No hay ausencias en este grupo.!*_\n\n*${usedPrefix}mulaiabsen* -empezar ausente`
 
     let d = new Date
     let date = d.toLocaleDateString('id', {
@@ -16,7 +16,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 Tanggal: ${date}
 ${conn.absen[id][2]}
 
-┌ *Yang sudah absen:*
+┌ *El que ha estado ausente:*
 │ 
 │ Total: ${absen.length}
 ${list}
