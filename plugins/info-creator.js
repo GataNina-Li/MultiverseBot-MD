@@ -2,7 +2,7 @@ const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessa
 let fetch = require('node-fetch')
 let fs = require('fs')
 let handler = async(m, { conn }) => {
-conn.sendContact(m.chat, numberowner, nameowner, m)
+conn.sendContact(m.chat, numberowner, nameowner, m) 
 
 	//let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.mp4'
 let text = `*Hola! Esos son los Contactos disponibles* 🌟\n*El Bot no responde a dudas para ello consulte con la ✅ Cuenta Oficial de Instagram - Asistencia, Gracias!*`
