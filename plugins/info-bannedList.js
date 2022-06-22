@@ -2,7 +2,7 @@ let handler = async (m, { conn, isOwner }) => {
     let chats = Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned)
     let users = Object.entries(global.db.data.users).filter(user => user[1].banned)
     
-m.reply(conn.sendBut(m.chat, `╭────────────────────🚫
+m.reply(conn.sendBut(m.chat, `╭────────────────🚫
 │ *Lista de chats prohibidos*
 │ *List of banned chats*
 │┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -10,9 +10,9 @@ m.reply(conn.sendBut(m.chat, `╭───────────────�
 │ ${i + 1}. ${conn.getName(jid) == undefined ? 'Unknown' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}
 `.trim()).join('\n') : ''}
-╰────────────────────🚫
+╰────────────🚫
                           
-╭────────────────────🚫
+╭────────────────🚫
 │ *Lista de Usuarios Prohibidos*
 │ *Banned Users List*
 │┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -20,7 +20,7 @@ m.reply(conn.sendBut(m.chat, `╭───────────────�
 │ ${i + 1}. ${conn.getName(jid) == undefined ? 'Unknown' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}
 `.trim()).join('\n') : ''}
-╰────────────────────🚫`, wm, `Menu`, '.menu',  m))
+╰────────────🚫`, wm, `Menu`, '.menu',  m))
     //`.trim())
    //conn.reply(m.chat, caption, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }) separar contenido
 }
