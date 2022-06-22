@@ -19,7 +19,7 @@
 ### 👉 <a href="https://replit.com/@GataNina-Li/Session-Md?lita=1&outputonly=1#.replit"><img title="Session" src="https://blog.replit.com/images/logo.png" width="90" /></a> 
 
 # Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/EstelarBot-MD)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/MultiverseBot-MD)
 
 
 # Añada lo siguente al Buildpack
@@ -33,8 +33,6 @@
 > https://github.com/mcollina/heroku-buildpack-imagemagick
 ```
 -----
-### 🌟 CREADORA 
-[![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
 
 ### 🌟 AGRADECIMIENTOS
 [![Hyzer](https://github.com/Hyzerr.png?size=100)](https://github.com/Hyzerr)
