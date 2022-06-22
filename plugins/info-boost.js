@@ -21,7 +21,7 @@ let handler = async (m, { conn }) => {
    let neww = performance.now()
    let speed = `${neww - old}`
    let multi = `${eg}*SE COMPLETO EL OBJETIVO DE AUMENTO DE VELOCIDAD*`
-   let pp = 'https://i.pinimg.com/originals/64/3a/81/643a81e32e243cd07bf37a93036769f5.jpg'
+   let pp = 'https://i.pinimg.com/originals/64/3a/81/643a81e32e243cd07bf37a93036769f5.jpg' 
    conn.sendButtonImg(m.chat, pp, multi, `${wm} | ᴄᴏʟɪꜱɪᴏɴ ɪᴍᴘᴜʟꜱᴀᴅᴀ\n${speed} milisegundos`, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', '.menu', m)
   // conn.reply(m.chat, finish, m)
 }
