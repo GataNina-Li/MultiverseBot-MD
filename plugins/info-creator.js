@@ -3,9 +3,10 @@ let fetch = require('node-fetch')
 let fs = require('fs')
 let handler = async(m, { conn }) => {
 conn.sendContact(m.chat, numberowner, nameowner, m)
-	
+
+	let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.gif'
 let text = `Ejemplo`
-  let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv1.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+  let message = await prepareWAMessageMedia({ video: fs.readFileSync pp, gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
