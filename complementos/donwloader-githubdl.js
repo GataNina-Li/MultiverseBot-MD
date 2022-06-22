@@ -1,8 +1,8 @@
 let handler = async (m, { args, usedPrefix, command }) => {
 
-if (!args[0]) throw 'usernamenya mana om'
-if (!args[1]) throw 'repo nya mana?'
-if (!args[2]) throw 'masukkan nama branch'
+if (!args[0]) throw 'donde esta el nombre de usuario bro?'
+if (!args[1]) throw '¿dónde está el repositorio?'
+if (!args[2]) throw 'ingrese el nombre de la sucursal'
 let url = `https://github.com/${args[0]}/${args[1]}/archive/refs/heads/${args[2]}.zip`
 //F
 m.reply(`compressing data to file zip*`)
