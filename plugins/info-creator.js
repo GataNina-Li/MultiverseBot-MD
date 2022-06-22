@@ -3,13 +3,14 @@ let fetch = require('node-fetch')
 let fs = require('fs')
 let handler = async(m, { conn }) => {
 conn.sendContact(m.chat, numberowner, nameowner, m)
-
+	
+let text = `Ejemplo`
   let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv1.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            videoMessage: message.videoMessage,
-           hydratedContentText: text.trim(),
+           hydratedContentText: text,
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
