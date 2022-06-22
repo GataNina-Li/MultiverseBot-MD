@@ -1,4 +1,4 @@
-let handler = async (m, { conn, usedPrefix }) => {
+/* //aqui let handler = async (m, { conn, usedPrefix }) => {
     let id = m.chat
     conn.absen = conn.absen ? conn.absen : {}
     if (!(id in conn.absen)) throw `_*No hay ausencias en este grupo.!*_\n\n*${usedPrefix}mulaiabsen* -empezar ausente`
@@ -28,4 +28,4 @@ handler.help = ['cekabsen']
 handler.tags = ['absen']
 handler.command = /^cekabsen$/i
 handler.group = true
-module.exports = handler
+module.exports = handler */ //aqui
