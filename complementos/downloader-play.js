@@ -1,4 +1,4 @@
-const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
+/*const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let fs = require('fs')
 let yts = require('yt-search')
@@ -87,5 +87,5 @@ handler.command = /^(p|play)$/i
 
 handler.exp = 0
 
-module.exports = handler
+module.exports = handler*/
 
