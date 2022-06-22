@@ -12,7 +12,7 @@ const _ = require('lodash')
 const syntaxerror = require('syntax-error')
 const P = require('pino')
 const os = require('os')
-let simple = require('./lib/simple')
+let simple = require('./lib/simple') 
 var low
 try {
   low = require('lowdb')
