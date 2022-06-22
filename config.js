@@ -4,8 +4,8 @@ global.mods = []
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-//global.packname = 'wa.me/6285713964963'
-//global.author = 'Bot Is The Best'
+global.packname = 'wa.me/6285713964963'
+global.author = 'Bot Is The Best'
 
 global.nameowner = 'MultiverseBot-MD'
 global.numberowner = '51993042301'
@@ -39,8 +39,8 @@ global.eror = '_*Server Error*_'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
 global.stiker_wait = 'Stiker sedang dibuat'
-global.packname = '2022'
-global.author = '© Hyzer Official'
+//global.packname = '2022'
+//global.author = '© Hyzer Official'
 global.vs = '1.0.0'
 
 //=============『 Apikey 』================== //
