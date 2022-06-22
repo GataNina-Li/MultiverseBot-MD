@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async(m, { conn, text }) => {
-  if (!text) throw `Masukkan query!`
+  if (!text) throw `Introduce una consulta!`
   let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/character', { q: text }))
   if (!res.ok) throw await res.text()
   let json = await res.json()
@@ -31,6 +31,6 @@ let charaingfo = `💬 *Name:* ${name}
 handler.help = ['character <nama>']
 handler.tags = ['anime']
 handler.command = /^(chara|character)$/i
-//kyaa jangan biarkan wabot-aq terbengkalai sampai nurutomo kembali
+//kya no dejes que se descuide wabot-aq sampai nurutomo devolver
 // Command - Re Edited -- TOXIC-DEVIL == || Character Type ||
 module.exports = handler
