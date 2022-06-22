@@ -1,4 +1,4 @@
-let fetch = require('node-fetch')
+/*let fetch = require('node-fetch')
 let handler = async (m, { conn }) => {
   let res = await fetch('https://api.waifu.pics/sfw/megumin')
   if (!res.ok) throw 'Error El sitio web está caído'
@@ -29,4 +29,4 @@ handler.command = /^(megumin)$/i
 
 handler.limit = true
 
-module.exports = handler
+module.exports = handler*/
