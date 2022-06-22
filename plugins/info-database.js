@@ -47,7 +47,7 @@ let handler = async (m) => {
          { messageId: template.key.id }
      )
 }
-handler.help = ['database', 'user']
+handler.help = ['usuarios | users']
 handler.tags = ['info']
-handler.command = /^(database|jumlahdatabase|user)$/i
+handler.command = /^(database|jumlahdatabase|user|users|usuarios|usuarias)$/i
 module.exports = handler
