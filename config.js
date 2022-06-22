@@ -7,8 +7,8 @@ global.prems = []
 global.packname = 'wa.me/6285713964963'
 global.author = 'Bot Is The Best'
 
-global.nameowner = 'MultiverseBot-MD'
-global.numberowner = '51993042301'
+//global.nameowner = 'MultiverseBot-MD'
+//global.numberowner = '51993042301'
 global.instagram = 'https://www.instagram.com/gata_dios'
 global.github = 'https://github.com/GataNina-Li/MultiverseBot-MD'
 global.dana = '087892711054'
