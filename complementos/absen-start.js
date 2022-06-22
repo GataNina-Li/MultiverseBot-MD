@@ -1,4 +1,4 @@
-let handler = async (m, { usedPrefix, text }) => {
+/*let handler = async (m, { usedPrefix, text }) => {
     conn.absen = conn.absen ? conn.absen : {}
     let id = m.chat
     if (id in conn.absen) {
@@ -15,4 +15,4 @@ handler.tags = ['absen']
 handler.command = /^(start|mulai)absen$/i
 handler.group = true
 handler.admin = true
-module.exports = handler
+module.exports = handler*/
