@@ -4,7 +4,7 @@ let fs = require('fs')
 let handler = async(m, { conn }) => {
 conn.sendContact(m.chat, numberowner, nameowner, m)
 
-	let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.gif'
+	let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.mp4'
 let text = `Ejemplo`
   let message = await prepareWAMessageMedia({ video: fs.readFileSync pp, gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
