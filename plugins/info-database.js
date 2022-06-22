@@ -4,7 +4,7 @@ let fs = require('fs')
 let handler = async (m) => {
     let totalreg = Object.keys(global.db.data.users).length
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
-    let resu = `*En esta realidad existen ${totalreg} Usuarios*`
+    let resu = `*En esta realidad existen ✨ ${totalreg} Usuarios*`
     
     let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv2.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -12,7 +12,7 @@ let handler = async (m) => {
          hydratedTemplate: {
            videoMessage: message.videoMessage,
            hydratedContentText: resu,
-           hydratedFooterText: wm,
+           hydratedFooterText: `ᴜꜱᴜᴀʀɪᴏꜱ | ${wm}`,
            hydratedButtons: [{
              urlButton: {
                displayText: '𝗚𝗜𝗧𝗛𝗨𝗕',
