@@ -1,4 +1,4 @@
-let fetch = require('node-fetch')
+/*let fetch = require('node-fetch')
 let handler = async(m, { conn, text }) => {
   if (!text) throw `Introduce una consulta!`
   let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/anime', { q: text }))
@@ -21,4 +21,4 @@ handler.help = ['anime <judul>']
 handler.tags = ['anime']
 handler.command = /^(anime|animeinfo)$/i
 //maapin fatur :<
-module.exports = handler
+module.exports = handler*/
