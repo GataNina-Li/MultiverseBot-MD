@@ -11,7 +11,7 @@ let handler = async (m) => {
      templateMessage: {
          hydratedTemplate: {
            videoMessage: message.videoMessage,
-           hydratedContentText: text,
+           hydratedContentText: resu,
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
