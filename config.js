@@ -43,6 +43,29 @@ global.stiker_wait = 'Stiker sedang dibuat'
 //global.author = '© Hyzer Official'
 global.vs = '1.0.0'
 
+
+//=============『 Avisos 』================== //
+global.rg = '➩𝐑𝐞𝐬𝐮𝐥𝐭𝐚𝐝𝐨☑⚟\n\n'
+global.resultado = rg
+
+global.ag = '┗❴𝐀𝐝𝐯𝐞𝐫𝐭𝐞𝐧𝐜𝐢𝐚⚠❵┛\n\n'
+global.advertencia = ag
+
+global.iig = '┗❴👨‍💻𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐜𝐢𝐨𝐧❵┛\n\n'
+global.informacion = iig
+
+global.fg = '┗❴❎𝐄𝐑𝐑𝐎𝐑❎❵┛\n\n'
+global.fallo = fg
+
+global.mg = '┗❴‼𝐋𝐨 𝐮𝐬𝐚𝐬𝐭𝐞 𝐦𝐚𝐥‼❵┛\n\n'
+global.mal = mg
+
+global.eeg = '┗❴📩𝐑𝐞𝐩𝐨𝐫𝐭𝐞📩❵┛\n\n'
+global.envio = eeg
+
+global.eg = '┗❴✔𝐄𝐱𝐢𝐭𝐨😄\n\n'
+global.exito = eg
+
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
   // name: 'https://website'
