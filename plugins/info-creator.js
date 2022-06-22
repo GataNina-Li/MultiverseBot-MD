@@ -34,7 +34,7 @@ let text = `*Hola! Esos son los Contactos disponibles* 🌟\n*El Bot no responde
              {
              quickReplyButton: {
                displayText: '𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 💫',
-               id: '.allmenu',
+               id: '.? all',
              }
           }]
         }
