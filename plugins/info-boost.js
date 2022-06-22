@@ -19,8 +19,9 @@ let handler = async (m, { conn }) => {
    let neww = performance.now()
    let speed = `${neww - old}`
    let finish = `✔️Berhasil mempercepat Bot hingga\n${speed} milisec!`
-
-     conn.reply(m.chat, finish, m)
+   let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.gif'
+   conn.sendButtonImg(m.chat, pp, finish, wm, 'Menu', '.menu', m)
+  // conn.reply(m.chat, finish, m)
 }
 handler.help = ['boost', 'refresh']
 handler.tags = ['info']
