@@ -6,7 +6,7 @@ conn.sendContact(m.chat, numberowner, nameowner, m)
 
 	//let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.mp4'
 let text = `Ejemplo`
-  let message = await prepareWAMessageMedia({ video: fs.readFileSync('.media/menu/menuv2.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+  let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv2.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
