@@ -1,5 +1,5 @@
 # MultiverseBot-MD
-<img src="https://c.tenor.com/7JVyw1cEFPAAAAAS/universe-galaxy.gif" width="400" height="230"/>
+<img src="https://i.ibb.co/GMgbjCt/IMG-20220622-WA0001.jpg" width="400" height="230"/>
 </p>
 
 >
@@ -39,4 +39,4 @@
 [![Ilman](https://github.com/ilmanhdyt.png?size=100)](https://github.com/ilmanhdyt)
 [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
 [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25)
-[![Elyas](https://github.com/Paquito1923.png?size=100)](https://github.com/Paquito1923)
+[![𝐀𝐃𝐎𝐋𝐅𝐎](https://github.com/ADOLFO-BOT5.png?size=100)](https://github.com/Paquito1923)
