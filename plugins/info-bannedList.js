@@ -5,7 +5,7 @@ let handler = async (m, { conn, isOwner }) => {
 m.reply(conn.sendBut(m.chat, `╭────────────────🚫
 │ *Lista de chats prohibidos*
 │ *List of banned chats*
-│┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+│┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 │ Total : ${chats.length} Chat${chats ? '\n' + chats.map(([jid], i) => `
 │ ${i + 1}. ${conn.getName(jid) == undefined ? 'Unknown' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}
@@ -15,12 +15,12 @@ m.reply(conn.sendBut(m.chat, `╭───────────────�
 ╭────────────────🚫
 │ *Lista de Usuarios Prohibidos*
 │ *Banned Users List*
-│┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+│┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 │ Total : ${users.length} Pengguna${users ? '\n' + users.map(([jid], i) => `
 │ ${i + 1}. ${conn.getName(jid) == undefined ? 'Unknown' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}
 `.trim()).join('\n') : ''}
-╰────────────🚫`, wm, `Menu`, '.menu',  m))
+╰────────────🚫`, wm, `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m))
     //`.trim())
    //conn.reply(m.chat, caption, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }) separar contenido
 }
