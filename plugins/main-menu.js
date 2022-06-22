@@ -312,7 +312,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             description: menuu,
             buttonText: '𝑴𝑬𝑵𝑼 𝑫𝑰𝑵𝑨𝑴𝑰𝑪𝑶',
             listType: 1,
-            footerText: `*_PRESIONE ESTE MENSAJE | Gata Dios_*`,
+            footerText: `*_PRESIONE ESTE MENSAJE_*`,
             mtype: 'listMessage',
             sections: [
               {
