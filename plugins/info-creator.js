@@ -49,8 +49,7 @@ conn.sendContact(m.chat, numberowner, nameowner, m)
          m.chat,
          template.message,
          { messageId: template.key.id }
-     )
-}  
+     )  
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
