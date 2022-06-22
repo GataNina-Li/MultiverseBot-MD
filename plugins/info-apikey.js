@@ -27,7 +27,7 @@ let handler = async m => m.reply(`
 ┃➥ *Zeksapi* = apivinz
 ┃➥ *shizukaapi* = itsmeiky633
 ┃➥ *apivhtear* = 1BlnApiIkyPake
-╰━━━━━━〘 ${wm} 〙━━━━━━━⬣
+╰━━ *〘 ${wm} 〙* ━━⬣
 `.trim())
 
 handler.help = ['apikey']
