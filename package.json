@@ -1,5 +1,5 @@
 {
-    "name": "EstelarBot-MD",
+    "name": "MultiverseBot-MD",
     "version": "1.0.0",
     "description": "Brillante Bot WhatsApp",
     "depecrated": false,
@@ -23,16 +23,16 @@
         "ShiraoriBOT",
         "wabot-aq"
     ],
-    "homepage": "https://github.com/GataNina-Li/EstelarBot-MD",
+    "homepage": "https://github.com/GataNina-Li/MultiverseBot-MD",
     "author": {
         "name": "GataNina-Li"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/github.com/GataNina-Li/EstelarBot-MD.git"
+        "url": "git+https://github.com/github.com/GataNina-Li/MultiverseBot-MD.git"
     },
     "bugs": {
-        "url": "https://github.com/github.com/GataNina-Li/EstelarBot-MD/issues"
+        "url": "https://github.com/github.com/GataNina-Li/MultiverseBot-MD/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
