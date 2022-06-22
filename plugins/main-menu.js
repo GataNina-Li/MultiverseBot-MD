@@ -506,14 +506,24 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
     
 // ✩｡:*•.─────  AJUSTES DE MENU - DATOS  ─────.•*:｡✩
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
-      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-      templateMessage: {
-          hydratedTemplate: {
-            imageMessage: message.imageMessage, 
-            hydratedContentText: text, 
-            hydratedFooterText: `Ⓛ ⇢ Limite\nⓅ ⇢ Premium\nMultiverseBot-MD `, 
-            hydratedButtons: [{
+    //let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
+      //const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     // templateMessage: {
+         // hydratedTemplate: {
+          //  imageMessage: message.imageMessage, 
+           // hydratedContentText: text, 
+          //  hydratedFooterText: `Ⓛ ⇢ Limite\nⓅ ⇢ Premium\nMultiverseBot-MD `, 
+          //  hydratedButtons: [{
+	  
+	  
+    let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menuv1.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           videoMessage: message.videoMessage,
+           hydratedContentText: text,
+           hydratedFooterText: `Ⓛ ⇢ Limite\nⓅ ⇢ Premium\nMultiverseBot-MD `,
+           hydratedButtons: [{
             urlButton: {
                displayText: 'Website Creator',
                url: web
