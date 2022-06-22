@@ -25,22 +25,16 @@ let text = `*Hola! Esos son los Contactos disponibles* 🌟\n*El Bot no responde
                url: instagram	           
              }
            },
-			     {
-             quickReplyButton: {
-               displayText: '𝗩𝗘𝗟𝗢𝗖𝗜𝗗𝗔𝗗',
-               id: '.ping',
-             }
-	   },
              {
              quickReplyButton: {
-               displayText: '𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢',
-               id: '.allmenu',
-             }
-	   },
-             {
-             quickReplyButton: {
-               displayText: '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟',
+		     displayText: '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡',
                id: '.menu',
+             }
+	   },
+             {
+             quickReplyButton: {
+               displayText: '𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 💫',
+               id: '.allmenu',
              }
           }]
         }
