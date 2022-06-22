@@ -516,7 +516,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
           //  hydratedButtons: [{
 	  
 	  
-    let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menuv1.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+    let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv1.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
