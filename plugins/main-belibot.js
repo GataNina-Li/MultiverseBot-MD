@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) => {
 const ftroli = {
     key : {
-    remoteJid: '6283136505591-1614953337@g.us',
+    remoteJid: '51993042301@g.us',
     participant : '0@s.whatsapp.net'
     },
     message: {
@@ -17,7 +17,7 @@ const ftroli = {
     }
     }
 	conn.reply(m.chat, price1, ftroli)
-}}
+}
 
 handler.help = ['sewa', 'sewabot']
 handler.tags = ['info']
