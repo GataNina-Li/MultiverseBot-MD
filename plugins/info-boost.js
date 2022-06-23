@@ -1,5 +1,9 @@
-let { performance } = require('perf_hooks')
+// SI VAS A MODIFICAR AL MENOS NO QUITES LOS CREDITOS, WEB, ENLACES, DE ESA FORMA YA ESTAS APOYANDO 
+// PARA QUE SE PUEDA SEGUIR ELABORANDO EN ESTE LINDO MULTIVERSEBOT-MD 
+// TAMBIEN PUEDES AGREGAR TÚ INFORMACIÓN SIN ESTAR ELIMINANDO LOS CREDITOS 
+// EN CASO DE PODER COMPARTIR ESTE REPOSITORIO SE TE AGREDECE, Y GRACIAS POR INTERESARTE EN MULTIVERSEBOT-MD!! 
 
+let { performance } = require('perf_hooks')
 let handler = async (m, { conn }) => {
 
  let start = `🎇 *COMENZANDO COLISION!!* 🎇`
@@ -43,3 +47,5 @@ module.exports = handler
 function pickRandom(list) {
   return list[Math.floor(Math.random() * list.length)]
 }
+
+// MultiverseBot-MD
