@@ -5,7 +5,7 @@
 
 let handler = async (m, { conn }) => {
   
-fdoc = {
+let fdoc = {
   key : {
   remoteJid: 'status@broadcast',
   participant : '0@s.whatsapp.net'
@@ -41,7 +41,7 @@ npm install
 
 npm update
 
-node .`, `${wm} | ᴜꜱᴀʀ ᴇɴ ᴏʀᴅᴇɴ, ᴜɴᴏ ᴘᴏʀ ᴜɴᴏ.`, `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m, fdoc))
+node .`, `${wm} | ᴜꜱᴀʀ ᴇɴ ᴏʀᴅᴇɴ, ᴜɴᴏ ᴘᴏʀ ᴜɴᴏ.`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fdoc,  m ))
 
 }
 handler.help = ['codigo | code',]
