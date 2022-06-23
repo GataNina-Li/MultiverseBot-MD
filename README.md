@@ -22,6 +22,17 @@
 # Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/MultiverseBot-MD)
 
+# Añada lo siguente al Buildpack
+```bash
+> heroku/nodejs
+```
+```bash
+> https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+```
+```bash
+> https://github.com/mcollina/heroku-buildpack-imagemagick
+```
+----
 # TERMUX
 ### INSTALAR DE UNO POR UNO PARA EVITAR UN ERROR
 ```bash
@@ -37,7 +48,7 @@ $ cd MultiverseBot-MD
 $ yarn
 $ node .
 ```
-
+----
 # Añada lo siguente al Buildpack
 ```bash
 > heroku/nodejs
@@ -47,6 +58,54 @@ $ node .
 ```
 ```bash
 > https://github.com/mcollina/heroku-buildpack-imagemagick
+```
+## ⚙ Configuracion de la visualización del menú.
+### Visualización del menú GIF
+```ts
+ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           videoMessage: message.videoMessage,
+           hydratedContentText: text.trim(),
+           hydratedFooterText: wm,
+           hydratedButtons: [{
+```
+
+### Visualización del menú con imagen
+```ts
+let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/elyas.jpg')}, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           imageMessage: message.imageMessage,
+           hydratedContentText: text.trim(),
+           hydratedFooterText: wm,
+           hydratedButtons: [{
+```
+
+### Visualización del menú con ubicación
+```ts
+ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           hydratedContentText: text.trim(),
+           locationMessage: { 
+           jpegThumbnail: fs.readFileSync('./media/elyas.jpg') },
+           hydratedFooterText: wm,
+           hydratedButtons: [{       
+```
+
+### Visualización del menú con vídeo
+```ts
+let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu.mp4')}, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           videoMessage: message.videoMessage,
+           hydratedContentText: text.trim(),
+           hydratedFooterText: wm,
+           hydratedButtons: [{           	
 ```
 -----
 ### 🌟 DESARROLLADORES
