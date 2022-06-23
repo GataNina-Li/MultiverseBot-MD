@@ -1,6 +1,5 @@
 let handler = async (m, { conn }) => {
-m.reply(conn.sendBut(m.chat, 
-`termux-setup-storage
+m.reply(conn.sendBut(m.chat, `termux-setup-storage
 
 pkg update && pkg upgrade
 
@@ -24,7 +23,7 @@ npm install
 
 npm update
 
-node .`, wm, `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m))
+node .`, `${wm} | ᴜꜱᴀʀ ᴇɴ ᴏʀᴅᴇɴ, ᴜɴᴏ ᴘᴏʀ ᴜɴᴏ.`, `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m))
 
 }
 handler.help = ['listaban | listban',]
