@@ -1,6 +1,6 @@
 let handler = async m => m.reply(`
 ┏ ┅ ━━━━━━━━━━━━ ┅ ━
-┇       *「 ANIME LINK 」*
+┇       「 ANIME LINK 」
 ┣ ┅ ━━━━━━━━━━━━ ┅ ━
 ┃ ❖ https://kusonime.com
 ┃ ❖ https://anoboy.media
@@ -44,7 +44,7 @@ let handler = async m => m.reply(`
 ┃ ❖ https://haruzorasubs.net
 ┃ ❖ https://myanimelist.net
 ┗ ┅ ━━━━━━━━━━━ ┅ ━
-`.trim()) // Tambah sendiri kalo mau
+`.trim()) // Agregate a ti mismo si quieres
 handler.help = ['animelink']
 handler.tags = ['anime']
 handler.command = /^animelink$/i
