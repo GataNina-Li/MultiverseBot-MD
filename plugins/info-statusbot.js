@@ -12,11 +12,17 @@ let fs = require('fs')
 let handler = async (m, { command }) => {
 let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
-bear = "Source Code"
-let ye = `Wa.me/${m.sender.split`@`[0]}`
+
+let who
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
+    else who = m.sender 
+    let name = conn.getName(m.sender)
+    
+//bear = "Source Code"
+//let ye = `Wa.me/${m.sender.split`@`[0]}`
 let esce = 
 `╭≛≛≛≛[ *𝗘𝗦𝗧𝗔𝗖𝗜𝗢𝗡* ]≛≛≛≛≛≛⬣
- ⎸💗 *Hola!!* ${ye} 
+ ⎸💗 *Hola!!* ${name} 
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  ⎸⍟ *Versión Multiverse*
  ⎸⚶ *_${vs}_*
