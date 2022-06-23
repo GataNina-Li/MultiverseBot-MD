@@ -1,3 +1,4 @@
+let fetch = require('node-fetch')
 let handler = async (m, { conn, chatId, options }) => {
 	
 	
@@ -73,7 +74,7 @@ const ftroli = {
     {	
 	    let text = 'Hola'
 	let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg')
-        let { data } = await conn.getFile(await(await require('node-fetch')(pp)).buffer())
+        //let { data } = await conn.getFile(await(await require('node-fetch')(pp)).buffer())
         conn.reply(m.chat, text, m, { contextInfo: { mentionedJid: conn.parseMention(text), externalAdReply: { title: 'Super Bot Whatsapp', body: wm, sourceUrl: 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA', thumbnail: data }}, options })
     }
     m.name = m.pushName || conn.getName(m.sender)
