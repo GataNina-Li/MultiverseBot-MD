@@ -1,3 +1,8 @@
+// SI VAS A MODIFICAR AL MENOS NO QUITES LOS CREDITOS, WEB, ENLACES, DE ESA FORMA YA ESTAS APOYANDO 
+// PARA QUE SE PUEDA SEGUIR ELABORANDO EN ESTE LINDO MULTIVERSEBOT-MD 
+// TAMBIEN PUEDES AGREGAR TÚ INFORMACIÓN SIN ESTAR ELIMINANDO LOS CREDITOS 
+// EN CASO DE PODER COMPARTIR ESTE REPOSITORIO SE TE AGREDECE, Y GRACIAS POR INTERESARTE EN MULTIVERSEBOT-MD!! 
+
 let handler = async (m, { conn }) => {
 m.reply(conn.sendBut(m.chat, `termux-setup-storage
 
@@ -31,3 +36,5 @@ handler.tags = ['info']
 handler.command = /^codigo|code|código$/i
 //handler.owner = false 
 module.exports = handler
+
+// MultiverseBot-MD
