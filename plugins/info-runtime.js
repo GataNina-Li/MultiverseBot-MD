@@ -12,8 +12,8 @@ m.reply(conn.sendBut(m.chat,
  ⎸ *⍟ Versión MultiverseBot-MD*
  ⎸ ❉ ➺ ${vs}
  ⎸ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸ ❉ *Activa durante:*   ${uptime}
- ⎸ ❉ *Active during:*    ${uptime}
+ ⎸ ❉ *Activa durante:*    *_${uptime}_*
+ ⎸ ❉ *Active during:*      *_${uptime}_*
 *╰𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗⬣*`, wm, `𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡`, '.menu',  m))
 }
 handler.help = ['ejecucion | runtime']
