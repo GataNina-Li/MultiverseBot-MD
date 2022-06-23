@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) => {
 	
 	
-	const fkontak = {
+	/*const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
 		"remoteJid": "status@broadcast",
@@ -14,7 +14,9 @@ let handler = async (m, { conn }) => {
 		}
 	},
 	"participant": "0@s.whatsapp.net"
-}
+}*/
+	
+let dd = `Hola`	
 const ftroli = {
     key : {
     remoteJid: 'status@broadcast',
@@ -25,14 +27,16 @@ const ftroli = {
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: ``, 
+    message: dd, 
     orderTitle: `▮Menu ▸`,
     thumbnail: 'https://telegra.ph/file/5ecbec3e82e247671a18e.jpg',  //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
     }
-const fdoc = {
+
+
+/*const fdoc = {
    key : {
    remoteJid: 'status@broadcast',
    participant : '0@s.whatsapp.net'
@@ -42,7 +46,7 @@ const fdoc = {
    title: wm, 
    }
    }
-   }
+   }*/
 	
 	
 	
@@ -63,7 +67,8 @@ const fdoc = {
     }
     }
     }*/
-	conn.reply(m.chat, `price1`, fkontak)
+	//conn.reply(m.chat, `price1`, fkontak)
+	
 }
 
 handler.help = ['sewa', 'sewabot']
