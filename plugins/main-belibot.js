@@ -25,7 +25,7 @@ const ftroli = {
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `Hai Kak !`, 
+    message: ``, 
     orderTitle: `▮Menu ▸`,
     thumbnail: 'https://telegra.ph/file/5ecbec3e82e247671a18e.jpg',  //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
@@ -63,7 +63,7 @@ const fdoc = {
     }
     }
     }*/
-	conn.reply(m.chat, `price1`, ftroli)
+	conn.reply(m.chat, `price1`, fkontak)
 }
 
 handler.help = ['sewa', 'sewabot']
