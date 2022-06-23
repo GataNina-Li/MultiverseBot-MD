@@ -5,18 +5,21 @@
 
 let handler = async (m, { conn }) => {
   
-let fdoc = {
-  key : {
-  remoteJid: 'status@broadcast',
-  participant : '0@s.whatsapp.net'
-  },
-  message: {
-  documentMessage: {
-  title: wm, 
-      
-                            }
-                          }
-                        }
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
+
 m.reply(conn.sendBut(m.chat, `termux-setup-storage
 
 pkg update && pkg upgrade
@@ -41,7 +44,7 @@ npm install
 
 npm update
 
-node .`, `${wm} | ᴜꜱᴀʀ ᴇɴ ᴏʀᴅᴇɴ, ᴜɴᴏ ᴘᴏʀ ᴜɴᴏ.`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fdoc,  m ))
+node .`, `${wm} | ᴜꜱᴀʀ ᴇɴ ᴏʀᴅᴇɴ, ᴜɴᴏ ᴘᴏʀ ᴜɴᴏ.`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
 
 }
 handler.help = ['codigo | code',]
