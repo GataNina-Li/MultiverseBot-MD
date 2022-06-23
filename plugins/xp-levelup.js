@@ -6,14 +6,14 @@ let handler = m => {
     let { min, xp, max } = levelling.xpRange(user.level, global.multiplier)
     throw `
 Level *${user.level} (${user.exp - min}/${xp})*
-No es suficiente *${max - user.exp}*otra vez!
+No es suficiente 💥*${max - user.exp}*🌌!
 `.trim()
   }
   let before = user.level * 1
 	while (levelling.canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 	if (before !== user.level) {
             m.reply(`
-Enhorabuena, has subido de nivel.!
+🌌Enhorabuena, has subido de nivel galactico🌌.!
 *${before}* -> *${user.level}*
 Usar *.my* verificar
 	`.trim())
