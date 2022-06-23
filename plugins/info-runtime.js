@@ -2,15 +2,22 @@ let handler = async (m, { conn }) => {
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
 
-m.reply(`
-┌─〔 R U N T I M E 〕
-├ Bot Aktif Selama ${uptime}
-└────
-    `)
+//m.reply(`
+//┌─〔 R U N T I M E 〕
+//├ Bot  ${uptime}
+//└────`)
+    
+m.reply(conn.sendBut(m.chat, `*╭𝄗𝄗✦ 𝙏𝙄𝙀𝙈𝙋𝙊 | 𝙍𝙐𝙉𝙏𝙄𝙈𝙀 ✦𝄗𝄗⬣*╭━〔 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊́𝙉 | 𝙍𝙐𝙉𝙏𝙄𝙈𝙀 〕━⬣
+ ⎸ *⍟ Versión MultiverseBot-MD*
+ ⎸ ❉ ➺ ${vs}
+ ⎸ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+ ⎸ ❉ *Activa durante:*   ${uptime}
+ ⎸ ❉ *Active during:*    ${uptime}
+*╰𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗⬣*`, wm, `𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡`, '.menu',  m))
 }
-handler.help = ['runtime']
+handler.help = ['ejecucion | runtime']
 handler.tags = ['info']
-handler.command = /^(uptime|runtime)$/i
+handler.command = /^(uptime|runtime|ejecucion|ejecución|ejecucción|ejecuccion|ejecusion|runtimes|uptimes)$/i
 
 module.exports = handler
 
