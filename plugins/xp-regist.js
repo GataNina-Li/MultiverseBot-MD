@@ -3,7 +3,7 @@ let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { text, usedPrefix }) {
   let user = global.db.data.users[m.sender]
   if (user.registered === true) throw `Ya estás registrado\¿Quieres volver a registrarte?? ${usedPrefix}unreg <SN|SERIAL NUMBER>`
-  if (!Reg.test(text)) throw `Format salah\n*${usedPrefix}daftar nama.umur*`
+  if (!Reg.test(text)) throw `Formato incorrecto\n*${usedPrefix}lista nombre.años*`
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw 'Los nombres no pueden estar vacíos (Alphanumeric)'
   if (!age) throw 'La edad no puede estar vacía (Número)'
@@ -26,7 +26,7 @@ Serial Number:
 ${sn}
 `.trim())
 }
-handler.help = ['daftar', 'reg', 'register'].map(v => v + ' <nama>.<umur>')
+handler.help = ['lista', 'reg', 'register'].map(v => v + ' <nombre>.<años>')
 handler.tags = ['xp']
 
 handler.command = /^(daftar|reg(ister)?)$/i
