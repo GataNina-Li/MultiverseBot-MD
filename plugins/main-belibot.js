@@ -85,10 +85,10 @@ const ftroli = {
         let { data } = await conn.getFile(await(await require('node-fetch')(pp)).buffer())
         conn.reply(chatId ? chatId : m.chat, text, m, { contextInfo: { mentionedJid: conn.parseMention(text), externalAdReply: { title: 'Super Bot Whatsapp', body: wm, sourceUrl: 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA', thumbnail: data }}, options })
     }
-    m.name = m.pushName || conn.getName(m.sender)
-    if (m.msg && m.msg.url) m.download = () => conn.downloadM(m.msg, m.mtype.toLowerCase().replace(/message/i, ''))
+   // m.name = m.pushName || conn.getName(m.sender)
+    //if (m.msg && m.msg.url) m.download = () => conn.downloadM(m.msg, m.mtype.toLowerCase().replace(/message/i, ''))
 	
-}
+
 
 handler.help = ['sewa', 'sewabot']
 handler.tags = ['info']
