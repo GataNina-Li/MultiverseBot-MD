@@ -26,8 +26,8 @@ npm update
 node .`, `${wm} | ᴜꜱᴀʀ ᴇɴ ᴏʀᴅᴇɴ, ᴜɴᴏ ᴘᴏʀ ᴜɴᴏ.`, `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m))
 
 }
-handler.help = ['listaban | listban',]
+handler.help = ['codigo | code',]
 handler.tags = ['info']
-handler.command = /^codigo$/i
+handler.command = /^codigo|code|código$/i
 //handler.owner = false
 module.exports = handler
