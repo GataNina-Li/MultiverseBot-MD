@@ -73,7 +73,7 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
                displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
                url: instagram	           
              }
-           },
+           }, 
 			     {
              quickReplyButton: {
                displayText: '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡',
