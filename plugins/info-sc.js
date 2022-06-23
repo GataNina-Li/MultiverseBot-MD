@@ -95,11 +95,15 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
          template.message,
          { messageId: template.key.id }
      )
+	
+	if (/codigo/.test(command)) {
+	conn.reply(m.chat,`ejemplo`, m)	
+	}
 }
 //conn.sendBut(m.chat, esce, wm3, 'Thanks', 'thanks', m) 
   
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
-handler.command = /^(sc|sourcecode)$/i
+handler.command = /^(sc|sourcecode|codigo)$/i
 
 module.exports = handler
