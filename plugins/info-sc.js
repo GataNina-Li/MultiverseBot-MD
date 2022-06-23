@@ -15,7 +15,7 @@ let who
     let name = conn.getName(m.sender)
 //let ye = `@${m.sender.split`@`[0]}`
 let esce = `
-*Hola!! ${name} Aquí Te dejo Los Desarroladores y más Información de MultiverseBot-MD*
+*Hola!! ✨ ${name} Aquí Te dejo Los Desarroladores y más Información de MultiverseBot-MD*
 
 *REPOSITORIO*
 ⍟ https://github.com/GataNina-Li/MultiverseBot-MD
@@ -96,14 +96,14 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
          { messageId: template.key.id }
      )
 	
-	if (/codigo/i.test(command)) {
-	conn.reply(m.chat,`ejemplo`, m)	
-	}
+	//if (/codigo/i.test(command)) {
+	//conn.reply(m.chat,`ejemplo`, m)	
+	//}
 }
 //conn.sendBut(m.chat, esce, wm3, 'Thanks', 'thanks', m) 
   
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
-handler.command = /^(sc|sourcecode|codigo)$/i
+handler.command = /^(sc|sourcecode)$/i
 
 module.exports = handler
