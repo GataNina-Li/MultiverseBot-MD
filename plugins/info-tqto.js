@@ -29,4 +29,4 @@ handler.help = ['creadores | creators']
 handler.tags = ['info']
 handler.command = /^(creadores|creators)$/i
 
-module.exports = handler
+module.exports = handler 
