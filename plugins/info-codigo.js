@@ -5,7 +5,7 @@
 
 let handler = async (m, { conn }) => {
   
-let fdoc = {
+fdoc = {
   key : {
   remoteJid: 'status@broadcast',
   participant : '0@s.whatsapp.net'
