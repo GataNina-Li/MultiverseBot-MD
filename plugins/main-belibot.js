@@ -1,5 +1,52 @@
 let handler = async (m, { conn }) => {
+	
+	
+	const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
 const ftroli = {
+    key : {
+    remoteJid: 'status@broadcast',
+    participant : '0@s.whatsapp.net'
+    },
+    message: {
+    orderMessage: {
+    itemCount : 2022,
+    status: 1,
+    surface : 1,
+    message: `Hai Kak !`, 
+    orderTitle: `▮Menu ▸`,
+    thumbnail: 'https://telegra.ph/file/5ecbec3e82e247671a18e.jpg',  //Gambarnye
+    sellerJid: '0@s.whatsapp.net' 
+    }
+    }
+    }
+const fdoc = {
+   key : {
+   remoteJid: 'status@broadcast',
+   participant : '0@s.whatsapp.net'
+   },
+   message: {
+   documentMessage: {
+   title: wm, 
+   }
+   }
+   }
+	
+	
+	
+/*const ftroli = {
     key : {
     remoteJid: '6283136505591-1614953337@g.us',
     participant : '0@s.whatsapp.net'
@@ -15,8 +62,8 @@ const ftroli = {
     sellerJid: '0@s.whatsapp.net' 
     }
     }
-    }
-	conn.reply(m.chat, price1, ftroli)
+    }*/
+	//conn.reply(m.chat, price1, ftroli)
 }
 
 handler.help = ['sewa', 'sewabot']
