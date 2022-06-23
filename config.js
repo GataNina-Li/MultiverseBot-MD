@@ -41,7 +41,7 @@ global.salah = 'Salah ❌\n'
 global.stiker_wait = 'Stiker sedang dibuat'
 //global.packname = '2022'
 //global.author = '© Hyzer Official'
-global.vs = '1.0.0'
+global.vs = '1.0.2'
 
 
 //=============『 Avisos 』================== //
