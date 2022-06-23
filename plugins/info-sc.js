@@ -85,7 +85,7 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
                displayText: '𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 💫',
                id: '.? all',
              }
-	   }
+	   },
           }]
         }
       }
