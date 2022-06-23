@@ -1,6 +1,6 @@
 # MultiverseBot-MD
 <p align="center">
-<img src="https://i.ibb.co/GMgbjCt/IMG-20220622-WA0001.jpg" width="800" height="400"/>
+<img src="https://i.ibb.co/GMgbjCt/IMG-20220622-WA0001.jpg" width="700" height="300"/>
 </p>
 
 >
