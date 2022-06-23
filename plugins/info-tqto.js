@@ -6,11 +6,11 @@
 
 let handler = async (m, { conn }) => {
 bear = "Source Code"
-let esce = 'BIG THANKS TO\n\nNurutomo\nhttps://github.com/Nurutomo\nElyas\nhttps://github.com/Paquito1923\nHyzer Official\nhttps://github.com/Hyzerr'
-conn.sendButtonImg(m.chat, fla + 'Thanks To', esce, wm2, 'Menu', '.menu', m) 
+let esce = `Ejemplo`
+conn.sendButtonImg(m.chat, fla + 'CREADORES', esce, wm, 'Menu', '.menu', m) 
 }
-handler.help = ['tqto', 'team']
+handler.help = ['creadores | creators']
 handler.tags = ['info']
-handler.command = /^(tqto|team)$/i
+handler.command = /^(creadores|creators)$/i
 
 module.exports = handler
