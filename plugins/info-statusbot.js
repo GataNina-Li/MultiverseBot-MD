@@ -39,12 +39,12 @@ let esce =
            jpegThumbnail: await (await fetch(fla + bear)).buffer() },            
            hydratedFooterText: gt,
            hydratedButtons: [{*/
-let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menus/Menu.jpg')}, { upload: conn.waUploadToServer })
+ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv3.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
-           imageMessage: message.imageMessage,
-           hydratedContentText: esce,
+           videoMessage: message.videoMessage,
+           hydratedContentText: text.trim(),
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
