@@ -4,6 +4,19 @@
 // EN CASO DE PODER COMPARTIR ESTE REPOSITORIO SE TE AGREDECE, Y GRACIAS POR INTERESARTE EN MULTIVERSEBOT-MD!! 
 
 let handler = async (m, { conn }) => {
+  
+let fdoc = {
+  key : {
+  remoteJid: 'status@broadcast',
+  participant : '0@s.whatsapp.net'
+  },
+  message: {
+  documentMessage: {
+  title: wm, 
+      
+                            }
+                          }
+                        }
 m.reply(conn.sendBut(m.chat, `termux-setup-storage
 
 pkg update && pkg upgrade
@@ -28,13 +41,14 @@ npm install
 
 npm update
 
-node .`, `${wm} | ᴜꜱᴀʀ ᴇɴ ᴏʀᴅᴇɴ, ᴜɴᴏ ᴘᴏʀ ᴜɴᴏ.`, `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m))
+node .`, `${wm} | ᴜꜱᴀʀ ᴇɴ ᴏʀᴅᴇɴ, ᴜɴᴏ ᴘᴏʀ ᴜɴᴏ.`, `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m, fdoc))
 
 }
 handler.help = ['codigo | code',]
 handler.tags = ['info']
 handler.command = /^codigo|code|código$/i
 //handler.owner = false 
+
 module.exports = handler
 
 // MultiverseBot-MD
