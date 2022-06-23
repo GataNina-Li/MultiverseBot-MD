@@ -67,7 +67,7 @@ const ftroli = {
     }
     }
     }
-	conn.reply(m.chat, ftroli)
+	conn.reply(m.chat, ftroli, m)
 
 }
 handler.help = ['sewa', 'sewabot']
