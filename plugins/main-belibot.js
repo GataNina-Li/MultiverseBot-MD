@@ -1,5 +1,4 @@
-//let fetch = require('node-fetch')
-let handler = async (m, { conn, chatId, options }) => {
+let handler = async (m, { conn }) => {
 	
 	
 	/*const fkontak = {
@@ -51,7 +50,7 @@ const ftroli = {
 	
 	
 	
-/*const ftroli = {
+const ftroli = {
     key : {
     remoteJid: '6283136505591-1614953337@g.us',
     participant : '0@s.whatsapp.net'
@@ -67,35 +66,10 @@ const ftroli = {
     sellerJid: '0@s.whatsapp.net' 
     }
     }
-    }*/
-	//conn.reply(m.chat, `price1`, fkontak)
-
-//m.reply = async (text, chatId, options) => {
-    	
-	    
-	 // BY JOHANNES
-    /**
-     * Reply to this message
-     * @param {String|Object} text
-     * @param {String|false} chatId
-     * @param {Object} options
-     */
-    // m.reply = async (text, chatId, options) => {
-	let text = 'Hola'
-    	let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg')
-        let { data } = await conn.getFile(await(await require('node-fetch')(pp)).buffer())
-        conn.reply(m.chat, text, m, { 
-		        contextInfo: { mentionedJid: conn.parseMention(text), externalAdReply: { 
-			title: 'Super Bot Whatsapp', 
-			body: wm, 
-			sourceUrl: 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA', 
-			thumbnail: data }}})
     }
-   // m.name = m.pushName || conn.getName(m.sender)
-    //if (m.msg && m.msg.url) m.download = () => conn.downloadM(m.msg, m.mtype.toLowerCase().replace(/message/i, ''))
-	
+	conn.reply(m.chat, ftroli)
 
-
+}
 handler.help = ['sewa', 'sewabot']
 handler.tags = ['info']
 handler.command = /^(sewa|sewabot)?$/i
