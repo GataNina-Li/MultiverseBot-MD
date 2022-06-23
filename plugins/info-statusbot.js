@@ -21,7 +21,7 @@ let who
 //bear = "Source Code"
 //let ye = `Wa.me/${m.sender.split`@`[0]}`
 let esce = 
-`*╭≛≛≛≛ ⚕ 𝗘𝗦𝗧𝗔𝗖𝗜𝗢𝗡 ⚕ ≛≛≛≛≛≛⬣*
+`*╭≛≛≛≛≛≛ ⚕ 𝗘𝗦𝗧𝗔𝗖𝗜𝗢𝗡 ⚕ ≛≛≛≛≛≛⬣*
  ⎸💗 *Hola!!* ${name} 
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  ⎸⍟ *Versión Multiverse*
@@ -41,7 +41,7 @@ let esce =
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  ⎸⚶ *Usuario(s) Prohibido(s) | Prohibited*
  ⎸🜚 ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
-*╰𝄗✦ 𝗘𝗦𝗧𝗢𝗬 𝗘𝗡 𝗢𝗥𝗕𝗜𝗧𝗔 ✦𝄗⬣*`/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+*╰𝄗𝄗✦ 𝗘𝗦𝗧𝗢𝗬 𝗘𝗡 𝗢𝗥𝗕𝗜𝗧𝗔 ✦𝄗𝄗⬣*`/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: esce,
