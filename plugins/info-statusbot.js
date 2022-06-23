@@ -83,7 +83,7 @@ let esce =
              {
              quickReplyButton: {
                displayText: '𝗗𝗘𝗦𝗔𝗥𝗥𝗢𝗟𝗟𝗔𝗗𝗢𝗥𝗘𝗦  🛃',
-               id: '.menu',
+               id: '.sc',
              }
           }]
         }
