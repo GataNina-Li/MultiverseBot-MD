@@ -80,7 +80,8 @@ const ftroli = {
      * @param {String|false} chatId
      * @param {Object} options
      */
-     m.reply = async (text, chatId, options) => {
+    // m.reply = async (text, chatId, options) => {
+	let text = 'Hola'
     	let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg')
         let { data } = await conn.getFile(await(await require('node-fetch')(pp)).buffer())
         conn.reply(chatId ? chatId : m.chat, text, m, { contextInfo: { mentionedJid: conn.parseMention(text), externalAdReply: { title: 'Super Bot Whatsapp', body: wm, sourceUrl: 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA', thumbnail: data }}, options })
