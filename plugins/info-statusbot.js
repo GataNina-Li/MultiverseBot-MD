@@ -24,23 +24,23 @@ let esce =
 `*╭≛≛≛≛≛≛ ⚕ 𝗘𝗦𝗧𝗔𝗖𝗜𝗢𝗡 ⚕ ≛≛≛≛≛≛⬣*
  ⎸💗 *Hola!!* ${name} 
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸⍟ *Versión Multiverse*
- ⎸🜚 *_${vs}_*
+ ⎸ *⍟ Versión Multiverse*
+ ⎸ 🜚 *_${vs}_*
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸⚶ *Orbita Durante* 
- ⎸🜚 *_${uptime}_*
+ ⎸ ⚶ *Orbita Durante* 
+ ⎸ 🜚 *_${uptime}_*
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸⚶ *Acción Cósmica* 
- ⎸🜚 *_${global.opts['self'] ? '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝗿𝗶𝘃𝗮𝗱𝗮' : '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝘂𝗯𝗹𝗶𝗰𝗮 '}
+ ⎸ ⚶ *Acción Cósmica* 
+ ⎸ 🜚 *_${global.opts['self'] ? '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝗿𝗶𝘃𝗮𝗱𝗮' : '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝘂𝗯𝗹𝗶𝗰𝗮 '}_*
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸⚶ *Usuario(s)* 
- ⎸🜚 *_${Object.keys(global.db.data.users).length}_* 
+ ⎸ ⚶ *Usuario(s)* 
+ ⎸ 🜚 *_${Object.keys(global.db.data.users).length}_* 
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸⚶ *Chat(s) Prohibido(s)*
- ⎸🜚 *_${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_* 
+ ⎸ ⚶ *Chat(s) Prohibido(s)*
+ ⎸ 🜚 *_${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_* 
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸⚶ *Usuario(s) Prohibido(s)*
- ⎸🜚 *_${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_* 
+ ⎸ ⚶ *Usuario(s) Prohibido(s)*
+ ⎸ 🜚 *_${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_* 
 *╰𝄗𝄗✦ 𝗘𝗦𝗧𝗢𝗬 𝗘𝗡 𝗢𝗥𝗕𝗜𝗧𝗔 ✦𝄗𝄗⬣*`/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
