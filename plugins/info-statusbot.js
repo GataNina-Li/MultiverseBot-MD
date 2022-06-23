@@ -31,16 +31,16 @@ let esce =
  ⎸🜚 *_${uptime}_*
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  ⎸⚶ *Acción Cósmica* 
- ⎸🜚 ${global.opts['self'] ? '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝗿𝗶𝘃𝗮𝗱𝗮' : '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝘂𝗯𝗹𝗶𝗰𝗮 '}
+ ⎸🜚 *_${global.opts['self'] ? '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝗿𝗶𝘃𝗮𝗱𝗮' : '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝘂𝗯𝗹𝗶𝗰𝗮 '}
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸⚶ *Usuario(s) | Users* 
- ⎸🜚 ${Object.keys(global.db.data.users).length} 
+ ⎸⚶ *Usuario(s)* 
+ ⎸🜚 *_${Object.keys(global.db.data.users).length}_* 
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸⚶ *Chat(s) Prohibido(s) | Forbidden Chats*
- ⎸🜚 ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
+ ⎸⚶ *Chat(s) Prohibido(s)*
+ ⎸🜚 *_${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_* 
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸⚶ *Usuario(s) Prohibido(s) | Prohibited*
- ⎸🜚 ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
+ ⎸⚶ *Usuario(s) Prohibido(s)*
+ ⎸🜚 *_${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_* 
 *╰𝄗𝄗✦ 𝗘𝗦𝗧𝗢𝗬 𝗘𝗡 𝗢𝗥𝗕𝗜𝗧𝗔 ✦𝄗𝄗⬣*`/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
@@ -97,9 +97,9 @@ let esce =
      )
 }
 
-handler.help = ['estado | status']
+handler.help = ['estacion | orbita']
 handler.tags = ['info']
-handler.command = /^orbita|estacion|estacion|estado|status|estate|state|stado|stats|botstat(us)?$/i
+handler.command = /^orbita|orvita|estación|estacion|estacion|estado|status|estate|state|stado|stats|botstat(us)?$/i
 handler.exp = 4 
 
 module.exports = handler
