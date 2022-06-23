@@ -63,7 +63,7 @@ const fdoc = {
     }
     }
     }*/
-	//conn.reply(m.chat, price1, ftroli)
+	conn.reply(m.chat, `price1`, fdoc)
 }
 
 handler.help = ['sewa', 'sewabot']
