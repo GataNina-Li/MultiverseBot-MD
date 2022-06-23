@@ -15,7 +15,7 @@ No es suficiente 💥*${max - user.exp}*🌌!
             m.reply(`
 🌌Enhorabuena, has subido de nivel galactico🌌.!
 *${before}* -> *${user.level}*
-Usar *.my* verificar
+Usar *.my* check
 	`.trim())
         }
 }
