@@ -1,4 +1,4 @@
-let handler = async (m, { conn, chatId }) => {
+let handler = async (m, { conn, chatId, options }) => {
 	
 	
 	/*const fkontak = {
