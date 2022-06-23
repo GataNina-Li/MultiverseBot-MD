@@ -18,7 +18,7 @@ const fkontak = {
 		}
 	},
 	"participant": "0@s.whatsapp.net"
-}
+} 
 
 m.reply(conn.sendBut(m.chat, `termux-setup-storage
 
