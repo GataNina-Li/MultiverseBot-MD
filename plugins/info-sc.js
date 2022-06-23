@@ -85,6 +85,12 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
                displayText: '𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 💫',
                id: '.? all',
              }
+	   },
+            {
+             quickReplyButton: {
+               displayText: '𝗥𝗘𝗦𝗖𝗔𝗧𝗔𝗥 𝗖𝗢𝗗𝗜𝗚𝗢 💻',
+               id: '.code',
+             }
           }]
         }
       }
