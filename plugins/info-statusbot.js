@@ -31,7 +31,7 @@ let esce =
  ⎸ 🜚 *_${uptime}_*
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  ⎸ ⚶ *Acción Cósmica* 
- ⎸ 🜚 *_${global.opts['self'] ? '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝗿𝗶𝘃𝗮𝗱𝗮' : '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝘂𝗯𝗹𝗶𝗰𝗮 '}_*
+ ⎸ 🜚 *${global.opts['self'] ? '_𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝗿𝗶𝘃𝗮𝗱𝗮_' : '_𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝘂𝗯𝗹𝗶𝗰𝗮_'}*
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  ⎸ ⚶ *Usuario(s)* 
  ⎸ 🜚 *_${Object.keys(global.db.data.users).length}_* 
@@ -99,7 +99,7 @@ let esce =
 
 handler.help = ['estacion | orbita']
 handler.tags = ['info']
-handler.command = /^orbita|orvita|estación|estacion|estacion|estado|status|estate|state|stado|stats|botstat(us)?$/i
+handler.command = /^órbita|orbita|orvita|estación|estacion|estacion|estado|status|estate|state|stado|stats|botstat(us)?$/i
 handler.exp = 4 
 
 module.exports = handler
