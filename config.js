@@ -1,30 +1,27 @@
-//=============『 Utama 』================== //
-global.owner = ['51993042301', '593993684821', '593968585383', '50495086382', '5218451003894', '5215573031859', '50498965677', '528451003894', '525573031859'] 
-global.mods = [] 
-global.prems = [] 
+// ✩｡:*•.─────  NUMERO OWNER  ─────.•*:｡✩ 
+global.owner = ['51993042301', '593993684821', '593968585383', '50495086382', '5218451003894', '5215573031859', '50498965677', '528451003894', '525573031859'] //Agrega primero el numero que será Bot, luego los numeros a ser Owner
+global.mods = [] //Moderadores
+global.prems = [] //Premium, sin Limites en usar el Bot
 
-//=============『 Info Owner 』============== //
-global.packname = '𝑴𝒖𝒍𝒕𝒊𝒗𝒆𝒓𝒔𝒆𝑩𝒐𝒕-𝑴𝑫'
+// ✩｡:*•.─────  INFORMACIION DEL BOT - GENERAL  ─────.•*:｡✩ 
+global.packname = '𝑴𝒖𝒍𝒕𝒊𝒗𝒆𝒓𝒔𝒆𝑩𝒐𝒕-𝑴𝑫' //Sticker
 global.author = '@gata_dios'
 
-global.nameowner = 'MultiverseBot-MD'
+global.nameowner = 'MultiverseBot-MD' //Nombre del Bot
 global.numberowner = '51993042301'
 
-global.instagram = 'https://www.instagram.com/gata_dios'
+global.instagram = 'https://www.instagram.com/gata_dios' //Enlaces
 global.youtube = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA'
 global.github = 'https://github.com/GataNina-Li/MultiverseBot-MD'
 
-global.dana = '087892711054'
-global.pulsa = '085212023766'
-global.gopay = '087892711054'
 
-//=============『 Info Bot 』=================//
+// ✩｡:*•.─────  DATOS SECUNDARIOS  ─────.•*:｡✩ 
 global.namebot = 'MultiverseBot-MD '
 global.gc = 'https://chat.whatsapp.com'
 global.web = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
 
-//=======『 Tampilan Dan Lainnya 』============//
+// ✩｡:*•.─────  ELEMENTOS DE INTERFAZ Y COMPLEMENTOS  ─────.•*:｡✩ 
 global.fotonya1 = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' //ganti jadi foto bot mu
 global.fotonya2 = 'https://telegra.ph/file/8c471d45b6cedad43cf84.jpg' //ini juga ganti 
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
@@ -42,12 +39,10 @@ global.eror = '_*Server Error*_'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
 global.stiker_wait = 'Stiker sedang dibuat'
-//global.packname = '2022'
-//global.author = '© Hyzer Official'
-global.vs = '1.0.2'
+global.vs = '1.0.2' //version
 
 
-//=============『 Avisos 』================== //
+// ✩｡:*•.─────  AVISOS  ─────.•*:｡✩ 
 global.rg = '➩ 𝗥𝗘𝗦𝗨𝗟𝗧𝗔𝗗𝗢 ☑⚟\n\n'
 global.resultado = rg
 
@@ -69,7 +64,7 @@ global.envio = eeg
 global.eg = '┗❴ ✔ 𝗘𝗫𝗜𝗧𝗢 😄 ❵┛\n\n'
 global.exito = eg
 
-//=============『 Apikey 』================== //
+// ✩｡:*•.─────  APIKEY  ─────.•*:｡✩ 
 global.APIs = { // API Prefix
   // name: 'https://website'
   amel: 'https://melcanz.com',
@@ -110,8 +105,8 @@ global.APIKeys = { // APIKey Here
   'https://api.lolhuman.xyz': 'Deffbotz',
 }
 
-//=============『 RPG GAMES 』================== //
-global.multiplier = 69 // The higher, The harder levelup
+// ✩｡:*•.─────  RPG JUEGOS  ─────.•*:｡✩ 
+global.multiplier = 69 // Cuanto más alto, más difícil subir de nivel
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
@@ -144,7 +139,7 @@ global.rpg = {
   }
 }
 
-//===========『 Jangan Di Ubah 』================ //
+// ✩｡:*•.─────  IGNORAR, NO CAMBIAR  ─────.•*:｡✩ 
 let fs = require('fs')
 let chalk = require('chalk')
 let file = require.resolve(__filename)
