@@ -46,6 +46,8 @@ $ pkg install yarn
 $ git clone https://github.com/GataNina-Li/MultiverseBot-MD
 $ cd MultiverseBot-MD
 $ yarn
+$ npm install
+$ npm update
 $ node .
 ```
 ----
