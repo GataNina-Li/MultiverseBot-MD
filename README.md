@@ -21,6 +21,21 @@
 # Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/MultiverseBot-MD)
 
+# TERMUX
+### INSTALAR DE UNO POR UNO PARA EVITAR UN ERROR
+```bash
+$ termux-setup-storage
+$ pkg update && pkg upgrade
+$ pkg install git -y
+$ pkg install nodejs -y
+$ pkg install ffmpeg -y
+$ pkg install imagemagick -y
+$ pkg install yarn
+$ git clone https://github.com/GataNina-Li/MultiverseBot-MD
+$ cd MultiverseBot-MD
+$ yarn
+$ node .
+```
 
 # Añada lo siguente al Buildpack
 ```bash
