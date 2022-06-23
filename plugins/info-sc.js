@@ -15,19 +15,40 @@ Hola!! ${ye} Aquí Te dejo Loa Desarroladores
 y más Información de MultiverseBot-MD
 
 *REPOSITORIO*
-- https://github.com/GataNina-Li/MultiverseBot-MD
+⮊ https://github.com/GataNina-Li/MultiverseBot-MD
 
 *DESARROLLADORES* 
-https://github.com/GataNina-Li
-https://github.com/Abiguelreyes75
-https://github.com/Sofianayeli
-https://github.com/ADOLFO-BOT5
+⮊ https://github.com/GataNina-Li
+⮊ https://github.com/Abiguelreyes75
+⮊ https://github.com/Sofianayeli
+⮊ https://github.com/ADOLFO-BOT5
 
 *ASISTENCIA*
+⮊ https://www.instagram.com/gata_dios
+*Para Dudas, Sugerencias, Preguntas,*
+*Informate de las Novedades*
 
-*COLABORADORES*
+*AGRADECIMIENTO A:*
+⮊ https://github.com/Hyzerr
+⮊ https://github.com/ilmanhdyt
+⮊ https://github.com/Nurutomo
+⮊ https://github.com/ariffb25
+⮊ https://github.com/Paquito1923
 
-*COMANDOS DE INSTALACIÓN*`
+
+*COMANDOS DE INSTALACIÓN*
+*Escribir uno por uno:* 
+⮊ termux-setup-storage
+⮊ pkg update && pkg upgrade
+⮊ pkg install git -y
+⮊ pkg install nodejs -y
+⮊ pkg install ffmpeg -y
+⮊ pkg install imagemagick -y
+⮊ pkg install yarn
+⮊ git clone https://github.com/GataNina-Li/MultiverseBot-MD
+⮊ cd MultiverseBot-MD
+⮊ yarn
+⮊ node .`
 
 let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv3.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
