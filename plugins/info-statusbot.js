@@ -21,22 +21,26 @@ let who
 //bear = "Source Code"
 //let ye = `Wa.me/${m.sender.split`@`[0]}`
 let esce = 
-`╭≛≛≛≛[ *𝗘𝗦𝗧𝗔𝗖𝗜𝗢𝗡* ]≛≛≛≛≛≛⬣
+`*╭≛≛≛≛ ⚕ 𝗘𝗦𝗧𝗔𝗖𝗜𝗢𝗡 ⚕ ≛≛≛≛≛≛⬣*
  ⎸💗 *Hola!!* ${name} 
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  ⎸⍟ *Versión Multiverse*
- ⎸⚶ *_${vs}_*
+ ⎸🜚 *_${vs}_*
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- ⎸🜚 *Orbita Durante* 
- ⎸⚶ *_${uptime}_*
- ⎸🜚 *Acción Cósmica* 
- ⎸⚶ ${global.opts['self'] ? '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝗿𝗶𝘃𝗮𝗱𝗮' : '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝘂𝗯𝗹𝗶𝗰𝗮 '}
- ⎸🜚 *Usuario(s) | Users* 
- ⎸⚶ ${Object.keys(global.db.data.users).length} 
- ⎸🜚 *Chat(s) Prohibido(s) | Forbidden Chats*
- ⎸⚶ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
- ⎸🜚 *Usuario(s) Prohibido(s) | Prohibited*
- ⎸⚶ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
+ ⎸⚶ *Orbita Durante* 
+ ⎸🜚 *_${uptime}_*
+ ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+ ⎸⚶ *Acción Cósmica* 
+ ⎸🜚 ${global.opts['self'] ? '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝗿𝗶𝘃𝗮𝗱𝗮' : '𝗢𝗿𝗯𝗶𝘁𝗮 𝗣𝘂𝗯𝗹𝗶𝗰𝗮 '}
+ ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+ ⎸⚶ *Usuario(s) | Users* 
+ ⎸🜚 ${Object.keys(global.db.data.users).length} 
+ ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+ ⎸⚶ *Chat(s) Prohibido(s) | Forbidden Chats*
+ ⎸🜚 ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
+ ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+ ⎸⚶ *Usuario(s) Prohibido(s) | Prohibited*
+ ⎸🜚 ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 *╰𝄗✦ 𝗘𝗦𝗧𝗢𝗬 𝗘𝗡 𝗢𝗥𝗕𝗜𝗧𝗔 ✦𝄗⬣*`/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
