@@ -22,7 +22,8 @@ let esce = `*DESARROLLADORES*
 ⍟ https://github.com/ilmanhdyt
 ⍟ https://github.com/Nurutomo
 ⍟ https://github.com/ariffb25
-⍟ https://github.com/Paquito1923`conn.sendButtonImg(m.chat, fla + 'CREADORES', esce, wm, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', '.menu', m) 
+⍟ https://github.com/Paquito1923`
+conn.sendButtonImg(m.chat, fla + 'CREADORES', esce, wm, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', '.menu', m) 
 }
 handler.help = ['creadores | creators']
 handler.tags = ['info']
