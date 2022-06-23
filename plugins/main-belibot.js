@@ -1,3 +1,4 @@
+const fs = require('fs')
 let handler = async (m, { conn }) => {
 	
 	
