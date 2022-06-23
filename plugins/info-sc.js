@@ -96,7 +96,7 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
          { messageId: template.key.id }
      )
 	
-	if (/codigo/.test(command)) {
+	if (command == 'codigo') { 
 	conn.reply(m.chat,`ejemplo`, m)	
 	}
 }
