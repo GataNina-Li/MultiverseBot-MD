@@ -44,7 +44,7 @@ let esce =
      templateMessage: {
          hydratedTemplate: {
            videoMessage: message.videoMessage,
-           hydratedContentText: text.trim(),
+           hydratedContentText: esce,
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
