@@ -18,12 +18,16 @@ y más Información de MultiverseBot-MD
 - https://github.com/GataNina-Li/MultiverseBot-MD
 
 *DESARROLLADORES* 
+https://github.com/GataNina-Li
+https://github.com/Abiguelreyes75
+https://github.com/Sofianayeli
+https://github.com/ADOLFO-BOT5
 
-*ASISTENCIA* 
+*ASISTENCIA*
 
 *COLABORADORES*
 
-*COMANDOS DE INSTALACIÓN* 
+*COMANDOS DE INSTALACIÓN*`
 
 let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv3.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
