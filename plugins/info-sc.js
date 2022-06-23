@@ -108,8 +108,8 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
 }
 //conn.sendBut(m.chat, esce, wm3, 'Thanks', 'thanks', m) 
   
-handler.help = ['sc', 'sourcecode']
+handler.help = ['desarrolladores | sc']
 handler.tags = ['info']
-handler.command = /^(sc|sourcecode)$/i
+handler.command = /^(desarrolladores|sc|sourcecode)$/i
 
 module.exports = handler
