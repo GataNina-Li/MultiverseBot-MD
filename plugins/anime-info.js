@@ -23,7 +23,7 @@ handler.command = /^(anime|animeinfo)$/i
 //maapin fatur :<
 module.exports = handler*/
 
-let fetch = require('búsqueda de nodo')
+let fetch = require('node-fetch')
 let handler = async(m, { conn, text }) => {
   if (!text) throw `Introduce una consulta!`
   let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/anime', { q: text }))
