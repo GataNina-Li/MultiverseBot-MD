@@ -50,22 +50,22 @@ const ftroli = {
    }*/
 
 	const ftroli = {
-	key : {
-                          participant : '0@s.whatsapp.net'
-                        },
-       message: {
-                    orderMessage: {
-                            itemCount : 1,
-                            status: 1,
-                            surface : 1,
-                            message: 'MikeBot', //Kasih namalu
-                            orderTitle: 'Bang',
-                            thumbnail: fs.readFileSync('./media/siang.jpg'), //Gambarnye
-                            sellerJid: '0@s.whatsapp.net'
-          
-                          }
-                        }
-                      }
+    key : {
+    remoteJid: '6283136505591-1614953337@g.us',
+    participant : '0@s.whatsapp.net'
+    },
+    message: {
+    orderMessage: {
+    itemCount : 2022,
+    status: 1,
+    surface : 1,
+    message: 'Get Bot', 
+    orderTitle: `Hyzer`,
+    thumbnail: 'https://telegra.ph/file/5ecbec3e82e247671a18e.jpg', 
+    sellerJid: '0@s.whatsapp.net' 
+    }
+    }
+    }
 	
 	
 /*const ftroli = {
@@ -85,7 +85,7 @@ const ftroli = {
     }
     }
     }*/
-	conn.reply(m.chat, 'Hola', m)
+	conn.reply(m.chat, ftroli, m)
 
 }
 handler.help = ['sewa', 'sewabot']
