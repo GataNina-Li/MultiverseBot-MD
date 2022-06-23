@@ -3,11 +3,7 @@
   "description": "Astronómico Bot",
   "repository": "https://github.com/GataNina-Li/MultiverseBot-MD",
   "logo": "https://i.imgur.com/PlyUHYP.jpeg",
-  "keywords": [
-    "bot",
-    "whatsapp",
-    "multi-device",
-    "whatsapp-bot"
+  "keywords": ["bot", "whatsapp", "multi-device", "whatsapp-bot"],
   "buildpacks": [
   {
     "url": "heroku/nodejs"
