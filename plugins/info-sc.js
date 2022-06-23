@@ -9,10 +9,13 @@ const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessa
 let fetch = require('node-fetch')
 let fs = require('fs')
 let handler = async (m, { conn }) => {
-let ye = `@${m.sender.split`@`[0]}`
+let who
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
+    else who = m.sender 
+    let name = conn.getName(m.sender)
+//let ye = `@${m.sender.split`@`[0]}`
 let esce = `
-Hola!! ${ye} Aquí Te dejo LoS Desarroladores
-y más Información de MultiverseBot-MD
+*Hola!! ${name} Aquí Te dejo Los Desarroladores y más Información de MultiverseBot-MD*
 
 *REPOSITORIO*
 ⍟ https://github.com/GataNina-Li/MultiverseBot-MD
@@ -48,6 +51,8 @@ y más Información de MultiverseBot-MD
 ⍟ git clone https://github.com/GataNina-Li/MultiverseBot-MD
 ⍟ cd MultiverseBot-MD
 ⍟ yarn
+⍟ npm install
+⍟ npm update
 ⍟ node .`
 
 let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv3.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
@@ -81,11 +86,6 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
                id: '.? all',
              }
 	   },
-             {
-             quickReplyButton: {
-               displayText: '𝗗𝗘𝗦𝗔𝗥𝗥𝗢𝗟𝗟𝗔𝗗𝗢𝗥𝗘𝗦  🛃',
-               id: '.menu',
-             }
           }]
         }
       }
