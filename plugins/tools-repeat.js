@@ -1,6 +1,6 @@
 let handler = async (m, { conn, text }) => {
 	
-    if (!text) return conn.reply(m.chat, 'Harap Masukan Teks yang akan direpeat!', m)
+    if (!text) return conn.reply(m.chat, 'Por favor ingrese el texto para repetir!', m)
 	
   conn.reply(m.chat, `
 ${text}
@@ -1005,7 +1005,7 @@ ${text}
 ${text}
 `.trim(), m)
 }
-handler.help = ['repeat <teks>']
+handler.help = ['repeat <texto>']
 handler.tags = ['tools']
 handler.command = /^(repeat)$/i
 handler.owner = false
