@@ -7,7 +7,7 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
     m.reply(laporan, jid)
     //m.reply(laporan, m.sender) // Mwehehehehe
     //m.reply('╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮\n\n✔️!')
-  m.reply(conn.sendBut(m.chat, `${eg}*El reporte ha sido enviado a mí Creadora. Tendrá una respuesta pronto. De ser Falso será Ignorado el reporte.*\n*The report has been sent to my Creator. You will have an answer soon. If false, the report will be ignored.*`, wm , `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m))
+  m.reply(conn.sendBut(m.chat, `${eg}*El reporte ha sido enviado a Los Autores Correspondientes de mí Desarrollo. Tendrá una respuesta pronto. De ser Falso será Ignorado el reporte.*\n\n*The report has been sent to The Corresponding Authors of my Development. You will have an answer soon. If false, the report will be ignored.*`, wm , `✨ 𝗠𝗘𝗡𝗨`, '.menu',  m))
 }
 handler.help = ['reporte | bug'].map(v => v + ' *comando con error*')
 handler.tags = ['info']
