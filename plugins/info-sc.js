@@ -11,7 +11,7 @@ let fs = require('fs')
 let handler = async (m, { conn }) => {
 let ye = `@${m.sender.split`@`[0]}`
 let esce = `
-Hola!! ${ye} Aquí Te dejo Loa Desarroladores
+Hola!! ${ye} Aquí Te dejo LoS Desarroladores
 y más Información de MultiverseBot-MD
 
 *REPOSITORIO*
