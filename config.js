@@ -7,7 +7,7 @@ global.prems = [] //Premium, sin Limites en usar el Bot
 global.packname = '𝑴𝒖𝒍𝒕𝒊𝒗𝒆𝒓𝒔𝒆𝑩𝒐𝒕-𝑴𝑫' //Sticker
 global.author = '@gata_dios'
 
-global.nameowner = 'MultiverseBot-MD' //Nombre del Bot
+global.nameowner = '✨ 𝑴𝒖𝒍𝒕𝒊𝒗𝒆𝒓𝒔𝒆𝑩𝒐𝒕-𝑴𝑫 ✨' //Nombre del Bot
 global.numberowner = '51993042301'
 
 global.instagram = 'https://www.instagram.com/gata_dios' //Enlaces
