@@ -49,16 +49,37 @@ $ yarn
 $ node .
 ```
 ----
-# Añada lo siguente al Buildpack
+## 💻 PARA USUARIOS DE WINDOWS/VPS/RDP (Opcional)
+
+* Descargar e instala Git [`Klik Disini`](https://git-scm.com/downloads)
+* Descargar e instala NodeJS [`Klik Disini`](https://nodejs.org/en/download)
+* Descargar e instala FFmpeg [`Klik Disini`](https://ffmpeg.org/download.html) (**No olvide agregar FFmpeg a la variable de entorno PATH**)
+* Descargar e instala ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
+* Descargar e instala Yarn [`Klik Disini`](https://classic.yarnpkg.com/en/docs/install#windows-stable)
+
 ```bash
-> heroku/nodejs
+git clone https://github.com/GataNina-Li/MultiverseBot-MD
+cd MultiverseBot-MD
+npm install
+npm update
+npm index
 ```
-```bash
-> https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+
+## 💻 Instalación de FFmpeg para Windows 
+* Descarga cualquiera de las versiones de FFmpeg disponibles haciendo clic en [FFmpeg](https://www.gyan.dev/ffmpeg/builds/).
+* Extraer archivos a `C:\` path.
+* Cambie el nombre de la carpeta extraída a `ffmpeg`.
+* Ejecute el símbolo del sistema como administrador.
+* Ejecute el siguiente comando:
+```cmd
+> setx /m PATH "C:\ffmpeg\bin;%PATH%"
 ```
-```bash
-> https://github.com/mcollina/heroku-buildpack-imagemagick
+Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
+* Ahora que tiene FFmpeg instalado, verifique que funcionó ejecutando este comando para ver la versión:
+```cmd
+> ffmpeg -version
 ```
+----
 ## ⚙ Configuracion de la visualización del menú.
 ### Visualización del menú GIF
 ```ts
