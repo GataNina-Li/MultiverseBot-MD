@@ -2,7 +2,7 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
   
     if (!text) throw `${mg}*Escriba un reporte.*\n*Ejemplo:*\n*${usedPrefix + command}* El comando *${usedPrefix}anime* no funciona.\n\n*Write a report.*\n*Example*\n*${usedPrefix + command}* The command *${usedPrefix}owner* it does not work.`
     if (text.length > 1500) throw `${fg}*El reporte mínimo es de 1500 caracteres!*\n*The minimum report must be 1500 characters!*`
-    const laporan = `╭━━〔 *REPORTE | REPORT* 〕━━━━⬣\n┃\n┃✿ *Número | Number*\n┃⇢ *Wa.me/${m.sender.split`@`[0]}*\n┃\n┃✿ *Mensaje | Text*\n┃⇢ *${text}*\n┃\n╰━━━━〔 *${wm}* 〕━━━━━━⬣`
+    const laporan = `╭━━〔 *REPORTE | REPORT* 〕━━⬣\n┃\n┃✿ *Número | Number*\n┃⇢ *Wa.me/${m.sender.split`@`[0]}*\n┃\n┃✿ *Mensaje | Text*\n┃⇢ *${text}*\n┃\n╰━━━〔 *${wm}* 〕━━━⬣`
   for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid && v != '51993042301@s.whatsapp.net'))
     m.reply(laporan, jid)
     //m.reply(laporan, m.sender) // Mwehehehehe
