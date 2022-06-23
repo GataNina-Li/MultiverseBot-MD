@@ -49,10 +49,15 @@ $ node .
 > https://github.com/mcollina/heroku-buildpack-imagemagick
 ```
 -----
+### 🌟 DESARROLLADORES
+[![Hyzer](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li)
+[![Hyzer](https://github.com/Abiguelreyes75.png?size=100)](https://github.com/Abiguelreyes75)
+[![Hyzer](https://github.com/Sofianayeli.png?size=100)](https://github.com/Sofianayeli)
+[![Hyzer](https://github.com/ADOLFO-BOT5.png?size=100)](https://github.com/ADOLFO-BOT5)
 
 ### 🌟 AGRADECIMIENTOS
 [![Hyzer](https://github.com/Hyzerr.png?size=100)](https://github.com/Hyzerr)
 [![Ilman](https://github.com/ilmanhdyt.png?size=100)](https://github.com/ilmanhdyt)
 [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
 [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25)
-[![𝐀𝐃𝐎𝐋𝐅𝐎](https://github.com/ADOLFO-BOT5.png?size=100)](https://github.com/Paquito1923)
+[![𝐀𝐃𝐎𝐋𝐅𝐎](https://github.com/Paquito1923.png?size=100)](https://github.com/Paquito1923)
