@@ -4,13 +4,16 @@ global.mods = []
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.packname = 'wa.me/6285713964963'
-global.author = 'Bot Is The Best'
+global.packname = '𝑴𝒖𝒍𝒕𝒊𝒗𝒆𝒓𝒔𝒆𝑩𝒐𝒕-𝑴𝑫'
+global.author = '@gata_dios'
 
 global.nameowner = 'MultiverseBot-MD'
 global.numberowner = '51993042301'
+
 global.instagram = 'https://www.instagram.com/gata_dios'
+global.youtube = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA'
 global.github = 'https://github.com/GataNina-Li/MultiverseBot-MD'
+
 global.dana = '087892711054'
 global.pulsa = '085212023766'
 global.gopay = '087892711054'
