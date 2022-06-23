@@ -28,7 +28,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: 'bot',
 body: 'Super Bot WhatsApp',         
 previewType: 1, thumbnail: fs.readFileSync("./media/menu/shiraori.jpg"),
-sourceUrl: `${youtube}`}}})  
+sourceUrl: `${youtube}`}}})}  
     	
 handler.help = ['sewa', 'sewabot']
 handler.tags = ['info']
