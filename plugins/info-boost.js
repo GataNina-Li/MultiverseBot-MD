@@ -29,7 +29,7 @@ let handler = async (m, { conn }) => {
  let boost4 = `*${pickRandom(['61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80'])}%*`
  let boost5 = `*${pickRandom(['81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100'])}%*`
 
-   await m.reply(start)
+   await m.reply(m.chat, start, fkontak, m)
    await m.reply(start2)
    await m.reply(boost)
    await m.reply(boost2)
@@ -41,7 +41,7 @@ let handler = async (m, { conn }) => {
    let speed = `${neww - old}`
    let multi = `${eg}*SE COMPLETO EL OBJETIVO DE AUMENTO DE VELOCIDAD*`
    let pp = 'https://i.pinimg.com/originals/64/3a/81/643a81e32e243cd07bf37a93036769f5.jpg' 
-   conn.sendButtonImg(m.chat, pp, multi, `${wm} | ᴄᴏʟɪꜱɪᴏɴ ɪᴍᴘᴜʟꜱᴀᴅᴀ\n${speed} milisegundos`, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', '.menu', fkontak, m)
+   conn.sendButtonImg(m.chat, pp, multi, `${wm} | ᴄᴏʟɪꜱɪᴏɴ ɪᴍᴘᴜʟꜱᴀᴅᴀ\n${speed} milisegundos`, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', '.menu', m)
   // conn.reply(m.chat, finish, m)
 }
 handler.help = ['masrapido | boost']
