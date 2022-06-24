@@ -95,4 +95,4 @@ global.iq = [
 'Tu coeficiente intelectual es: 5000',
 'Tu coeficiente intelectual es: 7500',
 'Tu coeficiente intelectual es: 10000',
-]
+] 
