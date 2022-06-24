@@ -29,13 +29,13 @@ let handler = async (m, { conn }) => {
  let boost4 = `*${pickRandom(['61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80'])}%*`
  let boost5 = `*${pickRandom(['81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100'])}%*`
 
-   await m.reply(start, fkontak, m)
-   await m.reply(start2, fkontak, m)
-   await m.reply(boost, fkontak, m)
-   await m.reply(boost2, fkontak, m)
-   await m.reply(boost3, fkontak, m)
-   await m.reply(boost4, fkontak, m)
-   await m.reply(boost5, fkontak, m)
+   await m.reply(fkontak, start)
+   await m.reply(start2)
+   await m.reply(boost)
+   await m.reply(boost2)
+   await m.reply(boost3)
+   await m.reply(boost4)
+   await m.reply(boost5)
    let old = performance.now()
    let neww = performance.now()
    let speed = `${neww - old}`
