@@ -1,5 +1,6 @@
-require('@bochilteam/scraper')
-let handler = async (m, { conn, args, usedPrefix, command, facebookdl, facebookdlv2 }) => {
+
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+let { facebookdl, facebookdlv2 } require('@bochilteam/scraper')
   
 if (!args[0]) throw `enlace mal`
 try {
