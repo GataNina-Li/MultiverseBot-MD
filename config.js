@@ -1,5 +1,5 @@
 // ✩｡:*•.─────  NUMERO OWNER  ─────.•*:｡✩ 
-global.owner = ['51993042301', '593993684821', '593968585383', '50495086382', '50495086382', '5218451003894', '5215573031859', '50498965677', '528451003894', '525573031859'] //Agrega primero el numero que será Bot, luego los numeros a ser Owner
+global.owner = ['51993042301', '593993684821', '593968585383', '50495086382', '50497501147', '5218451003894', '5215573031859', '50498965677', '528451003894', '525573031859'] //Agrega primero el numero que será Bot, luego los numeros a ser Owner
 global.mods = [] //Moderadores
 global.prems = [] //Premium, sin Limites en usar el Bot
 
