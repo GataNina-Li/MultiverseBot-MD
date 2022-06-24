@@ -35,7 +35,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^(reproducir|reproducir2|reproductor|Reproducir|Reproducir2|Reproductor|play3|Play3|playvid|Playvid|playaudio|Playaudio)$/i
+handler.command = /^(videofacebook1)$/i
 
 handler.exp = 0
 
