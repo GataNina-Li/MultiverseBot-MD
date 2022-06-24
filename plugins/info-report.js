@@ -1,3 +1,8 @@
+// SI VAS A MODIFICAR AL MENOS NO QUITES LOS CREDITOS, WEB, ENLACES, DE ESA FORMA YA ESTAS APOYANDO 
+// PARA QUE SE PUEDA SEGUIR ELABORANDO EN ESTE LINDO MULTIVERSEBOT-MD 
+// TAMBIEN PUEDES AGREGAR TÚ INFORMACIÓN SIN ESTAR ELIMINANDO LOS CREDITOS 
+// EN CASO DE PODER COMPARTIR ESTE REPOSITORIO SE TE AGREDECE, Y GRACIAS POR INTERESARTE EN MULTIVERSEBOT-MD!! 
+
 let handler = async(m, { conn, text, usedPrefix, command }) => {
   
     if (!text) throw `${mg}*Escriba un reporte.*\n*Ejemplo:*\n*${usedPrefix + command}* El comando *${usedPrefix}anime* no funciona.\n\n*Write a report.*\n*Example*\n*${usedPrefix + command}* The command *${usedPrefix}owner* it does not work.`
@@ -14,3 +19,5 @@ handler.tags = ['info']
 handler.command = /^(bug|report|reports|bugs|request|requests|reportar|reporte|reportes|buggata|gatabug|reportes|informe|informes)$/i 
 //handler.exp = 7
 module.exports = handler
+
+// MultiverseBot-MD
