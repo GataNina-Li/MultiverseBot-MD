@@ -1,9 +1,29 @@
+// SI VAS A MODIFICAR AL MENOS NO QUITES LOS CREDITOS, WEB, ENLACES, DE ESA FORMA YA ESTAS APOYANDO 
+// PARA QUE SE PUEDA SEGUIR ELABORANDO EN ESTE LINDO MULTIVERSEBOT-MD 
+// TAMBIEN PUEDES AGREGAR TÚ INFORMACIÓN SIN ESTAR ELIMINANDO LOS CREDITOS 
+// EN CASO DE PODER COMPARTIR ESTE REPOSITORIO SE TE AGREDECE, Y GRACIAS POR INTERESARTE EN MULTIVERSEBOT-MD!! 
+
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let fetch = require('node-fetch')
 let fs = require('fs')
 let handler = async(m, { conn }) => {
 conn.sendContact(m.chat, numberowner, nameowner, m) 
-
+	
+	
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+} 
 	//let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.mp4'
 let text = `*Hola! Esos son los Contactos disponibles* 🌟\n*El Bot no responde a dudas para ello consulte con la ✅ Cuenta Oficial de Instagram - Asistencia, Gracias!*`
   let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv2.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
@@ -41,14 +61,12 @@ let text = `*Hola! Esos son los Contactos disponibles* 🌟\n*El Bot no responde
       }
     }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
-    return await conn.relayMessage(
-         m.chat,
-         template.message,
-         { messageId: template.key.id }
-     )  
+    return await conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  
 }
 handler.help = ['creador | owner']
 handler.tags = ['info']
 handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
 
 module.exports = handler
+
+// MultiverseBot-MD
