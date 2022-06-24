@@ -1,5 +1,6 @@
-let { facebookdl, facebookdlv2 } = require('@bochilteam/scraper')
-let handler = async (m, { conn, args, usedPrefix, command }) => {
+require('@bochilteam/scraper')
+let handler = async (m, { conn, args, usedPrefix, command, facebookdl, facebookdlv2 }) => {
+  
 if (!args[0]) throw `enlace mal`
 try {
 const { result } = await facebookdl(args[0]).catch(async _ => await facebookdlv2(args[0]))
