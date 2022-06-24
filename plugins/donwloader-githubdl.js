@@ -15,14 +15,14 @@ let handler = async (m, { args, usedPrefix, command, conn }) => {
     // 'attachment; filename=Nurutomo-wabot-aq-v2.5.1-251-g836cccd.zip'
     //m.reply(`*Mohon tunggu, sedang mengirim repository..*`)
     
-    let text = `${eg}Espere un momento. Pronto Tendrá El archivo de GitHub`
+    let text = `${eg}*Espere un momento. Pronto Tendrá El archivo de GitHub!!*`
     let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/github.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            imageMessage: message.imageMessage,
            hydratedContentText: text,
-           hydratedFooterText: `${wm} | ᴍᴀʏᴏʀ ᴀ 250 ᴍɢ ᴛᴀʟ ᴠᴇᴢ ɴᴏ ꜱᴇ ᴇɴᴠɪᴇ`, 
+           hydratedFooterText: `ᴍᴀʏᴏʀ ᴀ 250 ᴍɢ ᴛᴀʟ ᴠᴇᴢ ɴᴏ ꜱᴇ ᴇɴᴠɪᴇ\n${wm}`, 
            hydratedButtons: [{
              urlButton: {
                displayText: '𝗚𝗜𝗧𝗛𝗨𝗕',
