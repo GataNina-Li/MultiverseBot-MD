@@ -39,7 +39,7 @@ global.eror = '_*Server Error*_'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
 global.stiker_wait = 'Stiker sedang dibuat'
-global.vs = '1.0.2' //version
+global.vs = '1.0.5' //version
 
 
 // ✩｡:*•.─────  AVISOS  ─────.•*:｡✩ 
