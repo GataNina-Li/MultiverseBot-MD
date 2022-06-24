@@ -1,4 +1,4 @@
-console.log('Starting...')
+console.log('Alineando las estrellas!!, pronto comenzará La Aventura') 
 let cluster = require('cluster')
 let path = require('path')
 let fs = require('fs')
@@ -13,7 +13,7 @@ CFonts.say('MULTIVERSE\nBOT\nMD', {
   colors: ['blueBright','yellowBright'],                                        font: 'block',
   align: 'center',
 })
-CFonts.say(`Bot`, {                                            
+CFonts.say(`UNA NUEVA DIMENSIÓN!!\nhttps://www.instagram.com/gata_dios`, {                                            
 colors: ['yellow'],                                                           
 font: 'console',                                                              align: 'center',
 })
