@@ -9,23 +9,8 @@ let fs = require('fs')
 let handler = async(m, { conn }) => {
 conn.sendContact(m.chat, numberowner, nameowner, m) 
 	
-	
-const fkontak = {
-	"key": {
-    "participants":"0@s.whatsapp.net",
-		"remoteJid": "status@broadcast",
-		"fromMe": false,
-		"id": "Halo"
-	},
-	"message": {
-		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-		}
-	},
-	"participant": "0@s.whatsapp.net"
-} 
 	//let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.mp4'
-let text = `*Hola! Esos son los Contactos disponibles* 🌟\n*El Bot no responde a dudas para ello consulte con la ✅ Cuenta Oficial de Instagram - Asistencia, Gracias!*`
+let text = `*Hola! Esos son los Contactos disponibles* 🌟\n*El Bot no responde a dudas para ello consulte con ✅ La Cuenta Oficial de Instagram - Asistencia, Gracias!*`
   let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv2.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
