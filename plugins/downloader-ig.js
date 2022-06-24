@@ -1,6 +1,6 @@
 const { instagramdl, instagramdlv2, instagramdlv3, instagramdlv4 } = require('@bochilteam/scraper')
 
-//import { instagramdl, instagramdlv2, instagramdlv3, instagramdlv4 } from '@bochilteam/scraper'
+//import { instagramdl, instagramdlv2, instagramdlv3, instagramdlv4 } from '@bochilteam/scraper' 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
   const fkontak = {
