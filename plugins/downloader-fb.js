@@ -5,9 +5,6 @@
   form.append('requestlink', 'https://video-converter-mp4.com/fb-downloader/')
   form.append('deftab', 'video')
   let res = await fetch('https://video-converter-mp4.com/wp-admin/admin-ajax.php', {
-    method: 'POST',
-    headers: { ...headers, ...form.getHeaders() },
-    body: form
   })
  handler.help = ['fb'].map(v => v + ' <url>')
 handler.tags = ['downloader']
