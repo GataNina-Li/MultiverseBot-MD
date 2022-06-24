@@ -1,6 +1,3 @@
-const cheerio = require('cheerio')
-const fetch = require('node-fetch')
-const FormData = require('form-data')
 let handler = async (m, { usedPrefix, command, conn, args }) => {
   if (!args[0]) throw `Gunakan format: ${usedPrefix}${command} https://fb.watch/xxxxx/`
   let res = await fbdl(args[0])
