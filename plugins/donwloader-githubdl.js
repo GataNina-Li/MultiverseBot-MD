@@ -1,8 +1,8 @@
+let regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let fs = require('fs')
-let regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
 let fetch = require('node-fetch')
-let handler = async (m, { args, usedPrefix, command }) => {
+let handler = async (m, { args, usedPrefix, command, conn }) => {
 
     if (!args[0]) throw `${mg}*Debe de Introducir un enlace válido de GitHub*\n\n*EJEMPLO*\n*${usedPrefix + command}* _https://github.com/GataNina-Li/MultiverseBot-MD_`
 
@@ -21,7 +21,7 @@ let handler = async (m, { args, usedPrefix, command }) => {
      templateMessage: {
          hydratedTemplate: {
            imageMessage: message.imageMessage,
-           hydratedContentText: text.trim(),
+           hydratedContentText: text,
            hydratedFooterText: `${wm} | ᴍᴀʏᴏʀ ᴀ 250 ᴍɢ ᴛᴀʟ ᴠᴇᴢ ɴᴏ ꜱᴇ ᴇɴᴠɪᴇ`,
            hydratedButtons: [{
              urlButton: {
