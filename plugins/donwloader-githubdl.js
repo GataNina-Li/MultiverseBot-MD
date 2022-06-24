@@ -22,7 +22,7 @@ let handler = async (m, { args, usedPrefix, command, conn }) => {
          hydratedTemplate: {
            imageMessage: message.imageMessage,
            hydratedContentText: text,
-           hydratedFooterText: `${wm} | ᴍᴀʏᴏʀ ᴀ 250 ᴍɢ ᴛᴀʟ ᴠᴇᴢ ɴᴏ ꜱᴇ ᴇɴᴠɪᴇ`,
+           hydratedFooterText: `${wm} | ᴍᴀʏᴏʀ ᴀ 250 ᴍɢ ᴛᴀʟ ᴠᴇᴢ ɴᴏ ꜱᴇ ᴇɴᴠɪᴇ`, 
            hydratedButtons: [{
              urlButton: {
                displayText: '𝗚𝗜𝗧𝗛𝗨𝗕',
@@ -53,7 +53,7 @@ let handler = async (m, { args, usedPrefix, command, conn }) => {
     //conn.reply(m.chat, text.trim(), m)
     return await conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  
 
-    conn.sendFile(m.chat, url, filename, null, m)
+    await conn.sendFile(m.chat, url, filename, null, m)
 
 }}
 handler.help = ['gitclone <url>']
