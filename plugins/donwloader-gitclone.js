@@ -1,7 +1,7 @@
 let regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let fs = require('fs')
-let fetch = require('node-fetch')
+let fetch = require('node-fetch') 
 let handler = async (m, { args, usedPrefix, command }) => {
 
     if (!args[0]) throw `${mg}*Debe de Introducir un enlace válido de GitHub*\n\n*EJEMPLO*\n*${usedPrefix + command}* _https://github.com/GataNina-Li/MultiverseBot-MD_`
