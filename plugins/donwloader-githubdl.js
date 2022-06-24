@@ -51,7 +51,7 @@ let handler = async (m, { args, usedPrefix, command }) => {
       }
     }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
-    conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  
+   await conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  
 
     conn.sendFile(m.chat, url, filename, null, m)
 
