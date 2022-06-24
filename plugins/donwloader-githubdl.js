@@ -55,7 +55,7 @@ let handler = async (m, { args, usedPrefix, command, conn }) => {
 
     await conn.sendFile(m.chat, url, filename, null, m)
 
-}}
+}
 handler.help = ['gitclone <url>']
 handler.tags = ['github']
 handler.command = /gitclone/i
