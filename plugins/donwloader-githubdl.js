@@ -13,9 +13,9 @@ let handler = async (m, { args, usedPrefix, command }) => {
     let url = `https://api.github.com/repos/${user}/${repo}/zipball`
     let filename = (await fetch(url, {method: 'HEAD'})).headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
     // 'attachment; filename=Nurutomo-wabot-aq-v2.5.1-251-g836cccd.zip'
-    m.reply(`*Mohon tunggu, sedang mengirim repository..*`)
+    //m.reply(`*Mohon tunggu, sedang mengirim repository..*`)
     
-    /*let text = `${eg}*Espere un momento. Pronto Tendrá El archivo de GitHub!!*`
+    let text = `${eg}*Espere un momento. Pronto Tendrá El archivo de GitHub!!*`
     let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/github.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -51,7 +51,7 @@ let handler = async (m, { args, usedPrefix, command }) => {
       }
     }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
-    return await conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  */
+    conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  
 
     conn.sendFile(m.chat, url, filename, null, m)
 
