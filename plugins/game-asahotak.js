@@ -47,8 +47,8 @@ let handler = async (m, { conn, usedPrefix }) => {
     let json = src[Math.floor(Math.random() * src.length)]
     let caption = `
 ${json.soal}
-Timeout ${(timeout / 1000).toFixed(2)} detik
-Ketik ${usedPrefix}ao untuk bantuan
+Se acabó el tiempo ${(timeout / 1000).toFixed(2)} detik
+Escribe ${usedPrefix}por ayuda
 Bonus: ${poin} XP
     `.trim()
     conn.asahotak[id] = [
