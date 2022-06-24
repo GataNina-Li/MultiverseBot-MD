@@ -30,7 +30,9 @@ Bonus: ${poin} XP
 }
 handler.help = ['caklontong']
 handler.tags = ['game']
-handler.command = /^caklontong/i */
+handler.command = /^caklontong/i 
+
+module.exports = handler*/
 
 
 let fetch = require('node-fetch')
@@ -50,8 +52,8 @@ let handler = async (m, { conn, usedPrefix }) => {
     let caption = `
 ${json.soal}
 
-Timeout ${(timeout / 1000).toFixed(2)} detik
-Ketik ${usedPrefix}calo untuk bantuan
+Se acabó el tiempo ${(timeout / 1000).toFixed(2)}detik
+Escribe ${usedPrefix}revendedor de ayuda
 Bonus: ${poin} XP
 `.trim()
     conn.caklontong[id] = [
@@ -66,7 +68,5 @@ Bonus: ${poin} XP
 handler.help = ['caklontong']
 handler.tags = ['game']
 handler.command = /^caklontong/i
-
-module.exports = handler
 
 module.exports = handler
