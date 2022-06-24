@@ -50,6 +50,7 @@ node .`, `${wm} | ᴜꜱᴀʀ ᴇɴ ᴏʀᴅᴇɴ, ᴜɴᴏ ᴘᴏʀ ᴜɴᴏ.`,
 handler.help = ['codigo | code',]
 handler.tags = ['info']
 handler.command = /^codigo|code|código$/i
+handler.exp = 2
 //handler.owner = false 
 
 module.exports = handler
