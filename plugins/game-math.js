@@ -1,4 +1,4 @@
-lobal.math = global.math ? global.math : {}
+global.math = global.math ? global.math : {}
 let handler  = async (m, { conn, args, usedPrefix }) => {
   if (args.length < 1) return conn.reply(m.chat, `
 *Modo:* ${Object.keys(modes).join(' | ')}
