@@ -9,8 +9,8 @@ let fs = require('fs')
 
 
 let handler = async (m, { conn, text } ) => {
-  let imgmenu = './src/github.jpg'
-  let miniurl = './src/github.jpg'
+  let imgmenu = 'https://i.imgur.com/PlyUHYP.jpeg'
+  let miniurl = 'https://i.imgur.com/PlyUHYP.jpeg'
   let text = '*Test button*'
   
   conn.sendButton(m.chat, text, 'BY 4LB3RTO', imgmenu, [['Cʀᴇᴀᴅᴏʀ🐢', '.menu'], ['Iɴғᴏ📌', '.infobot']], false, { quoted: m, contextInfo: { externalAdReply: {
