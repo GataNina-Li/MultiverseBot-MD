@@ -1,5 +1,5 @@
 //import { facebookdl, facebookdlv2 } from '@bochilteam/scraper'
-let { facebookdl, facebookdlv2 } = require('@bochilteam/scraper')
+/*let { facebookdl, facebookdlv2 } = require('@bochilteam/scraper')
 let handler = async (m, { conn, args }) => {
 
 if (!args[0]) throw `enlace?`
@@ -13,4 +13,4 @@ console.log(e)
 handler.help = ['facebbok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^((facebook|fb)(downloder|dl)?)$/i
-export default handler
+export default handler */
