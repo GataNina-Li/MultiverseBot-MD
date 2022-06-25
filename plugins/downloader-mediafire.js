@@ -4,7 +4,7 @@ if (!text) return m.reply(`Kirim perintah ${usedPrefix + command} *link mediafir
 if (!args[0].includes('mediafire.com')) return m.reply(error.linkmf)
 let mdjon = args.join(' ')
 res = await mediafireDl(mdjon)
-result = `「 *MEDIAFIRE DOWNLOAD* 」
+let result = `「 *MEDIAFIRE DOWNLOAD* 」
 *Data Berhasil Didapatkan!*
 🆔 Nama : ${res[0].nama}
 📊 Ukuran : ${res[0].size}
@@ -25,11 +25,11 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 } 
-  await m.reply(conn.sendBut(m.chat, result, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
- await m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
+   m.reply(conn.sendBut(m.chat, result, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
+    m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
 //m.reply(result)
 //await sleep(100)
-await conn.sendFile(m.chat, res[0].link, res[0].nama, null, m, false, {asDocument:true, mimetype:res[0].mime})
+      conn.sendFile(m.chat, res[0].link, res[0].nama, null, m, false, {asDocument:true, mimetype:res[0].mime})
 }
 handler.help = ['mediafire'].map(v => v + ' *enlace*')
 handler.command = ['mediafire']
