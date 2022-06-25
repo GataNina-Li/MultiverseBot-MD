@@ -23,7 +23,7 @@ xfar.Pinterest(args[0]).then(async data => {
 } 
 	
 let pincpt = `🔗Link media : ${data.url}`
-conn.sendFile(m.chat,data.url, 'pin.jpg', fkontak, m))
+conn.sendFile(m.chat,data.url, 'pin.jpg', '', fkontak, m))
 	
 let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/github.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -60,9 +60,7 @@ let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/github
       }
     }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
-   await conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  
-
-    conn.sendFile(m.chat, url, filename, null, m)
+   conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  
 
 }}
 			        
