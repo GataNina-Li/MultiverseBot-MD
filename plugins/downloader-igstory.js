@@ -1,4 +1,21 @@
 const { igstory } = require('../lib/scrape')
+const ftroli = {
+    key : {
+    remoteJid: 'status@broadcast',
+    participant : '0@s.whatsapp.net'
+    },
+    message: {
+    orderMessage: {
+    itemCount : 2022,
+    status: 1,
+    surface : 1,
+    message: `Hai Kak ${name}!`, 
+    orderTitle: `▮Menu ▸`,
+    thumbnail: await (await fetch(fla + 'Menu')).buffer(), //Gambarnye
+    sellerJid: '0@s.whatsapp.net' 
+    }
+    }
+    }
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
@@ -9,7 +26,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let igs = JSON.stringify(res)
     let json = JSON.parse(igs)
     
-    const fkontak = {
+    /*const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
 		"remoteJid": "status@broadcast",
@@ -22,8 +39,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 		}
 	},
 	"participant": "0@s.whatsapp.net"
-} 
-    m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
+} */
+    m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', ftroli,  m ))
     //await m.reply(global.wait, fkontak, m)
     
     for (let { downloadUrl, type } of json)
