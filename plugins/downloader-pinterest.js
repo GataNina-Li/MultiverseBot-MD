@@ -7,9 +7,9 @@ let handler = async (m, { usedPrefix, command, conn, args }) => {
 	 	  if (!args[0]) throw `Gunakan format: ${usedPrefix}${command} naruto`
 xfar.Pinterest(args[0]).then(async data => {
 let pincpt = `🔗Link media : ${data.url}`
-//conn.sendFile(m.chat,data.url, 'pin.jpg', pincpt,m)})
+conn.sendFile(m.chat,data.url, 'pin.jpg', pincpt,m)})
 	
-let message = await prepareWAMessageMedia({ image: fs.readFileSync('pin.jpg')}, { upload: conn.waUploadToServer })
+let message = await prepareWAMessageMedia({ image: fs.readFileSync(data.url)}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
