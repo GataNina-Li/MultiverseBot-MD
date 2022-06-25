@@ -1,6 +1,6 @@
+let fetch = require('node-fetch')
+let fs = require('fs')
 const { igstory } = require('../lib/scrape')
-
-
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
   if (!args[0]) throw `Pengunaan:\n${usedPrefix + command} <url>\n\nContoh:\n\n${usedPrefix + command} stikerinbot`
