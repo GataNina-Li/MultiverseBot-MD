@@ -12,10 +12,8 @@ let handler = async (m, { usedPrefix, command, conn, args }) => {
 	 //m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
 > const buttons = [
   {buttonId: 'MENU', buttonText: {displayText: '.menu'}, type: 1},
-   {buttonId: 'MENU2', buttonText: {displayText: '.menu'}, type: 1},
-    {buttonId: 'MENU3', buttonText: {displayText: '.menu'}, type: 1},
-     {buttonId: 'MENU4', buttonText: {displayText: '.menu'}, type: 1},
 ]
+
 xfar.Pinterest(args[0]).then(async data => {
 let pincpt = `🔗Link media : ${data.url}`
 const buttonMessage = {
