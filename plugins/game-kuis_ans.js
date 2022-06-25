@@ -22,7 +22,7 @@ handler.before = async function (m, { text }) {
     } else this.reply(m.chat, `*Jawaban Salah!*\nMasih ada ${global.kuis[id][2]} kesempatan`, m)
   }
  }
-}
+} 
 
 module.exports = handler*/
 
