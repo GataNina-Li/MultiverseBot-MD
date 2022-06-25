@@ -30,4 +30,4 @@ handler.command = /^(creadores|creators|creditos|credito)$/i
 
 module.exports = handler 
 
-// MultiverseBot-MD
+// MultiverseBot-MD 
