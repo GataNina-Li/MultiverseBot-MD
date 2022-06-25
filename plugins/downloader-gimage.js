@@ -18,7 +18,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }   
   
-  if (!text) return m.reply('Cari apa?', fkontak)
+  if (!text) return m.reply('Cari apa?', fkontak, m)
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('Not Found')
