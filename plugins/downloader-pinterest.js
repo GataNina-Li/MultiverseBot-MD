@@ -9,7 +9,7 @@ xfar.Pinterest(args[0]).then(async data => {
 let pincpt = `🔗Link media : ${data.url}`
 //conn.sendFile(m.chat,data.url, 'pin.jpg', pincpt,m)})
 	
-let message = await prepareWAMessageMedia({ image: fs.readFileSync(Pinterest)}, { upload: conn.waUploadToServer })
+let message = await prepareWAMessageMedia({ image: fs.readFileSync(data)}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
