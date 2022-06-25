@@ -7,8 +7,8 @@ res = await mediafireDl(mdjon)
 result = `*╭𝄗𝄗✦ MEDIAFIRE ✦𝄗𝄗⬣*
  ⎸ *_📡 Información encontrada_*
  ⎸一一一一一一一一
- ⎸ *_❊ *Nombre_* ┊ ${res[0].nama}
- ⎸ *_❊ *Peso_* ┊ ${res[0].size}
+ ⎸ *_❊ Nombre_* ┊ ${res[0].nama}
+ ⎸ *_❊ Peso_* ┊ ${res[0].size}
  ⎸ *_❊ Enlace_* ┊ ${res[0].link}
  *╰𝄗𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗𝄗⬣*`
 
@@ -26,7 +26,7 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 } 
-   m.reply(conn.sendBut(m.chat, result, `ᴍᴇᴅɪᴀꜰɪʀᴇ | ${wm}`, ``, ``, fkontak,  m ))
+   m.reply(conn.sendBut(m.chat, result, `ᴍᴇᴅɪᴀꜰɪʀᴇ | ${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
     m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
 //m.reply(result)
 //await sleep(100)
