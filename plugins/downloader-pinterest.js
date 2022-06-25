@@ -1,5 +1,5 @@
 let xfar = require('xfarr-api')
-let handler = async (m, { usedPrefix, command, conn, args }) => {
+let handler = async (m, { usedPrefix, command, conn, args, text }) => {
 	 	  if (!args[0]) throw `Gunakan format: ${usedPrefix}${command} naruto`
 xfar.Pinterest(args[0]).then(async data => {
 	
@@ -20,7 +20,7 @@ xfar.Pinterest(args[0]).then(async data => {
 	
 let pincpt = `🔗Link media : ${data.url}`
 await conn.sendFile(m.chat, data.url, 'pin.jpg', wm, fkontak, m)
-await conn.send3But(m.chat, wm, `ᴇɴʟᴀᴄᴇ\n${data.url}`, 'Menu', `${usedPrefix}menu`, 'Menu', `${usedPrefix}menu`, 'Menu', `${usedPrefix}menu`, fkontak, m)})
+await conn.send2But(m.chat, wm, `ᴇɴʟᴀᴄᴇ\n${data.url}`, '𝗕𝗨𝗦𝗖𝗔𝗥 𝗘𝗡 𝗚𝗢𝗢𝗚𝗟𝗘', `${usedPrefix}image ${text}`, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', fkontak, m)})
  
 	
 	}
