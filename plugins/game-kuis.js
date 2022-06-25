@@ -113,7 +113,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
     await conn.reply(m.chat,`「 PRUEBA 」\n\nPregunta :\n${pickRandom(global.kuis)}\n\nTiempo : 30.00 Segundo\nBonus : 5000 XP`, m),
     kuis, 4,
     setTimeout(() => {
-      if (global.kuis[id]) conn.sendBut(m.chat, `el tiempo se ha acabado!\n\nInténtalo de nuevo la próxima vez`, wm, 'Prueba', '.Prueba', m)
+      if (global.kuis[id]) conn.sendBut(m.chat, `el tiempo se ha acabado!\n\nInténtalo de nuevo la próxima vez`, wm, 'Prueba', '.kuis', m)
       delete global.kuis[id]
     }, 30000)
   ]
