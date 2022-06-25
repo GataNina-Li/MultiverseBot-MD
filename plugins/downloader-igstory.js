@@ -22,7 +22,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     surface : 1,
     message: `Hai Kak`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch(fla + 'Menu')).buffer(), //Gambarnye
+    thumbnail: './src/welcome.jpg', //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
