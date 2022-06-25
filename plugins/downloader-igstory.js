@@ -16,8 +16,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 		"es": "Halo"
 	},
 	"message":  { 
+		"message": `Hai Kak`, 
 		"contactMessage": {
-			"message": `Hai Kak`, 
 			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 		}
 	},
