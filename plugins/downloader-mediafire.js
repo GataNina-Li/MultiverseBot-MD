@@ -34,6 +34,6 @@ const fkontak = {
 }
 handler.help = ['mediafire'].map(v => v + ' *enlace*')
 handler.command = /^(mediafire)/i
-module.exports = handler
+module.exports = handler 
 
 
