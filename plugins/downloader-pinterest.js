@@ -10,7 +10,7 @@ let handler = async (m, { usedPrefix, command, conn, args }) => {
 //conn.sendFile(m.chat,data.url, 'pin.jpg', pincpt,m)})
 //conn.sendButtonImg(m.chat, gggd, mcng, wm2, 'Inventory', '.inv', m)
 	 //m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
- const buttons = [
+> const buttons = [
   {buttonId: 'MENU', buttonText: {displayText: '.menu'}, type: 1},
    {buttonId: 'MENU2', buttonText: {displayText: '.menu'}, type: 1},
     {buttonId: 'MENU3', buttonText: {displayText: '.menu'}, type: 1},
@@ -27,7 +27,7 @@ const buttonMessage = {
 
 const sendMsg = await conn.sendMessage(m.chat, buttonMessage)
 	})
-}}
+}
 	
 	
 /*let message = await prepareWAMessageMedia({ image: fs.readFileSync(data)}, { upload: conn.waUploadToServer })
