@@ -24,7 +24,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 	"participant": "0@s.whatsapp.net"
 } 
     
-    await m.reply(global.wait, fkontak)
+    await m.reply(global.wait, fkontak, m)
     
     for (let { downloadUrl, type } of json)
       conn.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), '*Nih*', m)
