@@ -9,7 +9,7 @@ let esce = `*DESARROLLADORES*
 ⍟ https://github.com/GataNina-Li
 ⍟ https://github.com/Abiguelreyes75
 ⍟ https://github.com/Sofianayeli
-⍟ https://github.com/ADOLFO-BOT5
+⍟ https://github.com/Adolfo-crazy
 
 *ASISTENCIA*
 ⍟ https://www.instagram.com/gata_dios
