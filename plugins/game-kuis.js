@@ -108,12 +108,12 @@ global.kuis = global.kuis ? global.kuis : {}
 let handler  = async (m, { conn, usedPrefix }) => {
 
   let id = m.chat
-  if (id in global.kuis) return conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', global.kuis[id][0])
+  if (id in global.kuis) return conn.reply(m.chat, 'Todavía hay preguntas sin respuesta en este chat.', global.kuis[id][0])
   global.kuis[id] = [
-    await conn.reply(m.chat,`「 PRUEBA 」\n\nPertanyaan :\n${pickRandom(global.kuis)}\n\nWaktu : 30.00 Detik\nBonus : 5000 XP`, m),
+    await conn.reply(m.chat,`「 PRUEBA 」\n\nPregunta :\n${pickRandom(global.kuis)}\n\nTiempo : 30.00 Segundo\nBonus : 5000 XP`, m),
     kuis, 4,
     setTimeout(() => {
-      if (global.kuis[id]) conn.sendBut(m.chat, `Waktu habis!\n\nCoba Lagi Lain Waktu`, wm, 'Kuis', '.kuis', m)
+      if (global.kuis[id]) conn.sendBut(m.chat, `el tiempo se ha acabado!\n\nInténtalo de nuevo la próxima vez`, wm, 'Kuis', '.kuis', m)
       delete global.kuis[id]
     }, 30000)
   ]
