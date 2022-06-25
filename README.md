@@ -4,9 +4,6 @@
 <img src="https://i.ibb.co/GMgbjCt/IMG-20220622-WA0001.jpg" width="700" height="300"/>
 </p>
 
-<img src="https://c.tenor.com/NAqend_mfQgAAAAC/github.gif" width="700" height="300"/>
-</p>
-
 >
 >
 >
