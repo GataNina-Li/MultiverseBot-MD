@@ -37,7 +37,7 @@ m.reply(`${res[0].link}`)
       conn.sendFile(m.chat, res[0].link, res[0].nama, null, m, false, {asDocument:true, mimetype:res[0].mime})
 }
 handler.help = ['mediafire'].map(v => v + ' *enlace*')
-handler.command = ['mediafire', 'enlacemediafire']
+handler.command = ['mediafire']
 module.exports = handler
 
 
