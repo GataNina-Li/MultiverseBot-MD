@@ -1,4 +1,4 @@
-const { igstory } = require('../lib/scrape')
+const { igstory } = require('../lib/scrape') 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
   if (!args[0]) throw `${mg}*Ingrese el nombre de usuario para descargas las Historias del Instagram*\n\n*EJEMPLO*\n*${usedPrefix + command}* netflixlat`
