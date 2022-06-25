@@ -22,7 +22,7 @@ let pincpt = `🔗Link media : ${data.url}`
 await conn.sendFile(m.chat, data.url, 'pin.jpg', `🌟 *Resultado de:* _${text}_\n${wm}`, fkontak, m)
  await conn.send3But(m.chat, wm, `ᴇɴʟᴀᴄᴇ | ᴘɪɴᴛᴇʀᴇꜱᴛ \n${data.url}`, '𝗦𝗜𝗚𝗨𝗜𝗘𝗡𝗧𝗘  🌀', `${usedPrefix}pinterest ${text}`, '📡 𝗕𝗨𝗦𝗖𝗔𝗥 𝗘𝗡 𝗚𝗢𝗢𝗚𝗟𝗘', `${usedPrefix}image ${text}`, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', `.menu`, fkontak, m)})
  }
-handler.help = ['pinterest <keyword>']
+handler.help = ['pinterest *texto*']
 handler.tags = ['internet', 'downloader']
 handler.command = /^(pinterest)$/i
 
