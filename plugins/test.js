@@ -12,6 +12,7 @@ let handler = async (m, { conn, text } ) => {
   let imgmenu = 'https://i.imgur.com/PlyUHYP.jpeg'
   let miniurl = 'https://i.imgur.com/PlyUHYP.jpeg'
   let text = '*Test button*'
+  let www = 'https://chat.whatsapp.com/JdCIiS4NNmC4XyxWM70Ori'
   
   conn.sendButton(m.chat, text, 'BY 4LB3RTO', imgmenu, [['Cʀᴇᴀᴅᴏʀ🐢', '.menu'], ['Iɴғᴏ📌', '.infobot']], false, { quoted: m, contextInfo: { externalAdReply: {
   showAdAttribution: true,
@@ -20,7 +21,7 @@ let handler = async (m, { conn, text } ) => {
   title: '🐱⸽⃕NʏᴀɴCᴀᴛBᴏᴛ - MD🍁⃨፝⃕✰',
   body: '4LB3RTO',
   thumbnail: miniurl,
-  sourceUrl: 'https://chat.whatsapp.com/JdCIiS4NNmC4XyxWM70Ori'
+  sourceUrl: www
   }}})
 }
    
