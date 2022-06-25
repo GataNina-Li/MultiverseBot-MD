@@ -22,10 +22,10 @@ const fkontak = {
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('Not Found')
-  conn.send2ButtonImg(m.chat, url, `
+  conn.sendButtonImg(m.chat, url, `
 *── 「 GOOGLE IMAGE 」 ──*
 
-${text}`.trim(), `ɢᴏᴏɢʟᴇ ɪᴍᴀɢᴇɴ\nᴀɴᴄʜᴏ ⇢ ${width} | ᴀʟᴛᴜʀᴀ ⇢ ${height}\n${wm}`, '𝗦𝗜𝗚𝗨𝗜𝗘𝗡𝗧𝗘  🌀', `.gimage ${text}`, '📡 𝗕𝗨𝗦𝗖𝗔𝗥 𝗘𝗡 𝗚𝗢𝗢𝗚𝗟𝗘', `${usedPrefix}image ${text}`, fkontak, m)
+${text}`.trim(), `ɢᴏᴏɢʟᴇ ɪᴍᴀɢᴇɴ\nᴀɴᴄʜᴏ ⇢ ${width} | ᴀʟᴛᴜʀᴀ ⇢ ${height}\n${wm}`, '𝗦𝗜𝗚𝗨𝗜𝗘𝗡𝗧𝗘  🌀', `.gimage ${text}`, fkontak, m)
 }
 handler.help = ['image <query>', 'gimage <query>', 'googleimage <query>']
 handler.tags = ['internet']
