@@ -1,7 +1,7 @@
 const { igstory } = require('../lib/scrape')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
-  if (!args[0]) throw `*Ingrese el nombre de usuario para descargas las Historias del Instagram*\n\n*EJEMPLO*\n*${usedPrefix + command}* netflixlat`
+  if (!args[0]) throw `${mg}*Ingrese el nombre de usuario para descargas las Historias del Instagram*\n\n*EJEMPLO*\n*${usedPrefix + command}* netflixlat`
   if (args[0].startsWith('http') || args[0].startsWith('@')) throw `username salah`
 
   igstory(args[0]).then(async res => {
@@ -26,7 +26,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     //await m.reply(global.wait, fkontak, m)
     
     for (let { downloadUrl, type } of json)
-      conn.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), `*AQUÍ TIENE LAS HISTORIAS!!*\n*${wm}*`, m)
+      conn.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), `🌟 *AQUÍ TIENE LAS HISTORIAS!!*\n*${wm}*`, m)
 
   })
 
