@@ -29,7 +29,7 @@ const fkontak = {
    m.reply(conn.sendBut(m.chat, result, `ᴍᴇᴅɪᴀꜰɪʀᴇ | ${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.enlacemediafire', fkontak,  m ))
 	
 if (command == 'enlacemediafire') {
-conn.reply(m.chat, `${res[0].link}`, m)	
+return conn.reply(m.chat, `${res[0].link}`, m)	
 }
     m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
 //m.reply(result)
