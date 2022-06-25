@@ -40,7 +40,7 @@ ${eg}
 ┃ ${filesizeH}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 🚀 𝙏𝙄𝙋𝙊 | 𝙏𝙔𝙋𝙀
-┃ ${ext}`.trim()
+┃ ${ext}`
 conn.reply(m.chat, caption, m ) //{
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
