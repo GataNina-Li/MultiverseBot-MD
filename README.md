@@ -33,7 +33,10 @@
 ```bash
 > https://github.com/mcollina/heroku-buildpack-imagemagick
 ```
-----
+------------------
+- [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/kPtMtP3.jpeg"></details>
+------------------
+
 # TERMUX
 ### INSTALAR DE UNO POR UNO PARA EVITAR UN ERROR
 ```bash
