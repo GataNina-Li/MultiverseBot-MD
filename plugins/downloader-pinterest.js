@@ -19,8 +19,8 @@ xfar.Pinterest(args[0]).then(async data => {
 } 
 	
 let pincpt = `🔗Link media : ${data.url}`
-conn.sendFile(m.chat, data.url, 'pin.jpg', '', fkontak, m)
-conn.sendBut(m.chat, wm, `${data.url}`, 'Menu', `${usedPrefix}menu`, m)})
+await conn.sendFile(m.chat, data.url, 'pin.jpg', wm, fkontak, m)
+await conn.send3But(m.chat, wm, `ᴇɴʟᴀᴄᴇ\n${data.url}`, 'Menu', `${usedPrefix}menu`, 'Menu', `${usedPrefix}menu`, 'Menu', `${usedPrefix}menu`, m)})
  
 	
 	}
