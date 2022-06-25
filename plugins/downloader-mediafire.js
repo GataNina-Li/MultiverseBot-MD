@@ -23,8 +23,9 @@ module.exports = handler*/
 
 const fs = require('fs')
 //import { mediafiredl } from '@bochilteam/scraper'
-const { mediafiredl } = require('@bochilteam/scraper')
+
 let handler = async (m, { conn, args, usedPrefix, command }) => {
+  let { mediafiredl } = require('@bochilteam/scraper')
 if (!args[0]) throw `${mg}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙈𝙀𝘿𝙄𝘼𝙁𝙄𝙍𝙀.\n\n𝙀𝙉𝙏𝙀𝙍 𝘼 𝙑𝘼𝙇𝙄𝘿 𝙈𝙀𝘿𝙄𝘼𝙁𝙄𝙍𝙀 𝙇𝙄𝙉𝙆.`
 try {
 let res = await mediafiredl(args[0])
