@@ -26,14 +26,18 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 } 
-   m.reply(conn.sendBut(m.chat, result, `ᴍᴇᴅɪᴀꜰɪʀᴇ | ${wm}`, fkontak,  m ))
+   m.reply(conn.sendBut(m.chat, result, `ᴍᴇᴅɪᴀꜰɪʀᴇ | ${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.enlacemediafire', fkontak,  m ))
+	
+if (/^enlacemediafire?$/i.test(command)) {
+m.reply(`${res[0].link}`)	
+}
     m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
 //m.reply(result)
 //await sleep(100)
       conn.sendFile(m.chat, res[0].link, res[0].nama, null, m, false, {asDocument:true, mimetype:res[0].mime})
 }
 handler.help = ['mediafire'].map(v => v + ' *enlace*')
-handler.command = ['mediafire']
+handler.command = ['mediafire', 'enlacemediafire']
 module.exports = handler
 
 
