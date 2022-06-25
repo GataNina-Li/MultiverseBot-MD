@@ -20,13 +20,48 @@ xfar.Pinterest(args[0]).then(async data => {
 } 
 	
 let pincpt = `🔗Link media : ${data.url}`
-conn.sendFile(m.chat,data.url, 'pin.jpg', pincpt, fkontak, m)})
+conn.sendFile(m.chat,data.url, 'pin.jpg', fkontak, m))
 	
-//conn.sendButtonImg(m.chat, Pinterest, pincpt, wm2, 'Thanks', 'thanks', m)
-//conn.sendButtonImg(m.chat, gggd, mcng, wm2, 'Inventory', '.inv', m)
-	 //m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
+let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/github.jpg')}, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           imageMessage: message.imageMessage,
+           hydratedContentText: pincpt,
+           hydratedFooterText: `${wm}`, 
+           hydratedButtons: [{
+             urlButton: {
+               displayText: '𝗚𝗜𝗧𝗛𝗨𝗕',
+               url: "https://github.com/GataNina-Li/MultiverseBot-MD"
+              }   
+            },
+              {
+              urlButton: {
+               displayText: '𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠',
+               url: instagram	           
+             }
+           },
+             {
+             quickReplyButton: {
+		     displayText: '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡',
+               id: '.menu',
+             }
+	   },
+             {
+             quickReplyButton: {
+               displayText: '𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 💫',
+               id: '.? all',
+             }
+          }]
+        }
+      }
+    }), { userJid: m.sender, quoted: m });
+    //conn.reply(m.chat, text.trim(), m)
+   await conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  
 
-}
+    conn.sendFile(m.chat, url, filename, null, m)
+
+}}
 			        
 
 handler.help = ['pinterest <keyword>']
