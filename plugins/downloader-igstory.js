@@ -13,10 +13,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     "participants":"0@s.whatsapp.net",
 		"remoteJid": "status@broadcast",
 		"fromMe": false,
-		"id": "Halo"
+		"es": "Halo"
 	},
-	"message": {
+	"message":  { 
 		"contactMessage": {
+			"message": `Hai Kak`, 
 			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 		}
 	},
