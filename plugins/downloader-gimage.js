@@ -18,15 +18,15 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }   
   
-  if (!text) return m.reply('Cari apa?', fkontak, m)
+  if (!text) return m.reply(`${mg}*Escriba el nombre para buscar la Imagen!!*\n\n*EJEMPLO*\n*${usedPrefix + command}* Animales`)
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('Not Found')
   conn.send3ButtonImg(m.chat, url, `
-*Resultado de:* _${text}_`.trim(), `ɢᴏᴏɢʟᴇ ɪᴍᴀɢᴇɴ\nᴀɴᴄʜᴏ ⇢ ${width} | ᴀʟᴛᴜʀᴀ ⇢ ${height}\n${wm}`, '𝗦𝗜𝗚𝗨𝗜𝗘𝗡𝗧𝗘  🌀', `.gimage ${text}`, '🎁 𝗕𝗨𝗦𝗖𝗔𝗥 𝗘𝗡 𝗣𝗜𝗡𝗧𝗘𝗥𝗘𝗦𝗧', `${usedPrefix}pinterest ${text}`, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', `.menu`, m)
+🪄 *Resultado de:* _${text}_`.trim(), `ɢᴏᴏɢʟᴇ ɪᴍᴀɢᴇɴ\nᴀɴᴄʜᴏ ⇢ ${width} | ᴀʟᴛᴜʀᴀ ⇢ ${height}\n${wm}`, '𝗦𝗜𝗚𝗨𝗜𝗘𝗡𝗧𝗘  🌀', `.gimage ${text}`, '🎁 𝗕𝗨𝗦𝗖𝗔𝗥 𝗘𝗡 𝗣𝗜𝗡𝗧𝗘𝗥𝗘𝗦𝗧', `${usedPrefix}pinterest ${text}`, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', `.menu`, m)
 }
-handler.help = ['image <query>', 'gimage <query>', 'googleimage <query>']
-handler.tags = ['internet']
+handler.help = ['image | gimage *texto*']
+handler.tags = ['internet', 'downloader']
 handler.command = /^(gimage|googleimage|image|images)$/i
 
 module.exports = handler
