@@ -33,7 +33,7 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
             let legendary = (_legendary * 1)
             let gambar1 = 'https://telegra.ph/file/da6679baefb4642c4ab8c.jpg'
             let str = `
-Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRandom(['Jepang', 'Korea', 'Bali', 'Amerika', 'Iraq', 'Arab', 'Pakistan', 'German', 'Finlandia', 'Ke bawa dunia mimpi', 'Ujung dunia', 'Mars', 'Bulan', 'Pluto', 'Matahari', 'Hatinya dia', '...'])} dan mendapatkan
+Tu vida se reduce -${healt * 1} porque te has aventurado a ${pickRandom(['Jepang', 'Korea', 'Bali', 'Amerika', 'Iraq', 'Arab', 'Pakistan', 'German', 'Finlandia', 'Ke bawa dunia mimpi', 'Ujung dunia', 'Mars', 'Bulan', 'Pluto', 'Matahari', 'Hatinya dia', '...'])} y obten
 *exp:* ${exp} 
 *uang:* ${uang}
 *sampah:* ${sampah}${potion == 0 ? '' : '\n*Potion:* ' + potion + ''}${diamond == 0 ? '' : '\n*diamond:* ' + diamond + ''}${common == 0 ? '' : '\n*common crate:* ' + common + ''}${uncommon == 0 ? '' : '\n*uncommon crate:* ' + uncommon + ''}
@@ -41,11 +41,11 @@ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRan
             conn.sendButtonImg(m.chat, gambar1, str, wm3, 'Inventory', '.inv', m)
             if (mythic > 0) {
                    global.db.data.users[m.sender].mythic += mythic * 1
-                   conn.reply(m.chat, '*Selamat anda mendapatkan item Rare yaitu*\n' + mythic + ' Mythic Crate', m)
+                   conn.reply(m.chat, '*Felicidades, tienes un artículo raro, a saber*\n' + mythic + ' Mythic Crate', m)
             }
             if (legendary > 0) {
                 global.db.data.users[m.sender].legendary += legendary * 1
-                conn.reply(m.chat, '*Selamat anda mendapatkan item Epic yaitu*\n' + legendary + ' Legendary Crate', m)
+                conn.reply(m.chat, '*Felicidades, tienes el artículo épico que es*\n' + legendary + ' Legendary Crate', m)
             }
             global.db.data.users[m.sender].healt -= healt * 1
             global.db.data.users[m.sender].exp += exp * 1
@@ -57,7 +57,7 @@ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRan
             global.db.data.users[m.sender].sampah += sampah * 1
             global.db.data.users[m.sender].lastadventure = new Date * 1
             } else conn.reply(m.chat, `Anda sudah berpetualang dan kelelahan, silahkan coba *${timers}* lagi`, m)
-        } else conn.reply(m.chat, 'Minimal 80 health untuk bisa berpetualang, beli nyawa dulu dengan ketik *' + usedPrefix + 'shop buy potion <jumlah>*\ndan ketik *' + usedPrefix + 'use potion <jumlah>*\n\n_Untuk mendapat money dan potion gratis ketik_ *' + usedPrefix + 'collect*', m)
+        } else conn.reply(m.chat, 'Mínimo 80 de salud para poder emprender una aventura, compra una vida primero escribiendo *' + usedPrefix + 'tienda comprar poción <jumlah>*\ndan ketik *' + usedPrefix + 'usar poción <jumlah>*\n\n_Para obtener dinero gratis y tipo de pociones_ *' + usedPrefix + 'recoger*', m)
     } catch (e) {
         console.log(e)
         conn.reply(m.chat, 'Error', m)
