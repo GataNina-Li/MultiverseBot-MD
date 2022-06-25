@@ -1,3 +1,6 @@
+const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
+let fs = require('fs')
+let fetch = require('node-fetch') 
 let xfar = require('xfarr-api')
 
 let handler = async (m, { usedPrefix, command, conn, args }) => {
