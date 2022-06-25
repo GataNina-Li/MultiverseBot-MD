@@ -4,7 +4,7 @@ if (!text) return m.reply(`Kirim perintah ${usedPrefix + command} *link mediafir
 if (!args[0].includes('mediafire.com')) return m.reply(error.linkmf)
 let mdjon = args.join(' ')
 res = await mediafireDl(mdjon)
-let result = 
+result = 
 `*╭𝄗𝄗✦ MEDIAFIRE ✦𝄗𝄗⬣*
  ⎸ *_📡 Información encontrada_*
  ⎸一一一一一一一一
