@@ -27,7 +27,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     //await m.reply(global.wait, fkontak, m)
     
     for (let { downloadUrl, type } of json)
-      conn.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), '*Nih*', m)
+      await conn.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), '*Nih*', m)
 
   })
 
