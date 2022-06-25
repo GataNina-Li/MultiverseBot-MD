@@ -20,7 +20,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `Hai Kak ${name}!`, 
+    message: `Hai Kak`, 
     orderTitle: `▮Menu ▸`,
     thumbnail: await (await fetch(fla + 'Menu')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
