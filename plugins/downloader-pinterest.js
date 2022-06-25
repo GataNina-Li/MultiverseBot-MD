@@ -1,8 +1,4 @@
-const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
-let fs = require('fs')
-let fetch = require('node-fetch') 
 let xfar = require('xfarr-api')
-
 let handler = async (m, { usedPrefix, command, conn, args }) => {
 	 	  if (!args[0]) throw `Gunakan format: ${usedPrefix}${command} naruto`
 xfar.Pinterest(args[0]).then(async data => {
@@ -22,10 +18,10 @@ xfar.Pinterest(args[0]).then(async data => {
 	"participant": "0@s.whatsapp.net"
 } 
 	
-let pincpt = `🔗Link media : ${data.url}`
-conn.sendFile(m.chat,data.url, 'pin.jpg', '', fkontak, m))
-	
-let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/github.jpg')}, { upload: conn.waUploadToServer })
+//let pincpt = `🔗Link media : ${data.url}`
+conn.sendFile(m.chat, data.url, 'pin.jpg', '', fkontak, m)})
+let pincpt = `🔗Link media : ${data.url}`	
+	let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/github.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
@@ -60,9 +56,10 @@ let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/github
       }
     }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
-   conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  
+   await conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  
+	
+	}
 
-}}
 			        
 
 handler.help = ['pinterest <keyword>']
