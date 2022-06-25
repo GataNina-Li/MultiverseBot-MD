@@ -1,51 +1,47 @@
-let handler = async (m, { conn, args, usedPrefix }) => {
-  conn.math = conn.math ? conn.math : {}
-  if (args.length < 1) throw `
-Mode: ${Object.keys(modes).join(' | ')}
-
-Ejemplos de uso: ${usedPrefix}math medium
-`.trim()
+lobal.math = global.math ? global.math : {}
+let handler  = async (m, { conn, args, usedPrefix }) => {
+  if (args.length < 1) return conn.reply(m.chat, `
+*Modo:* ${Object.keys(modes).join(' | ')}
+*Ejemplo de uso:* ${usedPrefix}math medium
+`.trim(), m)
   let mode = args[0].toLowerCase()
-  if (!(mode in modes)) throw `
-Mode: ${Object.keys(modes).join(' | ')}
-
-Ejemplos de uso: ${usedPrefix}math medium
-`.trim()
+  if (!(mode in modes)) return conn.reply(m.chat, `
+*Mode:* ${Object.keys(modes).join(' | ')}
+*Ejemplos de uso:* ${usedPrefix}math medium
+`.trim(), m)
   let id = m.chat
-  if (id in conn.math) return conn.reply(m.chat, 'Todavía hay preguntas sin respuesta en este chat.!', conn.math[id][0])
+  if (id in global.math) return conn.reply(m.chat, 'Todavía hay preguntas sin respuesta en este chat.', global.math[id][0])
   let math = genMath(mode)
-  conn.math[id] = [
-    await conn.reply(m.chat, `¿Cuál es el resultado de *${math.str}*?\n\nTimeout: ${(math.time / 1000).toFixed(2)} segundo\nBono de respuesta correcta: ${math.bonus} XP`, m),
+  global.math[id] = [
+    await conn.reply(m.chat, `❔ Cuánto es el resultado de *${math.str}*?\n\n⏳ *Tiempo:* ${(math.time / 1000).toFixed(2)} segundos\n💎 *Bono de respuesta correcta:* ${math.bonus} XP`, m),
     math, 4,
     setTimeout(() => {
-      if (conn.math[id]) conn.reply(m.chat, `el tiempo se ha acabado!\nLa respuesta es ${math.result}`, conn.math[id][0])
-      delete conn.math[id]
+      if (global.math[id]) conn.reply(m.chat, `Se acabó el tiempo!\nLa respuesta es ${math.result}`, global.math[id][0]) 
+      delete global.math[id]
     }, math.time)
   ]
 }
 handler.help = ['math <mode>']
 handler.tags = ['game']
-handler.command = /^math/i
+handler.registrar = true
+handler.command = /^math|mates|matemáticas/i
 
 module.exports = handler
 
 let modes = {
-  bot: [-1, -1, -1, -1, '+-',10000, 5],
   noob: [-3, 3,-3, 3, '+-', 15000, 10],
   easy: [-10, 10, -10, 10, '*/+-', 20000, 40],
   medium: [-40, 40, -20, 20, '*/+-', 40000, 150],
   hard: [-100, 100, -70, 70, '*/+-', 60000, 350],
   extreme: [-999999, 999999, -999999, 999999, '*/', 99999, 9999],
   impossible: [-99999999999, 99999999999, -99999999999, 999999999999, '*/', 30000, 35000],
-  impossible2: [-999999999999999, 999999999999999, -999, 999, '/', 30000, 50000],
-  impossible3: [-99999999999999999, 9999999999999999, -9999, 9999, '-/', 30000, 50000, 500000]
+  impossible2: [-999999999999999, 999999999999999, -999, 999, '/', 30000, 5000]
 } 
 
 let operators = {
   '+': '+',
   '-': '-',
-  '*': '*',
-  '-': '/',
+  '*': '×',
   '/': '÷'
 }
 
