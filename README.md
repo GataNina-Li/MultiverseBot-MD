@@ -57,11 +57,11 @@ $ node .
 ----
 ## 💻 PARA USUARIOS DE WINDOWS/VPS/RDP (Opcional)
 
-* Descargar e instala Git [`Klik Disini`](https://git-scm.com/downloads)
-* Descargar e instala NodeJS [`Klik Disini`](https://nodejs.org/en/download)
-* Descargar e instala FFmpeg [`Klik Disini`](https://ffmpeg.org/download.html) (**No olvide agregar FFmpeg a la variable de entorno PATH**)
-* Descargar e instala ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
-* Descargar e instala Yarn [`Klik Disini`](https://classic.yarnpkg.com/en/docs/install#windows-stable)
+* Descargar e instala Git [`Aquí`](https://git-scm.com/downloads)
+* Descargar e instala NodeJS [`Aquí`](https://nodejs.org/en/download)
+* Descargar e instala FFmpeg [`Aquí`](https://ffmpeg.org/download.html) (**No olvide agregar FFmpeg a la variable de entorno PATH**)
+* Descargar e instala ImageMagick [`Aquí`](https://imagemagick.org/script/download.php)
+* Descargar e instala Yarn [`Aquí`](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 
 ```bash
 git clone https://github.com/GataNina-Li/MultiverseBot-MD
