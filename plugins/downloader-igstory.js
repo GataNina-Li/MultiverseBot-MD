@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     "participants":"0@s.whatsapp.net",
 		"remoteJid": "status@broadcast",
 		"fromMe": false,
-		"message": "Halo"
+		"id": "Halo"
 	},
 	"message":  { 
 		"contactMessage": {
