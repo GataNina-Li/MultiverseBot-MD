@@ -1,5 +1,16 @@
 const { igstory } = require('../lib/scrape')
-const ftroli = {
+
+
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+
+  if (!args[0]) throw `Pengunaan:\n${usedPrefix + command} <url>\n\nContoh:\n\n${usedPrefix + command} stikerinbot`
+  if (args[0].startsWith('http') || args[0].startsWith('@')) throw `username salah`
+
+  igstory(args[0]).then(async res => {
+    let igs = JSON.stringify(res)
+    let json = JSON.parse(igs)
+    
+    const ftroli = {
     key : {
     remoteJid: 'status@broadcast',
     participant : '0@s.whatsapp.net'
@@ -16,16 +27,6 @@ const ftroli = {
     }
     }
     }
-
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-
-  if (!args[0]) throw `Pengunaan:\n${usedPrefix + command} <url>\n\nContoh:\n\n${usedPrefix + command} stikerinbot`
-  if (args[0].startsWith('http') || args[0].startsWith('@')) throw `username salah`
-
-  igstory(args[0]).then(async res => {
-    let igs = JSON.stringify(res)
-    let json = JSON.parse(igs)
-    
     /*const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
