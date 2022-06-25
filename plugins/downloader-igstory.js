@@ -10,6 +10,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let igs = JSON.stringify(res)
     let json = JSON.parse(igs)
     
+    let img = './src/welcome.jpg'
     const ftroli = {
     key : {
     remoteJid: 'status@broadcast',
@@ -22,7 +23,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     surface : 1,
     message: `Hai Kak`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: './src/welcome.jpg', //Gambarnye
+    thumbnail: img, //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
