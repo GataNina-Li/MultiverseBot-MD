@@ -5,26 +5,29 @@ let xfar = require('xfarr-api')
 
 let handler = async (m, { usedPrefix, command, conn, args }) => {
 	 	  if (!args[0]) throw `Gunakan format: ${usedPrefix}${command} naruto`
-xfar.Pinterest(args[0]).then(async data => {
-let pincpt = `🔗Link media : ${data.url}`
-conn.sendFile(m.chat,data.url, 'pin.jpg', pincpt,m)})
+//xfar.Pinterest(args[0]).then(async data => {
+//let pincpt = `🔗Link media : ${data.url}`
+//conn.sendFile(m.chat,data.url, 'pin.jpg', pincpt,m)})
 //conn.sendButtonImg(m.chat, gggd, mcng, wm2, 'Inventory', '.inv', m)
 	 //m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
-conn.send4But = async(jid, content, footer,button1, row1, button2, row2, button3, row3, button4, row4, quoted) => {
-    const buttons = [
-    { buttonId: row1, buttonText: { displayText: button1 }, type: 1 },
-        { buttonId: row2, buttonText: { displayText: button2 }, type: 1 },
-        { buttonId: row3, buttonText: { displayText: button3 }, type: 1 },
-        { buttonId: row4, buttonText: { displayText: button4 }, type: 1 }
-    ]
+ const buttons = [
+  {buttonId: 'MENU', buttonText: {displayText: '.menu'}, type: 1},
+   {buttonId: 'MENU2', buttonText: {displayText: '.menu'}, type: 1},
+    {buttonId: 'MENU3', buttonText: {displayText: '.menu'}, type: 1},
+     {buttonId: 'MENU4', buttonText: {displayText: '.menu'}, type: 1},
+]
+xfar.Pinterest(args[0]).then(async data => {
+let pincpt = `🔗Link media : ${data.url}`
 const buttonMessage = {
-  text: content,
-  footer: footer,
-  buttons: buttons,
-  headerType: 1
+    text: pincpt,
+    footer: wm,
+    buttons: buttons,
+    headerType: 1
 }
-return await conn.sendMessage(jid, buttonMessage, {quoted})
-}
+
+const sendMsg = await conn.sendMessage(m.chat, buttonMessage)
+	})
+}}
 	
 	
 /*let message = await prepareWAMessageMedia({ image: fs.readFileSync(data)}, { upload: conn.waUploadToServer })
@@ -64,7 +67,7 @@ return await conn.sendMessage(jid, buttonMessage, {quoted})
     //conn.reply(m.chat, text.trim(), m)
    await conn.relayMessage(m.chat, template.message, { messageId: template.key.id })  */
    
-}
+
 handler.help = ['pinterest <keyword>']
 handler.tags = ['internet', 'downloader']
 handler.command = /^(pinterest)$/i
