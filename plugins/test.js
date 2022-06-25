@@ -11,8 +11,9 @@ let fs = require('fs')
 let handler = async (m, { conn, text } ) => {
   let imgmenu = './src/github.jpg'
   let miniurl = './src/github.jpg'
+  let text = '*Test button*'
   
-  conn.sendButton(m.chat, `*Test button*`, 'BY 4LB3RTO', imgmenu, [['Cʀᴇᴀᴅᴏʀ🐢', '.menu'], ['Iɴғᴏ📌', '.infobot']], false, { quoted: m, contextInfo: { externalAdReply: {
+  conn.sendButton(m.chat, text, 'BY 4LB3RTO', imgmenu, [['Cʀᴇᴀᴅᴏʀ🐢', '.menu'], ['Iɴғᴏ📌', '.infobot']], false, { quoted: m, contextInfo: { externalAdReply: {
   showAdAttribution: true,
   mediaType: 'VIDEO',
   mediaUrl: '',
