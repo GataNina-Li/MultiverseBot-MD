@@ -23,7 +23,7 @@ module.exports = handler*/
 
 const fs = require('fs')
 //import { mediafiredl } from '@bochilteam/scraper'
-const { mediafiredl } = require('@bochilteam/scraper')
+let { mediafiredl } = require('@bochilteam/scraper')
 //import { mediafiredl } from '@bochilteam/scraper'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.mediafire.com/file/941xczxhn27qbby/GBWA_V12.25FF-By.SamMods-.apk/file`
