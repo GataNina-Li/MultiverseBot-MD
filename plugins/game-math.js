@@ -15,7 +15,7 @@ Ejemplos de uso: ${usedPrefix}math medium
   if (id in conn.math) return conn.reply(m.chat, 'Todavía hay preguntas sin respuesta en este chat.!', conn.math[id][0])
   let math = genMath(mode)
   conn.math[id] = [
-    await conn.reply(m.chat, `¿Cuál es el resultado de *${math.str}*?\n\nTimeout: ${(math.time / 1000).toFixed(2)} segundo\nBono de respuesta correcta: ${math.bonus} XP`, m),
+    await conn.reply(m.chat, `¿Cuál es el resultado de *${math.str}*?\n\nTimeout: ${(math.time / 10000).toFixed(2)} segundo\nBono de respuesta correcta: ${math.bonus} XP`, m),
     math, 4,
     setTimeout(() => {
       if (conn.math[id]) conn.reply(m.chat, `el tiempo se ha acabado!\nLa respuesta es ${math.result}`, conn.math[id][0])
