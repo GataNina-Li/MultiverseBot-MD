@@ -17,7 +17,7 @@ global.github = 'https://github.com/GataNina-Li/MultiverseBot-MD'
 
 // ✩｡:*•.─────  DATOS SECUNDARIOS  ─────.•*:｡✩ 
 global.namebot = 'MultiverseBot-MD '
-global.gc = 'https://chat.whatsapp.com'
+global.gc = 'https://github.com/GataNina-Li/MultiverseBot-MD'
 global.web = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
 
