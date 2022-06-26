@@ -10,10 +10,10 @@ let handler = async(m, { conn, text }) => {
 handler.help = ['quoteanime']
 handler.tags = ['anime']
 handler.command = /^(quoteanime)$/i
-handler.owner = true
+handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.group = true
+handler.group = false
 handler.private = false
 
 handler.admin = true
