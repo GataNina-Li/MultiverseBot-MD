@@ -8,7 +8,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
-  if (!vid) throw 'Konten Tidak ditemukan'
+  if (!vid) throw '*No se ha encontrado, vuelva a intentar*'
   let isVideo = /2$/.test(command)
   let yt = false
   let yt2 = false
@@ -21,11 +21,11 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
       usedServer = server
       break
     } catch (e) {
-      m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\nmencoba server lain...'}`)
+      m.reply(`${fg}Servidor ${server} con error!${servers.length >= i + 1 ? '' : '\nintente mas tarde...'}`)
     }
   }
-  if (yt === false) throw 'semua server gagal'
-  if (yt2 === false) throw 'semua server gagal'
+  if (yt === false) throw `${fg}Servidores Fallaron`
+  if (yt2 === false) throw `${fg}Servidores Fallaron`
   let { dl_link, thumb, title, filesize, filesizeF } = yt
 let anu =  `
 *Judul:* ${title}
