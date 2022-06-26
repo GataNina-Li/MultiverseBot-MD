@@ -1,5 +1,3 @@
-ines (11 sloc)  490 Bytes
-
 import { sticker } from '../lib/sticker.js'
 let handler = async (m, { conn, text }) => {
 let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
