@@ -12,5 +12,5 @@ let handler = async (m, { conn, args }) => {
     }}
 handler.help = ['facebbok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-handler.command = /^((facebook|fb)(downloder|dl)?)$/isVideo
+handler.command = /^((facebook|fb)(downloder|dl)?)$/
 export default handler
