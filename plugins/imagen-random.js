@@ -1,8 +1,8 @@
-const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
-let fs = require('fs')
-let fetch = require('node-fetch') 
+let fetch = require('node-fetch')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 let api = 'https://meme-api.herokuapp.com/gimme/sticker'
+let res = await fetch('https://meme-api.herokuapp.com/gimme/sticker')
+let img = await res.buffer()
 
 const fkontak = {
 	"key": {
@@ -20,8 +20,8 @@ const fkontak = {
 } 
 	
 //let pincpt = `🔗Link media : ${data.url}`
-await conn.sendFile(m.chat, api, 'api.jpg', ``, fkontak, m)
- await conn.send2But(m.chat, wm, ``, '𝗦𝗜𝗚𝗨𝗜𝗘𝗡𝗧𝗘  🌀', `${usedPrefix + command}`, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', `.menu`, fkontak, m)})
+conn.sendFile(m.chat, img, 'sticker.jpg', ``, fkontak, m)
+ conn.send2But(m.chat, wm, ``, '𝗦𝗜𝗚𝗨𝗜𝗘𝗡𝗧𝗘  🌀', `${usedPrefix + command}`, '𝗠𝗘𝗡𝗨 𝗣𝗥𝗜𝗡𝗖𝗜𝗣𝗔𝗟 ⚡', `.menu`, fkontak, m)})
  }
 //conn.sendButton(m.chat, gimme, wm, api, [['NEXT', `.random`]], m)
     //conn.sendButtonImg(m.chat, api, text, wm, 'NEXT', '.random', m)
