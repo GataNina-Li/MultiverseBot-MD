@@ -1,4 +1,4 @@
-console.log('Alineando las estrellas!!, pronto comenzará La Aventura') 
+console.log('Alineando las estrellas!! 🌟✨ pronto comenzará La Aventura!! 💫') 
 let cluster = require('cluster')
 let path = require('path')
 let fs = require('fs')
@@ -10,7 +10,7 @@ const rl = Readline.createInterface(process.stdin, process.stdout)
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
 
 CFonts.say('MULTIVERSE\nBOT\nMD', {
-  colors: ['blueBright','yellowBright'],                                        font: 'block',
+  colors: ['#66FFFF','#660099'],                                        font: 'block',
   align: 'center',
 })
 CFonts.say(`UNA NUEVA DIMENSIÓN!!\nhttps://www.instagram.com/gata_dios`, {                                            
