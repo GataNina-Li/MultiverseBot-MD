@@ -10,7 +10,7 @@ const rl = Readline.createInterface(process.stdin, process.stdout)
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
 
 CFonts.say('MULTIVERSE\nBOT\nMD', {
-  colors: ['#66FFFF','#3300FF'],                                        font: 'block',
+  colors: ['#66FFFF','#66FF00'],                                        font: 'block',
   align: 'center',
 })
 CFonts.say(`UNA NUEVA DIMENSIÓN!!\nhttps://www.instagram.com/gata_dios`, {                                            
