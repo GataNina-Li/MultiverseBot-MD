@@ -13,7 +13,7 @@ CFonts.say('MULTIVERSE\nBOT\nMD', {
   colors: ['#66FFFF','#66FF00'],                                        font: 'block',
   align: 'center',
 })
-CFonts.say(`UNA NUEVA DIMENSIÓN!!\nhttps://www.instagram.com/gata_dios`, {                                            
+CFonts.say(`UNA NUEVA DIMENSION!!\nhttps://www.instagram.com/gata_dios`, {                                            
 colors: ['yellow'],                                                           
 font: 'console',                                                              align: 'center',
 })
