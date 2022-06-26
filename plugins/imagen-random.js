@@ -1,4 +1,4 @@
-et handler = async (m, { conn }) => {
+let handler = async (m, { conn }) => {
 let api = 'https://meme-api.herokuapp.com/gimme/sticker'
     conn.sendButtonImg(m.chat, api, 'Nih', wm2, 'NEXT', '.random', m)
     
