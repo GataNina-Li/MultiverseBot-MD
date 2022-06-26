@@ -33,7 +33,7 @@ let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
  ⎸ *Tamaño de Video:* ${yt2.filesizeF}
  ⎸ *Servidor:* ${usedServer}
  ⎸ *Enlace:* ${vid.url}
-*╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*`
+*╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*` 
      let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(thumb)).buffer()}, { upload: conn.waUploadToServer }) 
       const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
       templateMessage: {
@@ -85,7 +85,7 @@ let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^(p|play)$/i
+handler.command = /^(p|play)$/i 
 
 handler.exp = 0
 
