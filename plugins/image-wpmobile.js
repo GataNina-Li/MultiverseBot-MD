@@ -4,7 +4,7 @@ let handler = async (m, { conn, args }) => {
   if (!args) throw 'Masukkan Parameter'
   m.reply('Sedang Diproses...')
   let res = `https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture`
-  conn.sendFile(m.chat, `${les.data.url}`, '',
+  conn.sendFile(m.chat, `${les.data.url}`
 }
 handler.help = ['wpmobile'].map(v => v + ' ')
 handler.tags = ['image']
