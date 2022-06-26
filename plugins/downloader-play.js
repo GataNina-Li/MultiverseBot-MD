@@ -21,11 +21,11 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
       usedServer = server
       break
     } catch (e) {
-      m.reply(`${fg}Servidor ${server} con error!${servers.length >= i + 1 ? '' : '\nintente mas tarde...'}`)
+      m.reply(`${fg}*Servidor ${server} con error!*${servers.length >= i + 1 ? '' : '\n*intente mas tarde...*'}`)
     }
   }
-  if (yt === false) throw `${fg}Servidores Fallaron`
-  if (yt2 === false) throw `${fg}Servidores Fallaron`
+  if (yt === false) throw `${fg}*Los Servidores Fallaron*`
+  if (yt2 === false) throw `${fg}*Los Servidores Fallaron*`
   let { dl_link, thumb, title, filesize, filesizeF } = yt
 let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
  ⎸ *Título:* ${title}
