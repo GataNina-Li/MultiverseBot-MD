@@ -1,4 +1,4 @@
-let fetch = require('node-fetch')
+const fetch = require('node-fetch')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 let api = 'https://meme-api.herokuapp.com/gimme/sticker'
 let res = await fetch('https://meme-api.herokuapp.com/gimme/sticker')
