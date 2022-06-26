@@ -2,7 +2,7 @@ const axios = require('axios')
  let handler = async(m, { conn }) => {
 let les = await axios.get('https://meme-api.herokuapp.com/gimme/sticker=${text}')
             conn.sendFile(m.chat, `${les.data.url}`, '', `${les.data.title} 
-            conn.sendButtonImg(m.chat, les, `Resultados de ${text}`, wm2, 'Thanks', 'thanks', m)
+            conn.sendButtonImg(m.chat, les, `Resultados de ${text}`, siguiente, 'Thanks', 'thanks', m)
 𝑴𝒖𝒍𝒕𝒊𝒗𝒆𝒓𝒔𝒆𝑩𝒐𝒕-𝑴𝑫 `, m) 
   }
 handler.help = ['imagenrandom']
