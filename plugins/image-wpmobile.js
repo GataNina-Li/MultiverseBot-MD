@@ -1,23 +1,25 @@
-const axios = require('axios')
- let handler = async(m, { conn }) => {
-let les = await axios.get('https://api.xjdog.cn/Get-Image')
-            conn.sendFile(m.chat, `${les.data.url}`, '', `${les.data.title}          
-🐈 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨 🐈`, m) 
-  }
-handler.help = ['imagenrandom']
-handler.tags = ['images']
-handler.command = /^(09)$/i
+let fetch = require('node-fetch')
+let handler = async (m, { conn, args }) => {
+   response = args.join(' ')
+  if (!args) throw 'Masukkan Parameter'
+  m.reply('Sedang Diproses...')
+  let res = `https://api.xteam.xyz/randomimage/wpmobile?apikey=beliapikey`
+  conn.sendFile(m.chat, res, 'wpmobile.jpg', `wangy wangy wangy`, m, false)
+}
+handler.help = ['wpmobile'].map(v => v + ' ')
+handler.tags = ['image']
+
+handler.command = /^(wpmobile)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.group = false
-handler.private = false
+handler.private = true
 
 handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.exp = 0
-handler.limit = false
+handler.limit = true
 
 module.exports = handler
