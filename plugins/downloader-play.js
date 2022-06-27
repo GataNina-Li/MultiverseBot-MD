@@ -83,7 +83,7 @@ let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
          { messageId: template.key.id }
      )
 }
-handler.help = ['play'].map(v => v + ' <pencarian>')
+handler.help = ['play | play2'].map(v => v + ' *texto*')
 handler.tags = ['downloader']
 handler.command = /^(p|play|play2)$/i 
 
