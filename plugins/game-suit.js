@@ -1,42 +1,42 @@
-let handler = async (m, { text, usedPrefix }) => {
-    let salah = `Pilihan yang tersedia\n\ngunting, kertas, batu\n\n${usedPrefix}suit gunting\n\nkasih spasi!`
-    if (!text) throw salah
-    var astro = Math.random()
+let handler = async(m, { texto, usedPrefix }) => {
+    let false = 🔰Opciones disponibles: 🤖\n\▪️scissors, paper, stone\n\n${usedPrefix}scissor suit\n\n▪️por favor espacio!
+    si (!texto) throw es falso
+    var astro = Matemáticas.aleatoria()
 
-    if (astro < 0.34) {
-        astro = 'batu'
-    } else if (astro > 0.34 && astro < 0.67) {
-        astro = 'gunting'
-    } else {
-        astro = 'kertas'
+    si (astro < 0,34) {
+        astro = 'roca'
+    } más si (astro > 0.34 && astro < 0.67) {
+        astro = 'tijeras'
+    } más {
+        astro = 'papel'
     }
 
-    //menentukan rules
-    if (text == astro) {
-        m.reply(`Seri!\nkamu: ${text}\nBot: ${astro}`)
-    } else if (text == 'batu') {
-        if (astro == 'gunting') {
+    // ❗definir las reglas
+    si (texto == astro) {
+        m.reply(Serie!\ntú: ${texto}\nBot: ${astro})
+    } else if (texto == 'roca') {
+        if (astro == 'tijeras') {
             global.db.data.users[m.sender].money += 1000
-            m.reply(`Kamu menang! +Rp1000\nKamu: ${text}\nBot: ${astro}`)
+            m.reply(¡Tú ganas! +Rp1000\nTú: ${text}\nBot: ${astro})
         } else {
-            m.reply(`Kamu kalah!\nkamu: ${text}\nBot: ${astro}`)
+            m.reply(¡Pierdes!\ntú: ${text}\nBot: ${astro})
         }
-    } else if (text == 'gunting') {
-        if (astro == 'kertas') {
+    } else if (texto == 'tijeras') {
+        if (astro == 'papel') {
             global.db.data.users[m.sender].money += 1000
-            m.reply(`Kamu menang! +Rp1000\nKamu: ${text}\nBot: ${astro}`)
+            m.reply(¡Tú ganas! +Rp1000\nTú: ${text}\nBot: ${astro})
         } else {
-            m.reply(`Kamu kalah!\nkamu: ${text}\nBot: ${astro}`)
+            m.reply(¡Pierdes!\ntú: ${text}\nBot: ${astro})
         }
-    } else if (text == 'kertas') {
-        if (astro == 'batu') {
+    } else if (texto == 'papel') {
+        if (astro == 'piedra') {
             global.db.data.users[m.sender].money += 1000
-            m.reply(`Kamu menang! +Rp1000\nKamu: ${text}\nBot: ${astro}`)
-        } else {
-            m.reply(`Kamu kalah!\nkamu: ${text}\nBot: ${astro}`)
+            m.reply(¡Tú ganas! +Rp1000\nTú: ${text}\nBot: ${astro})
+        } más {
+            m.reply(¡Pierdes!\ntú: ${text}\nBot: ${astro})
         }
     } else {
-        throw salah
+        tiro equivocado
     }
 }
 handler.help = ['suit']
