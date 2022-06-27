@@ -1,5 +1,5 @@
 let handler = async (m, { text, usedPrefix }) => {
-    let salah = `Opciones Disponibles\n\ntijeras, papel, roca\n\n${usedPrefix}armar traje\n\n¡Me encanta el espacio!`
+    let salah = `🌸Opciones Disponibles🌸\n\n💙tijeras, papel, piedra💙\n\n${usedPrefix}💜armar traje💜\n\n✨¡Me encanta el espacio!✨`
     if (!text) throw salah
     var astro = Math.random()
 
