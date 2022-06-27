@@ -28,11 +28,11 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (yt2 === false) throw `${fg}*Los Servidores Fallaron*`
   let { dl_link, thumb, title, filesize, filesizeF } = yt
 let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
- ⎸ *Título:* ${title}
- ⎸ *Tamaño de Audio:* ${filesizeF}
- ⎸ *Tamaño de Video:* ${yt2.filesizeF}
- ⎸ *Servidor:* ${usedServer}
- ⎸ *Enlace:* ${vid.url}
+ ⎸ ☁ *Título:* ${title}
+ ⎸ ☁ *Tamaño de Audio:* ${filesizeF}
+ ⎸ ☁ *Tamaño de Video:* ${yt2.filesizeF}
+ ⎸ ☁ *Servidor:* ${usedServer}
+ ⎸ ☁ *Enlace:* ${vid.url}
 *╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*` 
      let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(thumb)).buffer()}, { upload: conn.waUploadToServer }) 
       const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -55,20 +55,20 @@ let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
            },
                {
              quickReplyButton: {
-               displayText: '𝗩𝗜𝗗𝗘𝗢',
+               displayText: '💚 𝗩𝗜𝗗𝗘𝗢',
                id: `.ytmp4 ${vid.url}`,
              }
             },
                {
              quickReplyButton: {
-               displayText: '𝗩𝗜𝗗𝗘𝗢 2',
+               displayText: '💙 𝗩𝗜𝗗𝗘𝗢 ❷',
                id: `.play.2 ${text}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: '𝗔𝗨𝗗𝗜𝗢',
+               displayText: '🧡 𝗔𝗨𝗗𝗜𝗢',
                id: `.ytmp3 ${vid.url}`,
              }
 
