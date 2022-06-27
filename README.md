@@ -1,4 +1,4 @@
-> #### Versión Multiverse: 1.0.5 ✨
+> #### Versión Multiverse: 1.0.7 ✨
 # MultiverseBot-MD
 <p align="center">
 <img src="https://i.ibb.co/GMgbjCt/IMG-20220622-WA0001.jpg" width="700" height="300"/>
