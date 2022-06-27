@@ -8,4 +8,4 @@ handler.help = ['cosplay']
 handler.tags = ['anime']
 handler.command = /^(cosplay)$/i
 
-module.exports = handler/*
+module.exports = handler\*
