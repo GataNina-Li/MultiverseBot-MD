@@ -8,4 +8,4 @@ handler.help = ['cecan']
 handler.tags = ['asupan']
 handler.command = /^(cecan)$/i
 
-module.exports = handler\*
+module.exports = handler
