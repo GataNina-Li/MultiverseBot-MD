@@ -55,7 +55,7 @@ let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
            },
                {
              quickReplyButton: {
-               displayText: '𝗩𝗜𝗗𝗘𝗢 360p',
+               displayText: '𝗩𝗜𝗗𝗘𝗢',
                id: `.ytmp4 ${vid.url}`,
              }
             },
