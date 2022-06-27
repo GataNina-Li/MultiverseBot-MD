@@ -6,7 +6,7 @@ try {
   
 if (command == 'play.1') {
 conn.reply(m.chat, `Procesando...`, m)
-let res = await fetch("https://api.dhamzxploit.my.id/api/ytplaymp3?"+text)
+let res = await fetch("https://api.dhamzxploit.my.id/api/ytplaymp3?text="+text)
 //https://api.dhamzxploit.my.id/api/ytplaymp3?text=to%20the%20Bone%20lofi
 let json = await res.json()
 conn.sendFile(m.chat, json.descarga, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
