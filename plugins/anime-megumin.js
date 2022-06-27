@@ -1,4 +1,6 @@
-let fetch = require('node-fetch')
+//no envia nada 
+
+/*let fetch = require('node-fetch')
 let handler = async (m, { conn }) => {
   let res = await fetch('https://api.waifu.pics/sfw/megumin')
   if (!res.ok) throw 'Error Website sedang down'
@@ -29,4 +31,4 @@ handler.command = /^(megumin)$/i
 
 handler.limit = true
 
-module.exports = handler
+module.exports = handler\*
