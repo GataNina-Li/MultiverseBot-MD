@@ -26,6 +26,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   }
   if (yt === false) throw `${fg}*Los Servidores Fallaron*`
   if (yt2 === false) throw `${fg}*Los Servidores Fallaron*`
+  if (yt3 === false) throw `${fg}*Los Servidores Fallaron*`
   let { dl_link, thumb, title, filesize, filesizeF } = yt
 let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
  ⎸ *Título:* ${title}
