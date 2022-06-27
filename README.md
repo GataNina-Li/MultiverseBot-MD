@@ -134,13 +134,24 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
            hydratedFooterText: wm,
            hydratedButtons: [{           	
 ```
------
-### Preguntas Frecuentes 
+----- 
+* Cómo detengo el Bot en Termux?
+> Use CTRL + z para apagar el Bot
+
+* Cómo enciendo el Bot en termux?
+> En caso que vuelva a iniciar en termux use este comando ```cd MultiverseBot-MD && node .```
+En caso que este Apagado el Bot sin salir de la carpeta del Bot, use este comando ```node .```
+
+* Que hago si quiero volver a clonar el Bot
+> En caso que quiera eliminar la carpeta del Bot y volver a clonar use este comando `rm -rf MultiverseBot-MD && git clone https://github.com/GataNina-Li/MultiverseBot-MD && cd MultiverseBot-MD && yarn && npm install && node .`
 
 * Cómo puedo borrar la Session?
 > Ejecute este comando en Termux ```rm -rf multiverse.data.json```
 
+* Cómo puedo hacer el Bot Owner
+> Debe de ingresar al archivo `config.js` o también [`Aquí`](https://github.com/GataNina-Li/MultiverseBot-MD/blob/master/config.js) luego añadir su numero en donde diga `global.owner` 
 
+----- 
 ### 🌟 DESARROLLADORES
 [![Hyzer](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li)
 [![Hyzer](https://github.com/Abiguelreyes75.png?size=100)](https://github.com/Abiguelreyes75)
