@@ -1,6 +1,6 @@
-//falla de la api manda imagenes pero no se ven 
+/*falla de la api manda imagenes pero no se ven 
 
-/*let handler = async (m, { conn }) => {
+let handler = async (m, { conn }) => {
 let hyzer = 'https://api.zacros.my.id/randomimg/cosplay'
     conn.sendButtonImg(m.chat, hyzer, teksfoto, wm2, 'NEXT', '.cosplay', m)
 }
