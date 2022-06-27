@@ -1,4 +1,4 @@
-const fetch = require('node-fetch')
+/*const fetch = require('node-fetch')
 let handler = async (m, { usedPrefix, command, conn, args }) => {
   if (!args[0]) throw `Gunakan format: ${usedPrefix}${command} https://twitter.com/gofoodindonesia/status/1229369819511709697`
   let res = await twitter(args[0])
@@ -37,7 +37,7 @@ async function twitter(url) {
   let res = await fetch('https://www.expertsphp.com/instagram-reels-downloader.php', {
     method: 'POST',
     headers: {
-      'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,**;q=0.8,application/signed-exchange;v=b3;q=0.9',
       'cookie': '_ga=GA1.2.783835709.1637038175; _gid=GA1.2.880188214.1637038175; __gads=ID=5b4991618655cd86-22e2c7aeadce00ae:T=1637038176:RT=1637038176:S=ALNI_MaCe3McPrVVswzBEqcQlgnVZXtZ1g',
       'origin': 'https://www.expertsphp.com',
       'referer': 'https://www.expertsphp.com/twitter-video-downloader.html',
@@ -63,4 +63,25 @@ async function twitter(url) {
     thumbnail,
     result
   }
+}*/
+
+const { twitter } = require('../lib/scrape')
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+  if (!args[0]) throw `*Perintah ini untuk mengunduh media twitter dengan link*\n\ncontoh:\n${usedPrefix + command} https://twitter.com/gofoodindonesia/status/1229369819511709697`
+  if (!args[0].match(/(https:\/\/.*twitter.com)/gi)) throw `*Link salah! Perintah ini untuk mengunduh media twitter dengan link*\n\ncontoh:\n${usedPrefix + command} https://twitter.com/gofoodindonesia/status/1229369819511709697`
+
+  twitter(args[0]).then(async res => {
+    let twit = JSON.stringify(res)
+    let json = JSON.parse(twit)
+    let pesan = json.data.map((v) => `Link: ${v.url}`).join('\n------------\n')
+    m.reply(pesan)
+    for (let { url } of json.data)
+      conn.sendFile(m.chat, url, 'ig' + (/mp4/i.test(url) ? '.mp4' : '.jpg'), watermark, m, false, { thumbnail: Buffer.alloc(0) })
+  })
+
 }
+handler.help = ['twitter'].map(v => v + ' <url>')
+handler.tags = ['downloader']
+handler.command = /^twitter$/i
+handler.limit = true
+module.exports = handler
