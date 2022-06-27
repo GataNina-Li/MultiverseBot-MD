@@ -145,7 +145,7 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
 En caso que este Apagado el Bot sin salir de la carpeta del Bot, use este comando ```node .```
 
 * Que hago si quiero volver a clonar el Bot?
-> En caso que quiera eliminar la carpeta del Bot y volver a clonar use este comando `rm -rf MultiverseBot-MD && git clone https://github.com/GataNina-Li/MultiverseBot-MD && cd MultiverseBot-MD && yarn && npm install && node .`
+> En caso que quiera eliminar la carpeta del Bot y volver a clonar use este comando ```rm -rf MultiverseBot-MD && git clone https://github.com/GataNina-Li/MultiverseBot-MD && cd MultiverseBot-MD && yarn && npm install && node .``` Esta acción también sirve en caso que quiera Actualizar a la última versión 
 
 * Cómo puedo borrar la Session?
 > Ejecute este comando en Termux ```rm -rf multiverse.data.json```
