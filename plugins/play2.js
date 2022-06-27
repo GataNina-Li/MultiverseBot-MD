@@ -23,7 +23,7 @@ conn.sendFile(m.chat, json.result.video, 'error.mp4', wm, m)}
 m.reply('Error')
 console.log(e)
 }}
-handler.help = ['play.1' , 'play.2'].map(v => v + ' <texto>')
+handler.help = ['play.1 | play.2'].map(v => v + ' *texto*')
 handler.tags = ['downloader']
 handler.command = ['play.1', 'play.2']
 module.exports = handler 
