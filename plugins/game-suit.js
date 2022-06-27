@@ -1,6 +1,6 @@
 let handler = async(m, { texto, usedPrefix }) => {
     let false = 🔰Opciones disponibles: 🤖\n\▪️scissors, paper, stone\n\n${usedPrefix}scissor suit\n\n▪️por favor espacio!
-    si (!texto) throw es falso
+    si (!texto) throw es false
     var astro = Matemáticas.aleatoria()
 
     si (astro < 0,34) {
