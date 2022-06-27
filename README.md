@@ -149,6 +149,8 @@ En caso que este Apagado el Bot sin salir de la carpeta del Bot, use este comand
 
 * Cómo puedo borrar la Session?
 > Ejecute este comando en Termux ```rm -rf multiverse.data.json```
+En caso que no tenga nada en el terminar puede usar este comando ```cd MultiverseBot-MD && rm -rf multiverse.data.json```
+
 
 * Cómo puedo hacer el Bot Owner?
 > Debe de ingresar al archivo `config.js` o también [`Aquí`](https://github.com/GataNina-Li/MultiverseBot-MD/blob/master/config.js) luego añadir su numero en donde diga `global.owner` 
