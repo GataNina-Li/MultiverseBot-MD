@@ -1,6 +1,6 @@
-//const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
-//let fs = require('fs')
-//let fetch = require('node-fetch') 
+const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
+let fs = require('fs')
+let fetch = require('node-fetch') 
 const { twitter } = require('../lib/scrape')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args[0]) throw `*Perintah ini untuk mengunduh media twitter dengan link*\n\ncontoh:\n${usedPrefix + command} https://twitter.com/gofoodindonesia/status/1229369819511709697`
@@ -10,8 +10,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let twit = JSON.stringify(res)
     let json = JSON.parse(twit)
     let pesan = json.data.map((v) => `Enlace(s): ${v.url}`).join('\n------------\n')
-    m.reply(pesan)
-    /*let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/github.jpg')}, { upload: conn.waUploadToServer })
+   // m.reply(pesan)
+    let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/twitter.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
@@ -46,7 +46,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
     }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
-    conn.relayMessage(m.chat, template.message, { messageId: template.key.id })*/
+    conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
     
     for (let { url } of json.data)
       conn.sendFile(m.chat, url, 'ig' + (/mp4/i.test(url) ? '.mp4' : '.jpg'), watermark, m, false, { thumbnail: Buffer.alloc(0) })
