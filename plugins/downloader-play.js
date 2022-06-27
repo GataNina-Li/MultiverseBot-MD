@@ -61,8 +61,8 @@ let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
             },
                {
              quickReplyButton: {
-               displayText: '𝗩𝗜𝗗𝗘𝗢 720p',
-               id: `.ytv720 ${vid.url}`,
+               displayText: '𝗩𝗜𝗗𝗘𝗢 2',
+               id: `.play.2 ${text}`,
              }
 
             },
