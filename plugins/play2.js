@@ -9,8 +9,8 @@ conn.reply(m.chat, `Procesando...`, m)
 let res = await fetch("https://my-api-bice.vercel.app/api/ytplay?apikey=nktesla&q="+text)
 let json = await res.json()
 //conn.sendFile(m.chat, json.descarga, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
-  conn.sendFile(m.chat, json.descarga, 'error.mp3', ``, m)
-  //conn.sendFile(m.chat, 'https://my-api-bice.vercel.app/api/ytplay?', 'apikey=nktesla&q="+text')
+  //conn.sendFile(m.chat, json.descarga, 'error.mp3', ``, m)
+  conn.sendFile(m.chat, 'https://my-api-bice.vercel.app/api/ytplay?', 'apikey=nktesla&q="+text')
   
 if (command == 'play.2') {
 conn.reply(m.chat, `Procesando...`, m)
