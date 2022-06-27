@@ -46,7 +46,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
     }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
-   await conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
+    conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
     
     for (let { url } of json.data)
       conn.sendFile(m.chat, url, 'ig' + (/mp4/i.test(url) ? '.mp4' : '.jpg'), watermark, m, false, { thumbnail: Buffer.alloc(0) })
