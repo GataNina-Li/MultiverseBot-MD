@@ -135,6 +135,12 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
            hydratedButtons: [{           	
 ```
 -----
+### Preguntas Frecuentes 
+
+* Cómo puedo borrar la Session?
+> Ejecute este comando en Termux ```rm -rf multiverse.data.json```
+
+
 ### 🌟 DESARROLLADORES
 [![Hyzer](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li)
 [![Hyzer](https://github.com/Abiguelreyes75.png?size=100)](https://github.com/Abiguelreyes75)
