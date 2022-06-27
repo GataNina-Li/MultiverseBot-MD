@@ -9,7 +9,7 @@ conn.reply(m.chat, `Procesando...`, m)
 let res = await fetch("https://api.dhamzxploit.my.id/api/ytplaymp3?text="+text)
 //https://api.dhamzxploit.my.id/api/ytplaymp3?text=to%20the%20Bone%20lofi
 let json = await res.json()
-conn.sendFile(m.chat, json.descarga, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
+conn.sendFile(m.chat, res.json(), 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
   //conn.sendFile(m.chat, json.descarga, 'error.mp3', ``, m)
  // conn.sendFile(m.chat, 'https://my-api-bice.vercel.app/api/ytplay?', 'apikey=nktesla&q="+text')
   
