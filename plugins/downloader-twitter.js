@@ -10,7 +10,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let twit = JSON.stringify(res)
     let json = JSON.parse(twit)
     let pesan = json.data.map((v) => `Enlace(s): ${v.url}`).join('\n------------\n')
-    //m.reply(pesan)
+    m.reply(pesan)
     /*let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/github.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -53,7 +53,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   })
 
 }
-handler.help = ['twittervid | twittergif *enlace*']
+handler.help = ['twittervid | twittergif'].map(v => v + ' *enlace*')
 handler.tags = ['downloader']
 handler.command = /^twittervid|twittervideo|twittergif$/i
 handler.limit = true
