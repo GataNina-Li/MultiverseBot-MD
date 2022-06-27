@@ -8,7 +8,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
-  if (!vid) throw '*No se ha encontrado, vuelva a intentar*'
+  if (!vid) throw `${ag}*No se ha encontrado, vuelva a intentar*`
   let isVideo = /2$/.test(command)
   let yt = false
   let yt2 = false
@@ -43,32 +43,32 @@ let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
             hydratedFooterText: wm, 
             hydratedButtons: [{
              urlButton: {
-               displayText: 'Join Here',
-               url: gc
+               displayText: '𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺',
+               url: instagram 
              }
               },
              {
              urlButton: {
-               displayText: 'Group Bot', 
+               displayText: '𝗠𝘂𝗹𝘁𝗶𝘃𝗲𝗿𝘀𝗲𝗕𝗼𝘁-𝗠𝗗', 
                url: gc
              }
            },
                {
              quickReplyButton: {
-               displayText: 'Video 360p',
+               displayText: '𝗩𝗜𝗗𝗘𝗢 360p',
                id: `.ytmp4 ${vid.url}`,
              }
             },
                {
              quickReplyButton: {
-               displayText: 'Video 720p',
+               displayText: '𝗩𝗜𝗗𝗘𝗢 720p',
                id: `.ytv720 ${vid.url}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: 'Audio',
+               displayText: '𝗔𝗨𝗗𝗜𝗢',
                id: `.ytmp3 ${vid.url}`,
              }
 
@@ -85,7 +85,7 @@ let anu =  `*╭𝄗𝄗𝄗✦ PLAY ✦𝄗𝄗𝄗⬣*
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^(p|play)$/i 
+handler.command = /^(p|play|play2)$/i 
 
 handler.exp = 0
 
