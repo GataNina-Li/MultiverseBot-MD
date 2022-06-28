@@ -36,7 +36,7 @@ console.log(e)
 }}
 handler.help = ['mp33', 'aa'].map(v => 'yt' + v + ` <url>`)
 handler.tags = ['downloader']
-handler.command = /^yt(aa|mp33)$/i
+handler.command = /^play.1$/i
 handler.limit = 2
 handler.exp = 3
 module.exports = handler
