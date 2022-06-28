@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let json = JSON.parse(twit)
     let pesan = json.data.map((v) => `Enlace(s): ${v.url}`).join('\n------------\n')
    // m.reply(pesan)
-    let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/twitter.jpg')}, { upload: conn.waUploadToServer })
+    let message = await prepareWAMessageMedia({ image: fs.readFileSync('./src/twitter.png')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
