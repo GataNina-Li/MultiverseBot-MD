@@ -8,7 +8,20 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
   let server = (args[1] || servers[0]).toLowerCase()
   let { dl_link, thumb, title, filesize, filesizeF} = await yta(args[0], servers.includes(server) ? server : servers[0])
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize 
-  
+  const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
  if (!isLimit) m.reply(conn.sendBut(m.chat, 
 `*╭𝄗𝄗𝄗✦ *AUDIO* ✦𝄗𝄗𝄗⬣*
  ⎸ *YOUTUBE MP3*
