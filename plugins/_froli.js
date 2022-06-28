@@ -11,7 +11,7 @@ const ftroli = {
                             surface : 1,
                             message: 'MikeBot', //Kasih namalu
                             orderTitle: 'Bang',
-                            thumbnail: fs.readFileSync('./str/welcome.jpg'), //Gambarnye
+                            thumbnail: fs.readFileSync('./src/welcome.jpg'), //Gambarnye
                             sellerJid: '0@s.whatsapp.net'
           
                           }
