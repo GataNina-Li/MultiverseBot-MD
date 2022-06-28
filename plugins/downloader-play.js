@@ -87,5 +87,5 @@ handler.help = ['play | play2'].map(v => v + ' *texto*')
 handler.tags = ['downloader']
 handler.command = /^(p|play|play2)$/i 
 handler.exp = 5
-
+ 
 module.exports = handler 
