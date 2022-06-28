@@ -14,7 +14,21 @@ conn.sendFile(m.chat, res.json(), 'error.mp3', null, m, false, { mimetype: 'audi
  // conn.sendFile(m.chat, 'https://my-api-bice.vercel.app/api/ytplay?', 'apikey=nktesla&q="+text')*/
   
 if (command == 'play.2') {
-conn.reply(m.chat, `Procesando...`, m)
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}   
+m.reply(conn.sendBut(m.chat, global.wait, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
 let res = await fetch("https://api.lolhuman.xyz/api/ytplay2?apikey=9b817532fadff8fc7cb86862&query="+text)
 let json = await res.json()
 conn.sendFile(m.chat, json.result.video, 'error.mp4', wm, m)} 
