@@ -8,7 +8,7 @@ handler.command = /^(pornovid|pornovideo|Pornovid|Pornovideo|Pornvid|Ponrvid|por
 module.exports = handler
 
 function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
+  return list[Math.floor(list.length * Math.random())] 
 }
 
 const asupan = [
