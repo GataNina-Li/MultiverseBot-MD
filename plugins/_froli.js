@@ -1,24 +1,21 @@
 let fs = require('fs')
 let handler  = async (m, { conn, usedPrefix }) => {
-const ftroli = {
-	key : {
-                          participant : '0@s.whatsapp.net'
-                        },
-       message: {
-                    orderMessage: {
-                            itemCount : 1,
-                            status: 1,
-                            surface : 1,
-                            message: 'MikeBot', //Kasih namalu
-                            orderTitle: 'Bang',
-                            thumbnail: fs.readFileSync('./src/welcome.jpg'), //Gambarnye
-                            sellerJid: '0@s.whatsapp.net'
-          
-                          }
+const ftextt = {
+	 key: { 
+          fromMe: false,
+	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
+	 { remoteJid: "0-1625305606@g.us" } : {}) 
+                },
+	 message: { 
+		"extendedTextMessage": {
+                 "text":"hallo bang",
+                 "title": `Hmm`,
+                 'jpegThumbnail': fs.readFileSync('./src/welcome.jpg')
                         }
-                      }
+	                  } 
+                     }
 
-m.reply(ftroli)
+m.reply(ftextt)
 
 
 
