@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 const { fbdl } = require('../lib/fbdl')
 let handler = async(m, { conn, usedPrefix, args, command }) => {
-  if (!args[0]) throw `*Ingrese un enlace válido de Facebook para Obtener el Vídeo*\n\n*EJEMPLO*\n*${usedPrefix + command}* https://twitter.com/NetflixES/status/1541474691260354560?t=GVOvltFf9qCikmDOwW5lJw&s=19\n\n*${usedPrefix + command}* https://fb.watch/dW4TFRZyt-/`
+  if (!args[0]) throw `*Ingrese un enlace válido de Facebook para Obtener el Vídeo*\n\n*EJEMPLO*\n*${usedPrefix + command}* https://www.facebook.com/268372269857888/posts/pfbid028gYhU4oFMPGbfJz7fDvBoUzJsoy5WD3CQGvERypC61uEVWrCr41Ucg2Gn1DhVd1Yl/\n\n*${usedPrefix + command}* https://fb.watch/dW4TFRZyt-/`
   let v = await fbdl(args[0])
   //m.reply(wait)
   const fkontak = {
