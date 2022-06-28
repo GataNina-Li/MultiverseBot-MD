@@ -34,9 +34,9 @@ asDocument: chat.useDocument
 m.reply(`${fg}𝙀𝙎 𝙋𝙊𝙎𝙄𝘽𝙇𝙀 𝙌𝙐𝙀 𝙀𝙇 𝘼𝙍𝘾𝙃𝙄𝙑𝙊 𝙎𝙀𝘼 𝙈𝙐𝙔 𝙋𝙀𝙎𝘼𝘿𝙊. 𝙄𝙉𝙏𝙀𝙉𝙏𝙀 𝘾𝙊𝙉 𝙊𝙏𝙍𝙊\n\n𝙄𝙏 𝙄𝙎 𝙋𝙊𝙎𝙎𝙄𝘽𝙇𝙀 𝙏𝙃𝘼𝙏 𝙏𝙃𝙀 𝙁𝙄𝙇𝙀 𝙄𝙎 𝙑𝙀𝙍𝙔 𝙃𝙀𝘼𝙑𝙔. 𝙏𝙍𝙔 𝘼𝙉𝙊𝙏𝙃𝙀𝙍`)
 console.log(e)
 }}
-handler.help = ['mp3', 'a'].map(v => 'yt' + v + ` <url>`)
+handler.help = ['mp33', 'aa'].map(v => 'yt' + v + ` <url>`)
 handler.tags = ['downloader']
-handler.command = /^yt2(a|mp3)$/i
+handler.command = /^yt(aa|mp33)$/i
 handler.limit = 2
 handler.exp = 3
 module.exports = handler
