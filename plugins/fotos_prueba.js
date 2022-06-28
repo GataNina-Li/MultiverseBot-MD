@@ -1,7 +1,7 @@
 let fs = require('fs')
 let fetch = require('node-fetch')
 let handler = async(m, { conn, usedPrefix, command }) => {  
-await conn.sendButton(m.chat, pickRandom(asupan), '🔥🔥🔥🔥', 'Gata Dios', 'SIGUIENTE 🔄🥵', `${usedPrefix + command}`, m, false)
+await conn.sendButtonImg(m.chat, pickRandom(asupan), '🔥🔥🔥🔥', 'Gata Dios', 'SIGUIENTE 🔄🥵', `${usedPrefix + command}`, m, false)
 }
 handler.command = /^(pornovid|pornovideo|Pornovid|Pornovideo|Pornvid|Ponrvid|pornvid|ponrvid|pornov)$/i
 module.exports = handler
