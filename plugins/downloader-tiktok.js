@@ -11,20 +11,22 @@ handler.command = /^(tiktok)$/i
 
 module.exports = handler*/
 
-const xa = require('xfarr-api')
-let fetch = require('node-fetch')
-let handler = async(m, { conn, usedPrefix, args, command }) => {
-    if(!args[0]) throw `Enlace?`
-    m.reply(wait)
-    xa.Tiktok(args[0])
-    .then(async data => { 
-        await conn.sendFile(m.chat, data.medias[2].url, 'tiktok.mp3', null, m)
-        await conn.sendFile(m.chat, data.medias[1].url, 'tiktok.mp4', watermark, m) 
-    })
+import fetch from 'node-fetch'
+let handler = async (m, {command, conn, text, args}) => {
+if (!text) throw `Enlace?`
+if (command == 'tiktokaudio') {
+m.reply(wait)
+let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
+let json = await res.json()
+conn.sendFile(m.chat, json.result.nowatermark, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
+if (command == 'tiktok') {
+m.reply(wait)
+let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
+let json = await res.json()
+conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', wm, m)}
 }
-handler.help = ['tiktok <url>']
+handler.help = ['tiktok' , 'tiktokaudio'].map(v => v + ' <link>')
 handler.tags = ['downloader']
-handler.command = /^(tiktoknowm|tiktok)$/i
+handler.command = ['tiktok', 'tiktokaudio']
 handler.limit = true
-
-module.exports = handler
+export default handler
