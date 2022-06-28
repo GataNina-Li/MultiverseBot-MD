@@ -49,12 +49,12 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
     
     for (let { url } of json.data)
-      conn.sendFile(m.chat, url, 'ig' + (/jpg/i.test(url) ? '.mp4' : '.jpg'), watermark, m, false, { thumbnail: Buffer.alloc(0) })
+      conn.sendFile(m.chat, url, 'ig' + (/mp4/i.test(url) ? '.mp4' : '.jpg'), watermark, m, false, { thumbnail: Buffer.alloc(0) })
   })
 
 }
-handler.help = ['twittervid | twittergif'].map(v => v + ' *enlace*')
+handler.help = ['twittervid | twvid'].map(v => v + ' *enlace*')
 handler.tags = ['downloader']
-handler.command = /^twittervid|twittervideo|twittergif$/i
+handler.command = /^twittervid|twittervideo|twittergif|twvid$/i
 handler.limit = true
 module.exports = handler
