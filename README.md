@@ -152,7 +152,7 @@ En caso que este Apagado el Bot sin salir de la carpeta del Bot, use este comand
 En caso que no tenga nada en el terminar puede usar este comando ```cd MultiverseBot-MD && rm -rf multiverse.data.json``` luego use ```node .``` para obtener un nuevo código QR
 
 * Cómo puedo hacer el Bot Owner?
-> Debe de ingresar al archivo `config.js` o también [`Aquí`](https://github.com/GataNina-Li/MultiverseBot-MD/blob/master/config.js) luego añadir su número en donde diga `global.owner` 
+> Debe de ingresar al archivo `config.js` o también [`Aquí`](https://github.com/GataNina-Li/MultiverseBot-MD/blob/master/config.js) luego añadir su número en donde diga `global.owner` Recuerde que requiere de hacer una Bifurcación, puede hacerla [`Aquí`](https://github.com/GataNina-Li/MultiverseBot-MD/fork)
 
 ----- 
 ### 🌟 DESARROLLADORES
