@@ -8,7 +8,8 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
   let server = (args[1] || servers[0]).toLowerCase()
   let { dl_link, thumb, title, filesize, filesizeF} = await yta(args[0], servers.includes(server) ? server : servers[0])
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize 
-  if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp3', 
+  
+ if (!isLimit) m.reply(conn.sendBut(m.chat, 
 `*╭𝄗𝄗𝄗✦ *AUDIO* ✦𝄗𝄗𝄗⬣*
  ⎸ *YOUTUBE MP3*
  ⎸ *𝑴𝒖𝒍𝒕𝒊𝒗𝒆𝒓𝒔𝒆𝑩𝒐𝒕-𝑴𝑫*
@@ -16,7 +17,8 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
  ⎸🎧 *Título:* ${title}
  ⎸🎧 *Tipo:* MP3
  ⎸🎧 *Peso:* ${filesizeF}
-*╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*`.trim(), m, null, { asDocument: chat.useDocument })
+*╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*`, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
+  if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp3', ``.trim(), m, null, { asDocument: chat.useDocument })
 }
 handler.help = ['yta | ytmp3 *enlace*']
 handler.tags = ['downloader']
