@@ -101,7 +101,7 @@ Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
 
 ### Visualización del menú con imagen
 ```ts
-let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/elyas.jpg')}, { upload: conn.waUploadToServer })
+let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
@@ -118,7 +118,7 @@ let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/elya
          hydratedTemplate: {
            hydratedContentText: text.trim(),
            locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./media/elyas.jpg') },
+           jpegThumbnail: fs.readFileSync('./media/menu.jpg') },
            hydratedFooterText: wm,
            hydratedButtons: [{       
 ```
