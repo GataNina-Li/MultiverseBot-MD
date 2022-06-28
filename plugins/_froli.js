@@ -11,14 +11,14 @@ const ftroli = {
                             surface : 1,
                             message: 'MikeBot', //Kasih namalu
                             orderTitle: 'Bang',
-                            thumbnail: fs.readFileSync('./media/welcome.jpg'), //Gambarnye
+                            thumbnail: fs.readFileSync('./str/welcome.jpg'), //Gambarnye
                             sellerJid: '0@s.whatsapp.net'
           
                           }
                         }
                       }
 
-m.reply(`Hola`, ftroli)
+m.reply(ftroli)
 
 
 
