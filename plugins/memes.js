@@ -1,9 +1,9 @@
 let fs = require('fs')
 let fetch = require('node-fetch')
 let handler = async(m, { conn, usedPrefix, command }) => {  
-await conn.sendButtonImg(m.chat, pickRandom(asupan), '🔥🔥🔥🔥', 'Gata Dios', 'SIGUIENTE 🔄🥵', `${usedPrefix + command}`, m, false)
+await conn.sendButtonImg(m.chat, pickRandom(asupan), '🌌🌌🌌🌌', '𝑴𝒖𝒍𝒕𝒊𝒗𝒆𝒓𝒔𝒆𝑩𝒐𝒕-𝑴𝑫', 'SIGUIENTE MEME GALACTICO 🔄🌌', `${usedPrefix + command}`, m, false)
 }
-handler.command = /^(pornovid|pornovideo|Pornovid|Pornovideo|Pornvid|Ponrvid|pornvid|ponrvid|pornov)$/i
+handler.command = /^(meme|MEME)$/i
 module.exports = handler
 
 function pickRandom(list) {
