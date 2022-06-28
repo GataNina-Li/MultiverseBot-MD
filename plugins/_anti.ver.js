@@ -1,6 +1,6 @@
 let handler = m => m
 handler.before = async function (m) {
-    if (!db.data.chats[m.chat].viewonce) return
+    //if (!db.data.chats[m.chat].viewonce) return
     let q = m.quoted ? m.quoted : m
     if (q.mtype == 'viewOnceMessage') {
     m.reply('Bot mendeteksi adanya media viewonce atau media sekali lihat, tunggu sebentar... bot akan meneruskan nya...')
