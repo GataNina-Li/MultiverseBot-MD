@@ -1,14 +1,24 @@
 let fs = require('fs')
 let handler  = async (m, { conn, usedPrefix }) => {
-prep = conn.prepareMessageFromContent(m.chat, { orderMessage: { 
-itemCount: 999999999999, status: 1,
-message: `AwogAwogAwog`,
-orderTitle: 'B',
-sellerJid: '0@s.whatsapp.net',
-thumbnail: fs.readFileSync('./src/welcome.jpg')
-}}, {contextInfo: null, quoted: m})
-conn.relayWAMessage(prep)
-}
+const ftroli = {
+	key : {
+                          participant : '0@s.whatsapp.net'
+                        },
+       message: {
+                    orderMessage: {
+                            itemCount : 1,
+                            status: 1,
+                            surface : 1,
+                            message: 'MikeBot', //Kasih namalu
+                            orderTitle: 'Bang',
+                            thumbnail: fs.readFileSync('./media/welcome.jpg'), //Gambarnye
+                            sellerJid: '0@s.whatsapp.net'
+          
+                          }
+                        }
+                      }
+
+m.reply(`Hola`, ftroli)
 
 
 
