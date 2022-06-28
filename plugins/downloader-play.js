@@ -1,5 +1,5 @@
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
-const { servers, yta, ytv } = require('../lib/y2mate')
+const { servers, yta, ytv } = require('../lib/y2mate') 
 let fs = require('fs')
 let yts = require('yt-search')
 let fetch = require('node-fetch')
