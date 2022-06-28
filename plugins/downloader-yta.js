@@ -23,14 +23,14 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 	"participant": "0@s.whatsapp.net"
 }
  if (!isLimit) m.reply(conn.sendBut(m.chat, 
-`*╭𝄗𝄗𝄗✦ *AUDIO* ✦𝄗𝄗𝄗⬣*
+`*╭𝄗𝄗𝄗✦ AUDIO ✦𝄗𝄗𝄗⬣*
  ⎸ *YOUTUBE MP3*
  ⎸ *𝑴𝒖𝒍𝒕𝒊𝒗𝒆𝒓𝒔𝒆𝑩𝒐𝒕-𝑴𝑫*
  ⎸┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  ⎸🎧 *Título:* ${title}
  ⎸🎧 *Tipo:* MP3
  ⎸🎧 *Peso:* ${filesizeF}
-*╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*`, `${wm}`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
+*╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*`, `${wm} | ᴇꜱᴘᴇʀᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ`, `✨ 𝗠𝗘𝗡𝗨`, '.menu', fkontak,  m ))
   if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp3', ``.trim(), m, null, { asDocument: chat.useDocument })
 }
 handler.help = ['yta | ytmp3 *enlace*']
