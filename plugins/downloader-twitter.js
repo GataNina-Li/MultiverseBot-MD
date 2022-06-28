@@ -3,7 +3,7 @@ let fs = require('fs')
 let fetch = require('node-fetch') 
 const { twitter } = require('../lib/scrape')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) throw `*Ingrese un enlace válido de Twitter para Obtener el Vídeo o GIF *\n\n*EJEMPLO*\n*${usedPrefix + command}* https://twitter.com/NetflixES/status/1541474691260354560?t=GVOvltFf9qCikmDOwW5lJw&s=19`
+  if (!args[0]) throw `*Ingrese un enlace válido de Twitter para Obtener el Vídeo o GIF*\n\n*EJEMPLO*\n*${usedPrefix + command}* https://twitter.com/NetflixES/status/1541474691260354560?t=GVOvltFf9qCikmDOwW5lJw&s=19`
   if (!args[0].match(/(https:\/\/.*twitter.com)/gi)) throw `*Debe de ser un enlace válido de Twitter*\n\n*EJEMPLO*\n*${usedPrefix + command}* https://twitter.com/NetflixES/status/1541474691260354560?t=GVOvltFf9qCikmDOwW5lJw&s=19`
 
   twitter(args[0]).then(async res => {
