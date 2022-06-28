@@ -20,7 +20,7 @@ let handler = async (m, { conn, args }) => {
   if (res.status !== 200) throw await res.text()
   let json = await res.json()
   if (!json.status) throw json
-  /*let url = json.server_1 || json.info[0].videoUrl || ''
+  let url = json.server_1 || json.info[0].videoUrl || ''
   if (!url) throw 'Gagal mengambil url download'
   let txt = json.info[0].text
   for (let hashtag of json.info[0].hashtags) txt = txt.replace(hashtag, '*$&*')
