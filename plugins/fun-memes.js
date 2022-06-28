@@ -10,7 +10,7 @@ handler.command = /^(momaso|momaso)$/i
 module.exports = handler
 
 function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
+  return list[Math.floor(list.length * Math.random())] 
 }
 
 const asupan = [
