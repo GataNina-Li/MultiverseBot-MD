@@ -1,3 +1,6 @@
+//codigo corregido by erika
+
+
 let fs = require('fs')
 let fetch = require('node-fetch')
 let handler = async(m, { conn, usedPrefix, command }) => {  
