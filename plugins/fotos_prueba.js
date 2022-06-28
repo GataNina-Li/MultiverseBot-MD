@@ -14,7 +14,7 @@ let video = fs.readFileSync(`./fotos/${pickRandom(['1','2','3','4','5','6','7','
 }
 handler.help = ['xvideo']
 handler.tags = ['xvideo']
-handler.command = /^video|vídeo$/i
+handler.command = /^foto|fotos$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
