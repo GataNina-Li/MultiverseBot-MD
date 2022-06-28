@@ -1,10 +1,3 @@
-let util = require('util')
-let path = require('path')
-let fs = require('fs')
-
-let caption = `
-🥵🔥🔥🔥🔥
-`.trim()
 
 let handler = async (m, { conn }) => {
 if (!DATABASE._data.chats[m.chat].nsfw && m.isGroup) throw '❰ ⚠️ ❱ *Función Nsfw Desactivada*\n*Escriba #on nsfw para activar esta Función.*'
@@ -15,20 +8,6 @@ let video = fs.readFileSync(`./fotos/${pickRandom(['1','2','3','4','5','6','7','
 handler.help = ['xvideo']
 handler.tags = ['xvideo']
 handler.command = /^foto|fotos$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-handler.register = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-handler.exp = 200
-handler.limit = false
-
 module.exports = handler
 
 function pickRandom(list) {
