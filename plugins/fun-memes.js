@@ -21,5 +21,10 @@ const asupan = [
 "https://i.ytimg.com/vi/2aU89ku_FIk/maxresdefault.jpg",
 "http://pm1.narvii.com/7625/526951ab818b9351af9c06d5bce4c0354fd15e6br1-720-741v2_uhq.jpg",
 "http://pm1.narvii.com/7862/ea9f1159e6bb5f308c4ef7f34ace4d0981d2e586r1-735-672v2_uhq.jpg",
-"https://pbs.twimg.com/media/DpRtzHwUcAAZHfB.jpg"
+"https://pbs.twimg.com/media/DpRtzHwUcAAZHfB.jpg",
+"https://l.top4top.io/p_2371fmplu1.jpg",
+"https://e.top4top.io/p_2371blyz01.jpg",
+"https://i.top4top.io/p_23716efba1.jpg",
+"https://h.top4top.io/p_2371i1fry1.jpg",
+"https://j.top4top.io/p_2371ervfv1.jpg"
 ]
