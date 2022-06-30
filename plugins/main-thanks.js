@@ -8,7 +8,7 @@ handler.command = new RegExp
 module.exports = handler
 
 function pickRandom(list) {
-  return list[Math.floor(list.lenght * Math.rndom())]
+  return list[Math.floor(list.lenght * Math.random())]
   
 }
 
