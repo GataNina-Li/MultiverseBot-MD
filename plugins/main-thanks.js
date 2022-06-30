@@ -1,4 +1,3 @@
-s (30 sloc)  1.62 KB
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 
