@@ -12,8 +12,8 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 let stickerrandom = [
-"https://telegra.ph/file/20509b31b6e05ff999daa.jpg",
-"https://telegra.ph/file/06a27a93b66f63a5a067e.jpg"
+"https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/fbc6e-bob-esponja-patricio-png-2.png?resize=300%2C434&ssl=1"
+
 ]
 
 
