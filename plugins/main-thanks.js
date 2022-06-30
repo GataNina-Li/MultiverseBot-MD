@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-conn.sendImageAsSticker(m.chat, pickRandom(stikerthanks), m, { packname: "sticker by", author: "Elyas" })
+conn.sendImageAsSticker(m.chat, pickRandom(stikerrandom), m, { packname: "sticker by", author: "Elyas" })
 }  
   
 handler.customPrefix = /^(thanks)$/i
@@ -12,7 +12,7 @@ function pickRandom(list) {
   
 }
 
-let stickerthanks =[
+let stickerrandom =[
 'https://telegra.ph/file/20509b31b6e05ff999daa.jpg',
 'https://telegra.ph/file/06a27a93b66f63a5a067e.jpg' 
 ]
