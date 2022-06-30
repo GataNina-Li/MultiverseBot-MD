@@ -12,7 +12,7 @@ function pickRandom(list) {
   
 }
 
-let stickerrandom =[
+let stickerrandom = [
 'https://telegra.ph/file/20509b31b6e05ff999daa.jpg',
 'https://telegra.ph/file/06a27a93b66f63a5a067e.jpg' 
 ]
