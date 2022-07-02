@@ -1,3 +1,6 @@
+//no funciona
+
+
 let handler = async (m, { conn, participants, command, usedPrefix }) => {
     let member = participants.map(u => u.id)
     let orang
