@@ -3,7 +3,7 @@ let fetch = require('node-fetch')
 let handler = async(m, { conn, usedPrefix, command }) => {  
 await conn.sendButtonImg(m.chat, pickRandom(sagiri), '🔥🔥🔥🔥', 'Gata Dios', 'SIGUIENTE 🔄🥵', `${usedPrefix + command}`, m, false)
 }
-handler.command = /^(sagiri)$/i
+handler.command = /^(sagiri2)$/i
 module.exports = handler
 
 function pickRandom(list) {
