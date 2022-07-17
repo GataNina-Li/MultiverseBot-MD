@@ -1,7 +1,7 @@
 // ✩｡:*•.─────  NUMERO OWNER  ─────.•*:｡✩ 
-global.owner = ['51993042301', '16477229464', '593993684821', '593968585383', '50495086382', '50497501147', '5218451003894', '5215573031859', '50498965677', '528451003894', '525573031859'] //Agrega primero el numero que será Bot, luego los numeros a ser Owner
-global.mods = [] //Moderadores
-global.prems = [] //Premium, sin Limites en usar el Bot
+global.owner = ['50660708539', '50660708539', '50660708539', '50660708539', '50660708539', '50660708539', '50660708539', '50660708539', '50660708539', '50660708539', '50660708539'] //Agrega primero el numero que será Bot, luego los numeros a ser Owner
+global.mods = [50660708539] //Moderadores
+global.prems = [50660708539] //Premium, sin Limites en usar el Bot
 
 // ✩｡:*•.─────  INFORMACIION DEL BOT - GENERAL  ─────.•*:｡✩ 
 global.packname = '𝑴𝒖𝒍𝒕𝒊𝒗𝒆𝒓𝒔𝒆𝑩𝒐𝒕-𝑴𝑫' //Sticker
