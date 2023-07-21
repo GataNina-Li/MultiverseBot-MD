@@ -16,17 +16,24 @@
     "repo": "https://github.com/GataNina-Li/GataBotPlus-MD"
   },
   "news": {
-    "code": "Última modificación para esta versión: https://github.com/GataNina-Li/GataBotPlus-MD/commit/0a4ac796821bba18669939172fd295244cc9e46d",
-    "commands": ["#prueba", "#prueba2", "#prueba3", "#prueba4"],
+    "code": "https://github.com/GataNina-Li/GataBotPlus-MD/commit/0a4ac796821bba18669939172fd295244cc9e46d",
+    "commands": ["prueba", "prueba2", "prueba3", "prueba4"],
+    "new_commands": ["Sin definir", "prueba2", "prueba3", "prueba4"],
     "changes": [
       "Cada línea representa un nuevo cambio o novedad",
       "Usar las líneas o propiedades necesarias para agregar un nuevo cambio.",
       "Todos los colaboradores pueden editar esto, recuerden modificar la versión en settings.js",
       "¡Ahora GataBot responde a más comandos!"
     ],
-    "soon": "Próximamente: ¡agregar spoilers!",
+    "soon": [
+      "¡agregar spoilers!",
+      "¡agregar spoilers!",
+      "¡agregar spoilers!"
+    ],
+    "new_release": "Sin fecha definida",
     "creators": ["GataNina-Li", "Skidy89", "cuentasecundariaa", "ferhacks"],
     "contact": "centergatabot@gmail.com"
+    "donate": "https://paypal.me/OficialGD"
   },
   "update": "¡Se ha encontado una nueva versión! Para obtener la última versión de GataBot, visita el repositorio en GitHub: https://github.com/GataNina-Li/GataBotPlus-MD"
 }
