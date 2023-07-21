@@ -1,0 +1,32 @@
+{
+  "error": null,
+  "comments_owners": [
+      "En este apartado los Colaboradores pueden agregar comentarios sobre la modificación de este Json.",
+      "Este apartado no se mostraráen ninguna parte, el fin es poder dejar comentarios que enriquece el flujo de comunicación.",
+      "",
+      ""
+    ],
+  "gatabot": {
+    "date": "2023-07-20",
+    "version_num": 1.0.1,
+    "version_model": "alpha",
+    "model_description": "Está versión está en desarrollo. Puede presentar errores significativos.",
+    "version": "GataBotPlus-MD v1.0.1-alpha",
+    "description": "GataBotPlus-MD es un Bot para WhatsApp.",
+    "repo": "https://github.com/GataNina-Li/GataBotPlus-MD"
+  },
+  "news": {
+    "code": "Última modificación para esta versión: https://github.com/GataNina-Li/GataBotPlus-MD/commit/0a4ac796821bba18669939172fd295244cc9e46d",
+    "commands": ["#prueba", "#prueba2", "#prueba3", "#prueba4"],
+    "changes": [
+      "Cada línea representa un nuevo cambio o novedad",
+      "Usar las líneas o propiedades necesarias para agregar un nuevo cambio.",
+      "Todos los colaboradores pueden editar esto, recuerden modificar la versión en settings.js",
+      "¡Ahora GataBot responde a más comandos!"
+    ],
+    "soon": "Próximamente: ¡agregar spoilers!",
+    "creators": ["GataNina-Li", "Skidy89", "cuentasecundariaa", "ferhacks"],
+    "contact": "centergatabot@gmail.com"
+  },
+  "update": "¡Se ha encontado una nueva versión! Para obtener la última versión de GataBot, visita el repositorio en GitHub: https://github.com/GataNina-Li/GataBotPlus-MD"
+}
