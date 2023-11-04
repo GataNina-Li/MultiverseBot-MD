@@ -159,7 +159,7 @@ En caso que no tenga nada en el terminar puede usar este comando ```cd Multivers
 [![Hyzer](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li)
 [![Hyzer](https://github.com/Abiguelreyes75.png?size=100)](https://github.com/Abiguelreyes75)
 [![Hyzer](https://github.com/Sofianayeli.png?size=100)](https://github.com/Sofianayeli)
-[![ADOLFO](https://github.com/Adolfo-crazy.png?size=100)](https://github.com/Adolfo-crazy)
+[![ADOLFO](https://github.com/AdolfoGriego.png?size=100)](https://github.com/AdolfoGrirgo)
 
 ### 🌟 AGRADECIMIENTOS
 [![Hyzer](https://github.com/Hyzerr.png?size=100)](https://github.com/Hyzerr)
